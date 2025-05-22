@@ -1,0 +1,46 @@
+apt - command line interface for Ubuntu and Debian based systems
+apt provides a high-level command line interface for the package
+management system
+
+
+To install packages
+$ sudo apt install package_name
+
+To Check All Dependencies of a Package
+$ sudo apt depends bind9
+
+To Search for a Package
+$ sudo apt search apache2
+
+To View Information About Package
+$ sudo apt show apache2
+
+To Verify a Package for any Broken Dependencies
+$ sudo apt check apache2
+
+To Update System Packages
+$ sudo apt update
+
+To Upgrade System
+$ sudo apt upgrade
+
+To Remove Unused Packages
+$ sudo apt autoremove
+
+To Clean Old Repository of Downloaded Packages
+$ sudo apt autoclean
+
+To Remove Packages with its Configuration Files
+$ sudo apt purge apache2
+
+To Install .Deb Package
+$ sudo apt deb package-amd64.deb
+
+To Find Help for apt
+$ sudo apt help
+
+To Remove Packages
+$ sudo apt remove package_name
+
+To List Packages
+$ sudo apt list

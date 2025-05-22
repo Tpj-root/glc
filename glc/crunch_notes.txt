@@ -1,0 +1,35 @@
+CRUNCH(1)                   General Commands Manual                  CRUNCH(1)
+
+NAME
+       crunch - generate wordlists from a character set
+
+SYNOPSIS
+       crunch <min-len> <max-len> [<charset string>] [options]
+
+DESCRIPTION
+       Crunch can create a wordlist based on criteria you specify.  The output
+       from crunch can be sent to the screen, file,  or  to  another  program.
+       The required parameters are:
+
+       min-len
+              The minimum length string you want crunch to start at.  This op‐
+              tion is required even for parameters that won't use the value.
+
+       max-len
+              The maximum length string you want crunch to end at.   This  op‐
+              tion is required even for parameters that won't use the value.
+
+       charset string
+              You  may specify character sets for crunch to use on the command
+              line or if you leave it blank crunch will use the default  char‐
+              acter sets.  The order MUST BE lower case characters, upper case
+              characters, numbers, and then symbols.  If you don't follow this
+              order  you  will not get the results you want.  You MUST specify
+              either values for the character type or a plus sign.   NOTE:  If
+              you  want  to  include the space character in your character set
+              you must escape it using the \ character or enclose your charac‐
+              ter  set in quotes i.e. "abc ".  See the examples 3, 11, 12, and
+              13 for examples.
+
+OPTIONS
+

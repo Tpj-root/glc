@@ -1,0 +1,49 @@
+apt-cache - query the APT cache for debian and ubuntu based system
+
+Examples:
+
+
+To Find Out Package Name and Description of Software
+$ sudo apt-cache search vsftpd
+
+To find and list down all the packages starting with apache2
+$ sudo apt-cache pkgnames apache2
+
+To List All Available Packages
+$ sudo apt-cache pkgnames
+
+To Check Package Information
+$ sudo apt-cache show apache2
+
+To Check Dependencies for Specific Packages
+$ sudo apt-cache showpkg vsftpd
+
+To Check statistics of Cache
+$ sudo apt-cache stats
+
+To install Packages without Upgrading
+$ sudo apt-get install packageName --no-upgrade
+
+To Upgrade Only Specific Packages
+$ sudo apt-get install packageName --only-upgrade
+
+To Remove Packages Without Configuration
+$ sudo apt-get remove package_name
+
+To Completely Remove Packages
+$ sudo apt-get purge package_name
+
+To Clean Up Disk Space
+$ sudo apt-get clean
+
+To Download a Package Without Installing
+$ sudo apt-get download apache2
+
+To Check Change Log of Package
+$ sudo apt-get changelog vsftpd
+
+To Check Broken Dependencies
+$ sudo apt-get check
+
+To Auto clean Apt-Get Cache
+$ sudo apt-get autoclean

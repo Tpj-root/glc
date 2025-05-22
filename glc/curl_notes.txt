@@ -1,0 +1,70 @@
+
+---
+
+### ✅ **Install curl**
+
+**Debian/Ubuntu:**
+
+```bash
+sudo apt update
+sudo apt install curl
+```
+
+**RedHat/CentOS/Fedora:**
+
+```bash
+sudo dnf install curl     # For newer systems
+# or
+sudo yum install curl     # For older systems
+```
+
+**Arch Linux:**
+
+```bash
+sudo pacman -S curl
+```
+
+---
+
+### ⚙️ **Basic curl usage examples**
+
+**1. Download a file:**
+
+```bash
+curl -O https://example.com/file.txt
+```
+
+**2. Save output to a file:**
+
+```bash
+curl https://example.com -o saved.html
+```
+
+**3. Follow redirects:**
+
+```bash
+curl -L http://short.url
+```
+
+**4. Send a GET request with headers:**
+
+```bash
+curl -H "Accept: application/json" https://api.example.com
+```
+
+**5. Send POST data:**
+
+```bash
+curl -X POST -d "key=value" https://api.example.com/submit
+```
+
+**6. Show response headers:**
+
+```bash
+curl -I https://example.com
+```
+
+---
+
+Let me know if you want `curl` usage for APIs, file uploads, or authentication.
+

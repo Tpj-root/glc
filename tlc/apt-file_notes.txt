@@ -1,0 +1,47 @@
+ APT-FILE உதவி
+1. நிறுவி புதுப்பிக்க:
+Bash
+
+sudo apt update
+sudo apt install apt-file
+sudo apt-file update
+
+2. ஒரு கோப்பைத் தேட (எ.கா., ஒரு .so நூலகம்):
+Bash
+
+apt-file search libbrotlicommon.so.1
+
+வெளியீடு:
+
+libbrotli1: /usr/lib/x86_64-linux-gnu/libbrotlicommon.so.1
+
+3. ஒரு ஹெட்டர் கோப்பைத் தேட (.h):
+Bash
+
+apt-file search stdio.h
+
+வெளியீடு:
+
+libc6-dev: /usr/include/stdio.h
+
+4. பைனரி கோப்புகளைத் தேட:
+Bash
+
+apt-file search bin/nano
+
+5. கான்பிக் கோப்புகளைக் கண்டறிய:
+Bash
+
+apt-file search etc/nginx/nginx.conf
+
+6. ஒரு பேக்கேஜில் உள்ள அனைத்து கோப்புகளையும் பட்டியலிட:
+Bash
+
+apt-file list libbrotli1
+
+7. நூலகங்களைத் தேட:
+Bash
+
+apt-file search /usr/lib/x86_64-linux-gnu/libm.so
+
+காணாமல் போன கோப்புகள், ஹெட்டர்கள், நூலகங்கள் அல்லது பைனரிகளைக் கண்டறிய இந்தக் கருவியைப் பயன்படுத்துங்கள்!
