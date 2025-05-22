@@ -5,7 +5,7 @@
 ### Gnu/Linux Community (glc)
 
 
-It acts like a man system, making tools easy to understand and use for anyone. 
+It acts like a man command, making tools easy to understand and use for anyone. 
 This includes lots of example commands, detailed explanations of how each works, and full, documented instructions.
 
 
