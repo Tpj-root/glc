@@ -2,20 +2,21 @@
 This repository provides custom help pages for my personal scripts, offering quick command overviews and usage instructions.
 
 
-Tamil Linux Community (tlc)
-Gnu/Linux Community (glc)
+### Tamil Linux Community (tlc)
+
+### Gnu/Linux Community (glc)
 
 
 It acts like a man system, making my tools easy to understand and use for anyone. 
 This includes lots of example commands, detailed explanations of how each works, and full, documented instructions."
 
 
-What I'm doing:
+### What I'm doing:
 
 I'm creating a simple help command, similar to the man (manual) pages you see for other commands on Linux/Unix systems. This will provide quick and easy-to-read documentation for a linux and custom command/script I've developed.
 
 
-Why I'm doing it:
+### Why I'm doing it:
 
     Easy Reference: Instead of digging through a long script or a separate document, you'll be able to quickly get an overview of what the command does, its options, and how to use it.
 
@@ -27,7 +28,7 @@ Why I'm doing it:
     
     
     
-How to use:
+### How to use:
 
 ```
 git clone https://github.com/Tpj-root/glc.git
@@ -38,6 +39,7 @@ bash start.sh
 
 
 Man pages are only available if the correct package is installed.
+
 For example: man curl works only if curl is installed.
 
 But our glc help command is always available.
@@ -102,7 +104,7 @@ cnc@debian:~$ glc nmap
 
 
 
-How it helps you:
+### How it helps you:
 
 
 The glc command provides usage instructions, install steps, and examples — even when man pages are not available. It’s a quick reference guide right in your terminal.
