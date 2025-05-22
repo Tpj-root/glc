@@ -66,5 +66,256 @@ curl -I https://example.com
 
 ---
 
-Let me know if you want `curl` usage for APIs, file uploads, or authentication.
+
+---
+
+**1. API Call (GET):**
+
+```bash
+curl -X GET "https://api.example.com/data" -H "Authorization: Bearer YOUR_TOKEN"
+```
+
+---
+
+**2. File Upload (POST):**
+
+```bash
+curl -X POST "https://api.example.com/upload" \
+  -H "Authorization: Bearer YOUR_TOKEN" \
+  -F "file=@/path/to/your/file.jpg"
+```
+
+---
+
+**3. Authentication (Basic Auth):**
+
+```bash
+curl -u username:password "https://api.example.com/login"
+```
+
+
+---
+
+**4. POST with JSON Body:**
+
+```bash
+curl -X POST "https://api.example.com/create" \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer YOUR_TOKEN" \
+  -d '{"name": "Shadow", "role": "admin"}'
+```
+
+---
+
+**5. Auth with Token Response (Login):**
+
+```bash
+curl -X POST "https://api.example.com/auth/login" \
+  -H "Content-Type: application/json" \
+  -d '{"username": "shadow", "password": "your_password"}'
+```
+
+*Response will return a token, e.g.,*
+
+```json
+{"access_token": "eyJhbGciOi..."}
+```
+
+
+
+
+---
+
+**6. Refresh Token Request:**
+
+```bash
+curl -X POST "https://api.example.com/auth/refresh" \
+  -H "Content-Type: application/json" \
+  -d '{"refresh_token": "your_refresh_token"}'
+```
+
+---
+
+**7. PUT Request (Update Data):**
+
+```bash
+curl -X PUT "https://api.example.com/user/123" \
+  -H "Authorization: Bearer YOUR_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{"email": "new@example.com"}'
+```
+
+---
+
+**8. DELETE Request:**
+
+```bash
+curl -X DELETE "https://api.example.com/user/123" \
+  -H "Authorization: Bearer YOUR_TOKEN"
+```
+
+---
+
+**9. Download File (Save Output):**
+
+```bash
+curl -o output.jpg "https://api.example.com/image/123" \
+  -H "Authorization: Bearer YOUR_TOKEN"
+```
+
+---
+
+**10. Upload JSON File:**
+
+```bash
+curl -X POST "https://api.example.com/import" \
+  -H "Authorization: Bearer YOUR_TOKEN" \
+  -H "Content-Type: application/json" \
+  --data-binary "@data.json"
+```
+
+
+---
+
+**11. Multipart Form (JSON + File):**
+
+```bash
+curl -X POST "https://api.example.com/upload" \
+  -H "Authorization: Bearer YOUR_TOKEN" \
+  -F 'metadata={"name":"test"};type=application/json' \
+  -F "file=@/path/to/file.jpg"
+```
+
+---
+
+**12. Custom Header:**
+
+```bash
+curl -X GET "https://api.example.com/data" \
+  -H "X-Custom-Header: custom-value" \
+  -H "Authorization: Bearer YOUR_TOKEN"
+```
+
+---
+
+**13. Timeout Setting (10 seconds):**
+
+```bash
+curl --max-time 10 "https://api.example.com/data"
+```
+
+---
+
+**14. Follow Redirects:**
+
+```bash
+curl -L "https://short.url/example"
+```
+
+---
+
+**15. Verbose Output (Debug):**
+
+```bash
+curl -v "https://api.example.com/data"
+```
+
+
+
+---
+
+**16. Send Cookies:**
+
+```bash
+curl -b "sessionid=abc123; theme=dark" "https://api.example.com/data"
+```
+
+---
+
+**17. Save Cookies to File:**
+
+```bash
+curl -c cookies.txt "https://api.example.com/login"
+```
+
+---
+
+**18. Use Cookies from File:**
+
+```bash
+curl -b cookies.txt "https://api.example.com/profile"
+```
+
+---
+
+**19. Proxy Usage (HTTP Proxy):**
+
+```bash
+curl -x http://proxyserver:8080 "https://api.example.com/data"
+```
+
+---
+
+**20. Proxy with Authentication:**
+
+```bash
+curl -x http://user:pass@proxyserver:8080 "https://api.example.com/data"
+```
+
+
+
+---
+
+**21. SOCKS5 Proxy:**
+
+```bash
+curl --socks5-hostname socks5://proxyserver:1080 "https://api.example.com/data"
+```
+
+---
+
+**22. Save Cookies to Cookie Jar File:**
+
+```bash
+curl -c cookiejar.txt "https://api.example.com/login"
+```
+
+---
+
+**23. Load Cookies from Cookie Jar File:**
+
+```bash
+curl -b cookiejar.txt "https://api.example.com/profile"
+```
+
+---
+
+**24. Save and Load Cookies Automatically:**
+
+```bash
+curl -c cookiejar.txt -b cookiejar.txt "https://api.example.com/session"
+```
+
+
+
+
+
+Here’s a quick example of chaining curl requests in a script to get a token and use it:
+
+```
+#!/bin/bash
+
+# Get token
+TOKEN=$(curl -s -X POST "https://api.example.com/auth/login" \
+  -H "Content-Type: application/json" \
+  -d '{"username":"shadow","password":"your_password"}' | jq -r '.access_token')
+
+# Use token to get data
+curl -H "Authorization: Bearer $TOKEN" "https://api.example.com/data"
+
+
+```
+
+
+
 
