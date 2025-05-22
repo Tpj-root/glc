@@ -6,7 +6,7 @@
 
 
 It acts like a man system, making tools easy to understand and use for anyone. 
-This includes lots of example commands, detailed explanations of how each works, and full, documented instructions."
+This includes lots of example commands, detailed explanations of how each works, and full, documented instructions.
 
 
 ### What I'm doing:
