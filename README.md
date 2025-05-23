@@ -36,6 +36,12 @@ bash start.sh
 ```
 
 
+![Title Screen](img/Title_screen.png)
+
+
+
+
+
 Man pages are only available if the correct package is installed.
 
 For example: man curl works only if curl is installed.
