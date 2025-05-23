@@ -1,0 +1,26 @@
+
+bg command in linux is used to place foreground jobs in background.
+
+
+$ ping google.com
+press CTRL+Z
+
+To view running jobs
+(in my environment)
+$ jobs -l
+[1]+ 73192 Stopped  ping google.com
+
+To resume the job ping google.com job with job number 1
+$ bg %1
+
+
+To kill the job # ping google.com
+$ kill -s stop 73192
+or
+$ kill -s stop 1
+or
+$ pkill -stop 73192
+or
+To kill the job
+$ kill -9 73192
+

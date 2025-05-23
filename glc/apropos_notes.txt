@@ -1,0 +1,22 @@
+apropos - search the manual page names and descriptions
+
+
+example:
+$ apropos useradd
+$ apropos adduser
+$ apropos df
+$ apropos free
+$ apropos command_name
+
+
+
+$ apropos useradd
+useradd (8)          - create a new user or update default new user information
+
+$ apropos adduser
+adduser.conf (5)     - configuration file for adduser (8) and addgroup (8)
+adduser (8)          - add or manipulate users or groups
+adduser.local (8)    - hook for local actions in adduser and deluser
+deluser.local (8)    - hook for local actions in adduser and deluser
+
+

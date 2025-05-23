@@ -1,0 +1,51 @@
+
+brctl - ethernet bridge administration
+$ sudo apt install bridge-utils
+
+
+To Create New Ethernet Bridge using addbr
+$ sudo brctl addbr dev
+$ sudo brctl addbr stage
+$ sudo brctl addbr prod
+
+
+To Display Available Ethernet Bridge using show
+$ sudo brctl show
+
+
+To Delete Existing Ethernet Bridge using delbr
+$ sudo brctl delbr dev
+
+
+To Add an Interface to Existing Bridge
+$ sudo brctl addif dev eth0
+
+
+To Add Multiple Interfaces to Existing Bridge
+$ sudo brctl addif dev eth0 eth1
+
+
+To Track MAC address of a Bridge
+$ sudo brctl showmacs dev
+
+
+To Set Ageing Time for Mac Address on a Bridge
+$ sudo brctl setaging dev 300
+
+
+To Setup Spanning Tree on Ethernet Bridge
+$ sudo brctl stp dev on
+or
+$ sudo brctl stp dev yes
+
+
+To turn off spanning tree on your ethernet bridge
+$ sudo brctl stp dev off
+
+
+To Display STP Parameter Values of a Bridge
+$ sudo brctl showstp dev
+
+
+To Change Bridge Parameters Values
+$ sudo brctl setageing dev 200

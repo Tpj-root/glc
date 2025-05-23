@@ -1,0 +1,25 @@
+addgroup - add group to the system
+
+
+install addgroup package
+$ sudo apt install addgroup
+
+
+To add a new group ilugc
+$ sudo addgroup ilugc
+
+
+To add a new group with specified group id
+$ sudo addgroup klug --gid 6789
+
+
+To create a group with a specific shell
+$ sudo addgroup klug --shell /bin/sh
+
+
+To enter verbose mode
+$ sudo addgroup webadmin --debug
+
+
+To display help related to addgroup command.
+$ addgroup --help

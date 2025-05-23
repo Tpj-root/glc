@@ -1,0 +1,37 @@
+alias - customised shortcut for commands
+
+$ sudo alias name="value"
+
+create a user klug with home directory then,
+
+$ sudo alias cd="cd /home/klug"
+root@klug:~# cd
+root@klug:/home/klug
+
+Note:
+cd is a shell builtin, not an external system command
+Using the same alias name for cd is allowed, but it can cause confusion or unexpected behavior if not handled properly.
+To avoid issues with aliasing built-in commands like cd, use these best practices:
+
+Use a different alias name:
+
+$ alias gohome='cd /home/klug'
+
+
+$ sudo alias d="df -Th"
+
+root@klug:~# d
+
+
+To print all the defined aliases is reusable format
+# alias -p
+
+
+Make it persistent:
+Add the alias to ~/.bashrc or ~/.zshrc, then run source ~/.bashrc
+
+Run source ~/.bashrc (or ~/.zshrc) → immediately applies changes.
+
+Or close and reopen the terminal → shell reads the config file on startup.
+
+Use source if you want the alias active right away without restarting the terminal.

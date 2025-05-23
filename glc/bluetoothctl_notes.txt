@@ -1,0 +1,57 @@
+bluetoothctl - interactive bluetooth control tool
+
+
+check for bluetoothctl status
+$ sudo systemctl status bluetooth
+$ sudo systemctl start bluetooth
+$ sudo systemctl enable bluetooth
+
+
+search for Bluetooth devices
+$ bluetoothctl scan on
+
+
+To make your Bluetooth adapter discoverable to other devices
+$ bluetoothctl discoverable on
+
+To connect with a Bluetooth device is to pair it with your PC
+using the pair command
+$ bluetoothctl pair MAC_ID_of_Device
+
+
+To connect with already paired device
+$ bluetoothctl connect MAC_ID-of_Device
+
+
+To List Paired Devices With bluetoothctl
+$ bluetoothctl paired-devices
+
+
+To list devices that are within the Bluetooth range of your computer
+$ bluetoothctl devices
+
+
+To trust a Bluetooth device
+$ bluetoothctl trust MAC_ID_of_Device
+
+
+To untrust a device
+$ bluetoothctl untrust MAC_ID_of_Device
+
+
+To unpair a Bluetooth device
+$ bluetoothctl remove MAC_ID_of_Device
+
+
+To disconnect a device from system
+$ bluetoothctl disconnect MAC_ID_of_Device
+
+
+To block a specific device from connecting to system
+$ bluetoothctl block MAC_ID_of_Device
+
+
+To enter interactive mode
+$ bluetoothctl
+[bluetooth]# devices
+[bluetooth]# exit

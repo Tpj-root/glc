@@ -1,0 +1,12 @@
+unalias - this command will remove the customised shortcuts created in alias
+
+unalias - Removing an existing alias
+$ sudo unalias [alias name]
+$ sudo alias d="df -Th"
+
+
+to remove the alias d
+To check
+$ sudo alias -p
+$ sudo unalias d
+will remove the shortcut d for df -Th

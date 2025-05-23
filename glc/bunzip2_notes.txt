@@ -1,0 +1,20 @@
+bunzip2 - a block-sorting file compressor
+
+
+To compress file input.txt it deletes original
+$ bzip2 -z input.txt
+will give input.txt.bz2
+
+To decompress the input.txt.bz2
+$ bzip2 -d input.txt.bz2
+
+To compress file input.txt but does not deletes the original file
+$ bzip2 -k input.txt
+
+To check the integrity of file and to check file is corrupt or not
+$ bzip2 -t input.txt.bz2
+
+
+To show the compression ratio for each file processed in verbose
+mode
+$ bzip2 -v input.txt

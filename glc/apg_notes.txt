@@ -1,0 +1,66 @@
+apg - generates several random passwords
+
+
+To install it on Debian, run:
+
+$ sudo apt update
+$ sudo apt install apg
+
+
+$ apg -h
+display the options
+
+
+
+cnc@debian:~$ apg
+
+atHaj?Wad3 (at-Haj-QUESTION_MARK-Wad-THREE)
+Labes3ocHiv. (Lab-es-THREE-oc-Hiv-PERIOD)
+An[otVoj7 (An-LEFT_BRACKET-ot-Voj-SEVEN)
+ojOnEip7Swyb\ (oj-On-Eip-SEVEN-Swyb-BACKSLASH)
+Or>wetgac1 (Or-GREATER_THAN-wet-gac-ONE)
+Senk;OgAgg1 (Senk-SEMICOLON-Og-Agg-ONE)
+
+
+
+$ apg -n 2 -m 8 -x 10
+-n number of passwords
+-m minimum password length
+-x maximum password length
+will give 2 passwords with min password length 8 characters and
+max 10 characters
+
+
+
+$ apg -h
+
+apg   Automated Password Generator
+        Copyright (c) Adel I. Mirzazhanov
+
+apg   [-a algorithm] [-r file] 
+      [-M mode] [-E char_string] [-n num_of_pass] [-m min_pass_len]
+      [-x max_pass_len] [-c cl_seed] [-d] [-s] [-h] [-y] [-q]
+
+-M mode         new style password modes
+-E char_string  exclude characters from password generation process
+-r file         apply dictionary check against file
+-b filter_file  apply bloom filter check against filter_file
+                (filter_file should be created with apgbfm(1) utility)
+-p substr_len   paranoid modifier for bloom filter check
+-a algorithm    choose algorithm
+                 1 - random password generation according to
+                     password modes
+                 0 - pronounceable password generation
+-n num_of_pass  generate num_of_pass passwords
+-m min_pass_len minimum password length
+-x max_pass_len maximum password length
+-s              ask user for a random seed for password
+                generation
+-c cl_seed      use cl_seed as a random seed for password
+-d              do NOT use any delimiters between generated passwords
+-l              spell generated password
+-t              print pronunciation for generated pronounceable password
+-y              print crypted passwords
+-q              quiet mode (do not print warnings)
+-h              print this help screen
+-v              print version information

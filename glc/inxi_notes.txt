@@ -1,0 +1,17 @@
+
+### ✅ Install `inxi` on Debian:
+
+```bash
+sudo apt update
+sudo apt install inxi
+```
+
+
+Full system info
+
+$ inxi -Fxz
+
+
+
+
+

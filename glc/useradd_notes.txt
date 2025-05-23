@@ -1,0 +1,102 @@
+useradd - create a new user or update default new user information
+
+
+To add a new user klug
+$ sudo useradd klug
+
+
+To set a password for account klug
+$ sudo passwd klug
+
+
+To create a User with Different Home Directory
+$ sudo useradd -d /data/myprojects klug
+
+
+To view user related info
+$ sudo cat /etc/passwd | grep klug
+
+
+To create a User with a Specific User ID
+$ sudo useradd -u 1007 klug
+
+
+Create a User with a Specific Group ID
+$ sudo useradd -u 1007 -g mygroup klug
+
+To verify the user’s GID
+$ id -gn klug
+
+
+To Add a User klug to Multiple Groups
+$ sudo groupadd admins
+$ sudo groupadd devops
+$ sudo groupadd cloud
+$ sudo usermod -a -G admins,devops,cloud klug
+$ sudo useradd -G admins,devops,cloud ilugc
+
+
+To verify
+$ id klug
+$ id ilugc
+
+
+To Add a User without Home Directory
+$ sudo useradd -M klug
+
+
+to check
+$ ls -l /home/klug
+
+
+To Create a User with Account Expiry Date
+$ sudo useradd -e 2022-08-30 klug
+
+
+To verify the age of the account and password
+$ chage -l klug
+
+
+To Create a User with Password Expiry Date
+$ sudo useradd -e 2022-04-01 -f 40 klug
+
+
+To verify
+$ sudo chage -l klug 
+
+
+To Add a User with Custom Comments
+$ sudo useradd -c "Welcome to foss world +91-9999988888" klug
+
+
+To verify
+$ sudo tail -1 /etc/passwd
+
+
+To Create User Login Shell in Linux
+$ sudo useradd -s /sbin/nologin klug
+
+
+To check
+$ sudo tail -1 /etc/passwd
+
+
+
+To Add a User with Specific Home Directory, Default Shell, and Custom Comment
+$ sudo useradd -m -d /var/www/klug -s /bin/bash -c "website admin" -U klug
+
+
+To Add a User with Home Directory, Custom Shell, Custom Comment, and UID/GID
+$ sudo useradd -m -d /var/www/klug -s /bin/sh -c "website admin" -u 1000 -g 100 klug
+
+
+To Add a User with Home Directory, No Shell, Custom Comment, and User ID
+$ sudo useradd -m -d /var/www/klug -s /usr/sbin/nologin -c "webadmin" -u 1001 klug
+
+
+To Add a User with Home Directory, Shell, Custom Skell/Comment, and User ID
+$ sudo useradd -m -d /var/www/klug -k /etc/custom.skell -s /bin/sh -c "custom message" -u 1020 klug
+
+
+To Add a User without Home Directory, No Shell, No Group, and Custom Comment
+$ sudo useradd -M -N -r -s /bin/false -c "Disabled group Member" klug

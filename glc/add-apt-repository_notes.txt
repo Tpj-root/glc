@@ -1,0 +1,15 @@
+add-apt-repository - Adds a repository into the
+/etc/apt/sources.list
+or /etc/apt/sources.list.d or removes an existing one
+example:
+$ sudo add-apt-repository ppa:PPA_REPOSITORY_NAME/PPA
+$ sudo add-apt-repository ppa:libreoffice/ppa
+
+
+To list all repositories
+$ sudo apt policy
+
+
+To remove PPA repository
+$ sudo add-apt-repository --remove ppa:PPA_REPOSITORY_NAME/PPA
+$ sudo add-apt-repository --remove ppa:libreoffice/ppa

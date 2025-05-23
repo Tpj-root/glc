@@ -1,0 +1,72 @@
+
+### ✅ Install `neofetch` on Debian:
+
+```bash
+sudo apt update
+sudo apt install neofetch
+```
+
+### Use it:
+
+Just run:
+
+```bash
+neofetch
+```
+
+### 🧾 Example Output:
+
+It shows a clean summary:
+
+* OS
+* Kernel
+* Uptime
+* Packages
+* Shell
+* CPU, RAM
+* and ASCII logo
+
+### 🔄 Optional: Auto-run on terminal open
+
+Add to `~/.bashrc`:
+
+```bash
+neofetch
+```
+
+Then run:
+
+```bash
+source ~/.bashrc
+```
+Now it runs every time you open a terminal.
+
+
+
+cnc@debian:~$ neofetch
+
+
+       _,met$$$$$gg.          cnc@debian 
+    ,g$$$$$$$$$$$$$$$P.       ---------- 
+  ,g$$P"     """Y$$.".        OS: Debian GNU/Linux 12 (bookworm) x86_64 
+ ,$$P'              `$$$.     Kernel: 6.1.0-29-amd64 
+',$$P       ,ggs.     `$$b:   Uptime: 1 hour, 51 mins 
+`d$$'     ,$P"'   .    $$$    Packages: 3075 (dpkg) 
+ $$P      d$'     ,    $$P    Shell: bash 5.2.15 
+ $$:      $$.   -    ,d$$'    Resolution: 1920x1080 
+ $$;      Y$b._   _,d$P'      DE: Xfce 4.18 
+ Y$$.    `.`"Y$$$$P"'         WM: Xfwm4 
+ `$$b      "-.__              WM Theme: Default 
+  `Y$$                        Theme: Xfce [GTK2], Adwaita [GTK3] 
+   `Y$$.                      Icons: Tango [GTK2], Adwaita [GTK3] 
+     `$$b.                    Terminal: xfce4-terminal 
+       `Y$$b.                 Terminal Font: Monospace 12 
+          `"Y$b._             CPU: Intel i3-4150 (4) @ 3.500GHz 
+              `"""            GPU: NVIDIA GeForce GT 610 
+                              Memory: 3764MiB / 7895MiB 
+
+                                                      
+                                                      
+
+
+

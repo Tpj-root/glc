@@ -1,0 +1,27 @@
+adduser - add a user to the system
+install the adduser package
+$ sudo apt install adduser
+
+
+To add a new user
+$ adduser username
+
+
+To add a user with a different shell.
+$ sudo adduser username --shell /bin/sh
+
+
+To add a new user with a different configuration file
+$ sudo adduser username --conf custom_config.conf
+
+
+To add a user with different home directory.
+$ sudo adduser username --home /home/klug/
+
+
+To get the version of the adduser command
+$ sudo adduser --version
+
+
+To display the help section of the adduser command
+$ sudo adduser -h

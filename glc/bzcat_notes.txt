@@ -1,0 +1,13 @@
+
+
+bzcat - decompresses files to stdout
+To read the compressed file without decompressing it
+
+example:
+create a file number.txt
+$ echo "for(i=1; i<=10000; i++) {i;}" | bc > number.txt
+
+
+bzip the number.txt file
+$ bzip2 number.txt
+$ bzcat number.txt.bz2

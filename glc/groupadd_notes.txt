@@ -1,0 +1,21 @@
+groupadd - create a new group
+
+
+To create a new Linux group
+$ sudo groupadd webadmin
+
+
+To check
+$ sudo grep webadmin /etc/group
+
+
+To Create new group with a specific groupid
+$ sudo groupadd webadmin -g 1030
+
+
+To check
+$ sudo grep 1030 /etc/group
+
+
+To create group with group id with certain range of id
+$ sudo groupadd webadmin -K GID_MIN=1500 -K GID_MAX=2000

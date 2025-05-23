@@ -1,0 +1,22 @@
+blkid - locate/print block device attributes
+
+To display all the block devices
+$ sudo blkid
+
+To display the I/O limits on a particular block device
+$ sudo blkid -i /dev/vda1
+
+To displays information about /dev/vda1
+$ sudo blkid -p /dev/vda1
+$ sudo blkid -pi /dev/vda1
+
+To look up the devices that matches a specific search criteria
+$ sudo blkid -l -t TYPE=ext4
+$ sudo blkid -l -t TYPE=swap
+
+search based on UUID
+$ sudo blkid -U 02a5af55-4c2a-45b7-9876-599abc192ada
+
+
+To display in list format
+$ sudo blkid -o list

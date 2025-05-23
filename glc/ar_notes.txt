@@ -1,0 +1,48 @@
+ar - create, modify, and extract from archives
+install binutils for ar
+$ sudo apt install binutils
+
+create 4 text files file1.txt file2.txt file3.txt file4.txt
+general syntax to create new archive
+$sudo ar r [archive file] [file(s)]
+
+
+To create a new archive myfiles.a and place all .txt files in
+archive
+$sudo ar r myfiles.a *.txt
+
+
+To add a new file file5.txt to the archive
+$sudo ar r myfiles.a file5.txt
+
+
+To print the archive members
+$sudo ar p myfiles.a
+
+
+To print the archive contents in a list format
+$sudo ar t myfiles.a
+
+
+To extract a file4.txt from archive
+$sudo ar x myfiles.a file4.txt
+
+
+To Extract multiple files from archive
+$sudo ar x myfiles.a file1.txt file2.txt file3.txt
+
+
+To Extract all files
+$sudo ar x myfiles.a
+
+
+To delete a file from an archive
+$sudo ar d myfiles.a file5.txt
+
+
+To delete multiple files
+$sudo ar d myfiles.a file5.txt file4.txt file3.txt
+
+
+To read the contents of an archive
+$sudo ar pv myfiles.a

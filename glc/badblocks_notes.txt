@@ -1,0 +1,61 @@
+badblocks - search a device for bad blocks
+
+
+By default it doesn’t display any output on the screen, when there
+are no bad blocks as shown below.
+$ sudo badblocks /dev/sda1
+
+
+To view the badblocks search in verbose mode i.e how much scanning
+it has done so far
+$ sudo badblocks -v /dev/sda1
+
+
+By default it uses 1024 as block size , we specify a block size
+using -b option
+$ sudo badblocks -v -b 2048 /dev/sda1
+
+
+To Specify Maximum Bad Blocks Count to 100
+$ sudo badblocks -v -e 100 /dev/sda1
+
+
+Write the Badblocks to a File
+$ sudo badblocks -v -o badblocks.log /dev/sdb1
+
+
+To Perform a Badblock Write Mode Test
+$ sudo badblocks -vw /dev/sda1
+
+
+To display current progress of the test
+$ sudo badblocks -s /dev/sda1
+
+
+To specify the number of blocks to be tested at a time ,the
+default is 64 blocks.
+$sudo badblocks -sc 2000 /dev/sda1
+
+
+To write the list of badblocks to a file rather than on standard
+output
+$ sudo badblocks -o out.txt /dev/sda1
+
+
+To provide an input file which contains a list of known bad blocks
+in device, it will skip the known bad blocks at the time of test
+$ sudo badblocks -i known-badblocks.txt /dev/sda1
+
+
+To perform a non-destructive read-write test on device,
+$ sudo badblocks -sn /dev/sda1
+
+
+To test blocks from the first block to the specified last block
+$ sudo badblocks -s /dev/sda1 2000
+
+
+
+It is specified by passing the starting block number to test as an
+option after last block.
+$ sudo badblocks -s /dev/sda1 2000 200
