@@ -39,6 +39,15 @@ bash start.sh
 ![Title Screen](img/Title_screen.png)
 
 
+```
+nano -c main.sh 
+goto line no : 20
+
+## Enabled or Disable
+Title_screen=1 # 1 means enabled, 0 means disabled
+```
+
+
 
 
 
