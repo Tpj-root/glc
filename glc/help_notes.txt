@@ -1,0 +1,25 @@
+How it helps you:
+
+The glc command provides usage instructions, installation steps, and examples 
+— even when man pages are not available. 
+It’s a quick reference guide right in your terminal.
+
+    glc shows usage instructions in English.
+    tlc shows usage instructions in Tamil.
+
+
+$ tlc apt-file
+
+
+$ glc apt
+
+type glc Press Tab.
+
+The shell searches possible matches based on what you typed.
+If one match, it auto-completes it.
+
+If multiple matches, it either:
+
+    Shows you the list of matches (on second Tab press), or
+    Completes up to the common prefix.
+
