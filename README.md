@@ -134,16 +134,20 @@ The glc command provides usage instructions, install steps, and examples — eve
 This content is based on the book:
 
 Title: 400 Linux Commands with Examples
+
 Original Author: Dhanasekar T
+
 Email: tkdhanasekar@gmail.com
 
 Published by:
     Indian Linux User Group, Chennai – https://ilugc.in/
+
     Kanchi Linux User Group, Kanchipuram – https://kanchilug.wordpress.com/
 
 Copyright License : CC-BY-SA-NC
 
 Converted and customized by: Tpj-root
+
 Email: trichyhackerspace@gmail.com
 
 All modifications retain the same CC-BY-SA-NC license.
