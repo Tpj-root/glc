@@ -140,9 +140,10 @@ Original Author: Dhanasekar T
 Email: tkdhanasekar@gmail.com
 
 Published by:
-    Indian Linux User Group, Chennai – https://ilugc.in/
 
-    Kanchi Linux User Group, Kanchipuram – https://kanchilug.wordpress.com/
+ - Indian Linux User Group, Chennai – https://ilugc.in/
+
+ - Kanchi Linux User Group, Kanchipuram – https://kanchilug.wordpress.com/
 
 Copyright License : CC-BY-SA-NC
 
