@@ -1,20 +1,24 @@
 #!/bin/bash
 #/*
-# * Copyright (C) 2025 [Tpj-root]
+# * Title: glc
+# * Converted and customized by: Tpj-root
+# * Based on: "400 Linux Commands with Examples" by Dhanasekar T
+# * Published by:
+# *   Indian Linux User Group, Chennai – https://ilugc.in/
+# *   Kanchi Linux User Group, Kanchipuram – https://kanchilug.wordpress.com/
+# * Original Author Email: tkdhanasekar@gmail.com
+# * License: CC-BY-SA-NC (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+# * Note: This script is a non-commercial adaptation with formatting changes.
+# *
+# * Copyright (C) 2025 Tpj-root
 # * https://github.com/Tpj-root/glc
 # *
-# * This program is free software; you can redistribute it and/or modify
-# * it under the terms of the GNU General Public License version 2
-# * as published by the Free Software Foundation.
-# *
-# * This program is distributed in the hope that it will be useful,
-# * but WITHOUT ANY WARRANTY; without even the implied warranty of
-# * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# * GNU General Public License for more details.
-# *
-# * You should have received a copy of the GNU General Public License
-# * along with this program; if not, see <https://www.gnu.org/licenses/old-licenses/gpl-2.0.html>.
+# * This work is licensed under the Creative Commons Attribution-ShareAlike-NonCommercial 4.0 International License.
+# * You may share and adapt this material non-commercially, as long as you give appropriate credit,
+# * provide a link to the license, and indicate if changes were made. Any adaptations must be licensed under the same terms.
+# * For details, see: https://creativecommons.org/licenses/by-nc-sa/4.0/
 # */
+
 
 ## Enabled or Disable
 Title_screen=1 # 1 means enabled, 0 means disabled
@@ -114,10 +118,15 @@ function Title() {
   echo -e " | |_| | | | | |_| | | |___| | | | | |_| |>  <  "
   echo -e "  \____|_| |_|\__,_| |_____|_|_| |_|\__,_/_/\_\ ${RESET}${COLOR}community${RESET}"
   echo -e "                                       ${COLOR}Version : ${version}   "
-  echo -e " https://forums.tamillinuxcommunity.org/ ${RESET}"
-  echo -e "${BLINK}${BRIGHT_GREEN}              author : 🅂 🅷 🅰 🅳 🅾 🆆${RESET}"
+  echo -e " Indian Linux User Group, Chennai – https://ilugc.in/"
+  echo -e " Kanchi Linux User Group, Kanchipuram – https://kanchilug.wordpress.com/"
+  echo -e " Tamil Linux Community - https://forums.tamillinuxcommunity.org/"
+  echo -e " Based on: '400 Linux Commands with Examples' by Dhanasekar T ${RESET}"
+  echo -e "${BLINK}${BRIGHT_GREEN} https://wiki.hackerspaces.org/Public_Research_Association_of_Social_Hacktivity"
+  echo -e "  (C) 2025  author : 🅂 🅷 🅰 🅳 🅾 🆆${RESET}"
   
 }
+
 
 
 # print_special_color "Helloworld"
