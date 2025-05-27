@@ -1,0 +1,6 @@
+cfdisk - display or manipulate a disk partition table
+
+
+example:
+$ sudo cfdisk
+$ sudo cfdisk /dev/sda1

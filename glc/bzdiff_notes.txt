@@ -1,0 +1,10 @@
+bzdiff - compare bzip2 compressed files
+
+
+examples:
+To output a normal diff
+$ bzdiff --normal file1.bz2 file2.bz2
+
+
+To output in two columns
+$ bzdiff -y file1.bz2 file2.bz2

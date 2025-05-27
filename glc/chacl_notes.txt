@@ -1,0 +1,23 @@
+chacl - change the access control list of a file or directory
+
+example:
+To change the ACL of a file
+$ chacl u::rwx,g::r-x,o::r-- file
+
+To set default acl for a directory
+$ chacl -d u::rwx,g::r-x,o::r-- file_name
+
+To remove the ACL
+$ chacl -R file
+
+To remove the directory default ACL
+$ chacl -D /directory_name
+
+To remove all ACL
+$ chacl -B file
+
+To list the ACL for a file/directory
+$ chacl -l file/directory
+
+To set the access ACL recursively
+$ chacl -r u::r-x,g::r-x,o::r-- /directory

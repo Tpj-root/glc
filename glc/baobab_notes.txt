@@ -1,0 +1,5 @@
+Baobab - A graphical tool to analyze disk usage
+
+
+$ baobab
+$ baobab /dev/

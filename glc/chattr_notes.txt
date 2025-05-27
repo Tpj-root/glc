@@ -1,0 +1,44 @@
+chattr - change file attributes on a Linux file system
+
+
+To add attributes on files and immutable to secure from deletion
+create file sample.txt
+$ sudo chattr +i sample.txt
+
+
+To list the file attributes on a Linux second extended file system
+$ lsattr sample.txt
+----i---------e----- sample.txt
+Now change permission , rename , remove force will not be permitted
+
+
+To unset attribute on Files
+$ sudo chattr -i sample.txt
+$ lsattr sample.txt
+--------------e----- sample.txt
+Now its possible to rename , remove , change permissions of the
+file sample.txt
+
+
+To open the file only in append mode and the previous data cannot
+be modified
+create a text file example.txt
+$ sudo chattr +a example.txt
+$ lsattr example.txt
+-----a--------e----- example.txt
+
+
+
+$ echo "this is line two" > example.txt
+bash: sample.txt: Operation not permitted
+$ echo "this is line two" >> example.txt
+$ cat example.txt
+this is line one
+this is line two
+
+
+
+To secure entire directory important_folder and its files
+$ sudo chattr -R +i important_folder
+To unset it
+$ sudo chattr -R -i important_folder

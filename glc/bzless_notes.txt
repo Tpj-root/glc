@@ -1,0 +1,10 @@
+bzless - file perusal filter for crt viewing of bzip2 compressed text
+
+
+
+example:
+$ echo "for(i=1; i<=10000; i++) {i;}" | bc > number.txt
+$ bzip2 number.txt
+$ bzless number.txt.bz2
+
+

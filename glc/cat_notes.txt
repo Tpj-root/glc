@@ -1,0 +1,37 @@
+cat - concatenate files and print on the standard output
+
+
+example:
+To display contents of file
+$ cat /etc/group
+
+To view contents of multiple files
+$ cat file3.txt file4.txt
+
+To create a file with cat command
+$ cat > file5.txt
+this is file 5
+^D
+
+To view cat command with large file size
+$ cat file.txt | more
+$ cat file.txt | less
+
+To display $ at the end of each Line using cat
+$ cat -E file1.txt
+
+To display line numbers in file
+$ cat -n number.txt
+
+To display multiple files
+$ cat file1.txt; cat file2.txt; cat file3.txt
+
+To redirect the standard output of a file into a new file
+$ cat file1 > file2
+
+To append in existing file
+$ cat file1 >> file2
+
+
+To redirect all output files to a new single file
+$ cat file3.txt file4.txt file5.txt > file6.txt

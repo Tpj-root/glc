@@ -1,0 +1,10 @@
+AppArmor is a Linux kernel security module that allows the system
+administrator to restrict programs
+capabilities with per-program
+profiles in ubuntu, its similar to selinux in redhat based systems
+
+
+apparmor_status - display various information about the current
+AppArmor policy
+
+$ sudo apparmor_status

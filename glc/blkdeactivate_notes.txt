@@ -1,0 +1,10 @@
+blkdeactivate — utility to deactivate block devices
+
+To Deactivate all supported block devices , If a device is
+mounted, skip its deactivation
+$ sudo blkdeactivate
+
+
+To Deactivate all supported block devices , If a device is
+mounted, unmount it
+$ sudo blkdeactivate -u

@@ -1,0 +1,5 @@
+aa-enabled - test whether AppArmor is enabled in ubuntu systems
+
+
+$ aa-enabled
+Yes

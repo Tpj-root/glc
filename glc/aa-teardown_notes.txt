@@ -1,0 +1,3 @@
+aa-teardown - unload all AppArmor profiles
+
+$ sudo aa-teardown

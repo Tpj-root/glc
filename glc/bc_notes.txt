@@ -1,0 +1,33 @@
+bc - An arbitrary precision calculator language
+$ echo "12+5" | bc
+$ echo "10^2" | bc
+
+To store the result of complete operation in variable
+$ x=`echo "12+5" | bc`
+$ echo $x
+$ echo "var=10;var" | bc
+$ echo "var=10;var^=2;var" | bc
+
+To store the result of complete operation in variable
+$ x=`echo "var=500;var%=7;var" | bc`
+$ echo $x
+
+
+$ echo "var=11;++var" | bc
+Variable is increased first and then result of variable is stored
+
+
+$ echo "var=20;var++" | bc
+Result of the variable is used first and then variable is
+incremented
+
+
+$ echo "var=20;--var" | bc
+Variable is decreased first and then result of variable is stored
+
+
+$ echo "var=10;var--" | bc
+Result of the variable is used first and then variable is
+decremented.
+
+

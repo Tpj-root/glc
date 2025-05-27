@@ -1,0 +1,5 @@
+bzcmp - compare two bzip2 compressed file internally it uses cmp command
+
+
+example:
+$ bzcmp -b file1.bz2 file2.bz2

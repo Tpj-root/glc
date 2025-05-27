@@ -1,0 +1,4 @@
+aa-remove-unknown - remove unknown AppArmor profiles
+
+
+$ sudo aa-remove-unknown

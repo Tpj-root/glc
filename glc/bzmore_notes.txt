@@ -1,0 +1,8 @@
+bzmore - file perusal filter for crt viewing of bzip2 compressed text
+
+
+To view the content of bzip2 compressed files page by page.
+example:
+$ echo "for(i=1; i<=10000; i++) {i;}" | bc > number.txt
+$ bzip2 number.txt
+$ bzmore number.txt.bz2

@@ -1,0 +1,15 @@
+cancel - cancel jobs
+
+
+
+examples:
+To cancel the current print job
+$ cancel
+To cancel all jobs
+$ cancel -a
+To cancel job printer-1
+$ cancel printer-1
+To cancel with printer name laser-100
+$ cancel laser-100
+To cancel all the print jobs that are queued for the user klug
+$ cancel -u klug

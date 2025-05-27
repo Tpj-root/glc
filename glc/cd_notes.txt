@@ -1,0 +1,31 @@
+cd - change directory
+
+example:
+change current directory to /usr/share
+$ cd /usr/share/
+
+switch back to previous directory
+$ cd -
+
+To change current directory to parent directory
+$ cd ..
+
+To show last working directory from where we work
+$ cd --
+
+To move two directory up from where we now
+$ cd ../ ../
+
+move to users home directory from anywhere
+$ cd ~
+
+
+pushd saves the current location to memory and changes to the
+requested directory
+$ pushd /etc/perl/Net/
+/etc/perl/Net ~
+
+
+when popd command is entered, fetch the saved directory location
+from memory and makes it current working directory
+$ popd
