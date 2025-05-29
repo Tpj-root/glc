@@ -1,0 +1,23 @@
+cal - displays a calendar
+
+example:
+To Show current month calendar
+$ cal
+
+
+To Show calendar of selected month and year
+$ cal August 2002
+
+
+To Show the calendar of current year with the current date
+highlighted
+$ cal -y
+
+
+To Show the whole calendar of the year
+$ cal 2010
+
+
+
+To Show calendar of previous, current and next month
+$ cal -3

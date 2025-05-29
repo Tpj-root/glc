@@ -1,0 +1,12 @@
+clear - clear the terminal screen
+
+
+clear the terminal
+$ clear
+or
+CTRL+l
+or
+$ reset
+or
+$ printf "\033c"
+

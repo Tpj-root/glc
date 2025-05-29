@@ -317,5 +317,32 @@ curl -H "Authorization: Bearer $TOKEN" "https://api.example.com/data"
 ```
 
 
+curl - transfer a URL
 
+
+$ curl https://www.ilugc.in
+To display a progress meter during use to indicate the transfer
+rate, amount of data transferred, time left, etc
+$ curl -# -O ftp://ftp.mysite.com/file.zip
+
+
+To resumes download which has been stopped when downloading large
+files was interrupted
+$ curl -C - -O ftp://mysite.int/10000MB.zip
+
+
+To limit the upper bound of the rate of data transfer and keeps it
+around the given value in bytes.
+$ curl --limit-rate 500K -O ftp://mysite.in/10000MB.zip
+
+
+
+To download files from user authenticated FTP servers
+$ curl -u username:P@ssword -O ftp://mysite.in/confidential.txt
+
+
+
+To upload a file to the FTP server, use the -T followed by the
+name of the file to upload
+$ curl -T file.zip -u username:P@ssword ftp://ftp.example.com/
 

@@ -1,0 +1,25 @@
+cmp - compare two files byte by byte
+
+
+cmp command reports the byte and line number if a difference is found
+$ cmp file1.txt file2.txt
+
+
+To display the differing bytes in the output
+$ cmp -b file1.txt file2.txt
+
+
+To skip a particular number of initial bytes from both the files
+$ cmp -i 100 file1.txt file2.txt
+
+
+To input the number of bytes we want to skip
+$ cmp -i 100:120 file1.txt file2.txt
+
+
+To print byte position and byte value for all differing bytes
+$ cmp -l file1.txt file2.txt
+
+
+To limit the number of bytes we want to compare
+$ cmp -n 500 file1.txt file2.txt

@@ -1,0 +1,9 @@
+cracklib-check - Check passwords using libcrack2
+
+
+
+$ echo "abcdef123456" | cracklib-check
+$ echo "password" | cracklib-check
+$ echo "Wsd234$#@" | cracklib-check
+or
+$ cracklib-check<<<"Wsd234$#@"

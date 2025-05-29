@@ -1,0 +1,32 @@
+crontab - maintain crontab files for individual users
+
+
+To list crontab entries
+$ crontab -l
+
+
+To edit the crontab entry
+$ crontab -e
+
+
+To list scheduled cron jobs
+$ crontab -u ilugc -l
+
+
+To remove scheduled jobs without confirmation
+$ crontab -r
+
+
+To prompt before deleting crontab
+$ crontab -i -r
+
+
+To schedule Jobs for Specific Time
+$ crontab -e
+00 09 * * * /home/ilugc/mycode.sh
+
+
+To disable email notification.
+$ crontab -e
+* * * * * >/dev/null 2>&1
+

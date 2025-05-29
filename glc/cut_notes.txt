@@ -1,0 +1,27 @@
+cut - remove sections from each line of files
+
+
+
+$ cat file.txt
+Alpha is first line
+Beta is second line
+Charlie is third line
+Delta is fourth line
+
+
+
+To display 2nd character from each line of a file
+$ cut -c2 file.txt
+
+
+To extract first 3 characters of each line from file.txt
+$ cut -c1-3 file.txt
+
+
+To extract 7 characters from the beginning of each line in file.txt
+$ cut -c-7 test.txt
+
+
+
+To display only first field of each lines from a file using delimiter ":"
+$ cut -d':' -f1 file_name

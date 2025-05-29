@@ -1,0 +1,18 @@
+dumpe2fs - dump ext2/ext3/ext4 filesystem information
+
+
+
+To dump the file system information about a device
+$ sudo dumpe2fs /dev/sda1
+
+
+To display superblock information
+$ sudo dumpe2fs -h /dev/sda1
+
+
+To display Information of block groups
+$ sudo dumpe2fs /dev/sda1
+
+
+To view about superblocks
+$ sudo dumpe2fs /dev/sda1 | grep -i superblock

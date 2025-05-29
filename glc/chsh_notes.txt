@@ -1,0 +1,24 @@
+chsh - change login shell
+To set login shell for user1
+$ chsh -s /bin/bash user1
+
+
+
+$ chsh
+Password: *****
+Changing the login shell for klug
+Enter the new value, or press ENTER for the default
+Login Shell [/bin/bash]: /bin/sh
+
+
+To change current login shell from sh to bash
+$ echo $SHELL
+/bin/sh
+
+
+$ chsh -s /bin/bash
+
+
+$ echo $SHELL
+/bin/bash
+

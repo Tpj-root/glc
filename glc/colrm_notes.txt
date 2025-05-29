@@ -1,0 +1,17 @@
+
+colrm - remove columns from a file
+
+
+$ cat number.txt
+123456789
+
+
+$ colrm 4 6 < number.txt
+123789
+it will remove 4 5 and 6 column in the line
+
+
+
+$ colrm 1 3 < number.txt
+456789
+it will remove 1 2 and 3 column in the line

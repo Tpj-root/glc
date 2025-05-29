@@ -1,0 +1,13 @@
+
+convert - convert between image formats as well as resize an image,blur, crop, despeckle, dither, draw on, flip, join, re- sample
+
+
+$ convert picture.jpg picture.png
+$ convert picture.png picture.jpg
+$ convert picture.jpg -rotate 45 picture.png
+$ convert picture.png -flip picture.png
+$ convert picture.jpg -font courier -fill black -pointsize 50 -
+annotate +50+50 'ILUGC' picture.jpg
+$ convert picture.jpg picture_flip.jpg -append appended.jpg
+
+

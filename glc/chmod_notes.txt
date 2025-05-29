@@ -1,0 +1,61 @@
+
+chmod (numeric mode)
+
+
+
+chmod - change file mode bits
+numeric method
+r (read) = 4
+w (write) = 2
+x (execute) = 1
+no permissions = 0
+
+
+
+rwx=4+2+1=7
+rw= 4+2=6
+rx= 4+1=5
+
+
+
+To set read , write , execute permission to users , group and
+others
+$ chmod 777 file_name
+
+
+
+To set read , write , execute permission to users and read
+permission only for group and others
+$ chmod 744 file_name
+
+
+To set users read, write and execute permissions, read and execute
+permissions to group members and no permissions to all other users
+$ chmod 750 file_name
+
+
+
+To recursively set read, write, and execute permissions to the
+file owner and no permissions for group and all other users on a
+given directory
+$ chmod -R 700 dir_name
+
+
+
+To set the file’s permissions to be same for (file2_name) as those
+of the specified reference file (file1_name)
+$ chmod --reference=file1_name file2_name
+
+
+
+To set the permissions of all files and subdirectories under
+the /var/www to 700
+$ chmod -R 700 /var/www
+
+
+
+To set read, write, and execute permissions, and a sticky bit to a
+given directory
+$ chmod 1777 dir_name
+
+

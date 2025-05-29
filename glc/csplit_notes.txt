@@ -1,0 +1,23 @@
+csplit - split a file into sections determined by context lines
+
+
+$ cat file.txt
+one
+two
+three
+four
+five
+six
+
+
+To split file.txt into two parts (second part from 4 th line)
+$ csplit file.txt 4
+two files named xx00 and xx01 created
+
+
+
+To prefix in abc in place of ‘xx’ in output
+$ csplit -f abc file.txt 4
+$ ls
+$ cat abc00
+$ cat abc01

@@ -1,0 +1,22 @@
+chmem - configure memory 
+
+The chmem command sets a particular size or range of memory online or offline
+
+
+To request 1024 MiB of memory to be set online
+$ sudo chmem --enable 1024
+
+
+2 GiB of memory to be set online
+$ sudo chmem -e 2g
+
+
+This command requests the memory range starting with
+0x00000000e4000000 and ending with 0x00000000f3ffffff to beset offline
+
+$ sudo chmem --disable 0x00000000e4000000-0x00000000f3ffffff
+
+
+The memory block number 10 to be set off‐line
+$ chmem -b -d 10
+

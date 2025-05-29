@@ -1,0 +1,26 @@
+
+
+chpasswd - update passwords in batch mode
+
+
+$ sudo chpasswd
+klug: p@ssword1
+ilugc: p@ssword2
+CTRL+D
+
+
+storing username and password in a file and give input to chpasswd
+$ cat > password.txt
+klug: p@ssword1
+ilugc: p@ssword2
+then,
+$sudo chpasswd < password.txt
+or
+$ sudo cat password.txt | chpasswd
+
+
+
+To apply encryption algorithm on password
+$sudo chpasswd -c SHA512
+$ sudo chpasswd -c SHA256
+$ sudo chpasswd --md5

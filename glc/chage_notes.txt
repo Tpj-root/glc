@@ -1,0 +1,32 @@
+chage - change user password expiry information
+example:
+
+
+To view the list of options
+$ chage -h
+
+
+To view the account aging information
+$ chage -l user_name
+
+
+To set the last password change date to your specified date
+$ chage -d 2022-03-01 user_name
+
+
+To set the date when the account should expire
+$ chage -E 2022-06-30 user_name
+
+
+To specify the maximum and minimum number of days between password change
+$ chage -M 90 user_name
+
+
+To give prior warning 7days before the password expires
+$ chage -W 7 user_name
+
+
+To make the user account to be locked after X number of inactivity
+days
+$ chage -I 10 user_name
+

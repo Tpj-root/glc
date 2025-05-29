@@ -1,0 +1,39 @@
+
+
+chgrp - change group ownership
+
+
+To change a directory group ownership
+$ sudo chgrp ilugc example
+
+
+To change group ownership of a file
+$ sudo chgrp ilugc abc.txt
+
+
+To recursively change group ownership
+$ sudo chgrp -R ilugc example
+
+
+To change the group of a file to match the group of another,
+reference file
+To change the group ownership of the file abc.file to be the same
+as that of the test.file
+$ sudo chgrp --reference=test.file abc.file
+
+
+To list the changes that happened in our example directory
+$ sudo chgrp -c -R ilugc example
+
+
+To describe the action or non-action taken for every File
+$ sudo chgrp -v ilugc file1
+To change the group name of link files
+
+
+
+$ sudo chgrp --dereference ilugc symbolic_link
+To suppress potential error messages when executing the chgrp
+command
+$ sudo chgrp -f [GROUP_NAME] [DIRECTORY/FILE_NAME]
+$ sudo chgrp -f ilugc no_file

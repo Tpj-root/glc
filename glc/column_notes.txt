@@ -1,0 +1,14 @@
+column - columnate lists
+
+
+
+To display the information of the text file in form of columns
+$ column employee.txt
+
+
+To List File Content in Tabular Format
+$ column -t employee.txt
+
+
+To convert file rows into columns
+$ column -x employee.txt

@@ -1,0 +1,29 @@
+compgen - is a bash built-in command which is used to list all the commands that could be executed in the Linux system
+
+
+To list all commands available to be directly executed.
+$ compgen -c
+
+
+To search for commands having a specific keyword
+$ compgen -c | grep reminna
+
+
+To count total number of commands available for use
+$ compgen -c | wc -l
+
+
+To list all the bash alias
+$ compgen -a
+
+
+To list all the bash built-ins
+$ compgen -b
+
+
+To list all the bash keywords
+$ compgen -k
+
+
+To list all the bash functions
+$ compgen -A function

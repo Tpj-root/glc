@@ -1,0 +1,19 @@
+cksum - checksum and count the bytes in a file
+cksum command in Linux is used to display a cyclic redundancy check (CRC) value
+
+
+
+CRC is unique for each file and only changes if the file is edited
+
+
+$ cksum file.txt
+2410262730 15 file.txt
+
+
+
+after transfer of file.txt to other device or location
+
+check with cksum
+$ cksum file.txt
+2410262730 15 file.txt
+CRC value is same hence the file is not corrupted or edited

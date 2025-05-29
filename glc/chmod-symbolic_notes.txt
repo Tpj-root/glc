@@ -1,0 +1,70 @@
+
+chmod - change file mode bits
+Symbolic Method
+u - The file owner.
+g - The users who are members of the group.
+o - All other users.
+a - All users, equal to ugo.
+r - read
+w - write
+x - execute
+
+
+- Removes the specified permissions.
++ Adds specified permissions.
+= Changes the current permissions to the specified permissions
+
+
+To set group permission to read the file
+$ chmod g=r file_name
+
+
+To set other users permission to read the file
+$ chmod o=r file_name
+
+
+
+To set user , group and others permission to read the file
+$ chmod ugo=r file_name
+
+
+
+To set no permission to execute for all users
+$ chmod a-x file_name
+or
+$ chmod ugo-x file_name
+
+
+
+To set user alone full permission and no permission to group and
+other users
+$ chmod og-rwx filename
+
+
+
+To set user , group and others full permissions
+$ chmod a=rwx file_name
+or
+$ chmod ugo=rwx file_name
+
+
+To set read, write and execute permission to the file’s owner,
+read permissions to the file’s group and no permissions to all
+other users
+$ chmod u=rwx,g=r,o= file_name
+
+
+
+To set file owners permission to group and others permissions
+$ chmod g+u,o+u file_name
+
+
+To set sticky bit to a given directory
+$ chmod o+t dir_name
+
+
+To set Recursively remove the write permission for other users and
+group
+$ chmod -R o-w,g-w dir_name
+
+

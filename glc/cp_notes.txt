@@ -1,0 +1,48 @@
+cp - copy files and directories
+
+
+To copy file to a directory
+$ cp file_name /opt/
+
+
+To copying multiple files to a directory
+$ cp file1_name file2_name file3_name /opt
+
+
+To copying the files interactively
+$ cp -i file_name /opt
+
+
+To verbose output during copy command
+$ cp -v file_name /opt
+
+
+To copying a directory or folder
+$ cp -r /home/klug /opt/backup
+
+
+To archive files and directory during copy
+$ cp -a /home/klug /opt/backup/
+
+
+To copy only when source file is newer than the target file
+$ cp -v -u file_*.txt /opt/backup/
+
+
+
+To create symbolic links using cp command
+$ cp -s /home/klug/file1.txt /opt/backup/
+
+To create hard link using cp command
+$ cp -l /home/klug/file.txt /opt/backup/
+
+To copy attributes from source to destination
+$ cp --attributes-only /home/klug/file.txt /opt/backup/
+
+
+To preserve mode, ownership and timestamps when copying
+$ cp -p file.txt /opt/backup/
+
+
+To copy the files and directory forcefully
+$ cp -f file.txt /opt/backup

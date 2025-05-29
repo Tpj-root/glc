@@ -1,0 +1,29 @@
+cpio - copy files to and from archives
+
+
+To create a *.cpio file
+$ ls | cpio -ov > my_files.cpio
+
+
+To extract a *.cpio file
+$ cpio -iv < my_files.cpio
+
+
+To create *.tar archive file using cpio
+$ ls | cpio -ov -H tar > myfiles.tar
+
+
+To extract *.tar archive file using cpio
+$ cpio -iv -F myfiles.tar
+
+
+To create a *.cpio archive with selected files
+$ find . -iname "*.txt" | cpio -ov > myfiles.cpio
+
+
+To create a *.tar archive with selected files
+$ find . -iname "*.txt" | cpio -ov -H tar > myfiles.cpio
+
+
+To only view *.tar archive file using cpio
+$ cpio -it -F myfiles.tar

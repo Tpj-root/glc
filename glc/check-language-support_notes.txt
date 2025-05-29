@@ -1,0 +1,12 @@
+check-language-support
+- returns the list of missing packages in
+order to provide a complete language environment
+
+
+
+To show installed packages as well as missing ones
+$ check-language-support --show-installed
+
+
+To check all available languages
+$ check-language-support -a

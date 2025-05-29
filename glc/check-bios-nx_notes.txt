@@ -1,0 +1,16 @@
+check-bios-nx - determine if BIOS has blocked CPU's NX
+capabilities
+
+NX stands for No eXecute is a technology used in processors to
+prevent the execution of certain types of code
+
+
+This program attempts to determine if the running x86-based CPU
+has NX capabilities
+
+If the CPU is NX-capable but the nx bit is missing from flags,
+exit 1 otherwise exit 0 (nothing wrong with BIOS)
+
+
+$ sudo check-bios-nx --verbose
+ok: the NX bit is operational on this CPU.

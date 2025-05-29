@@ -1,0 +1,15 @@
+cheese - tool to take pictures and videos from your webcam
+
+
+
+To Start in fullscreen mode
+$ cheese -f
+
+
+Start in wide mode, with the thumbnails to the right of the video
+preview
+
+
+$ cheese -w
+To use the supplied DEVICE as the video capture device
+$ cheese --device=DEVICE

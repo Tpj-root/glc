@@ -1,0 +1,10 @@
+ctrlaltdel - set the function of the Ctrl-Alt-Del combination
+
+
+$ sudo ctrlaltdel
+soft
+
+
+To set ctrlaltdel function to hard
+$ sudo ctrlaltdel hard
+hard

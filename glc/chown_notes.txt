@@ -1,0 +1,48 @@
+
+chown - change file owner and group
+To change the owner of a file
+$ sudo chown klug file.txt
+
+
+To change the group of a file
+$ sudo chown :developers file.txt
+
+
+To change both owner and the group
+$ sudo chown klug:developers file.txt
+
+
+To change on symbolic link file
+$ sudo chown ilugc:devops symlnk_file
+
+
+To forcefully change the owner/group of symbolic file
+$ sudo chown -h ilugc:devops symlnk_file
+
+
+To change owner only if a file is owned by a particular user
+$ sudo chown --from=klug ilugc file_name
+
+
+To change group only if a file already belongs to a certain group
+$ sudo chown --from=:developers :devops file_name
+
+
+To copy the owner/group settings from one file to another
+$ sudo chown --reference=fileX fileY
+
+
+
+To change the owner/group of the files by traveling the
+directories recursively
+$ sudo chown -R ilugc:devops dir_name/
+
+
+To forcefully change the owner/group of a symbolic link directory
+recursively
+$ sudo chown -R -H klug:developers symlnk_dir
+
+
+
+To list all the changes made by the chown command
+$ sudo chown -v -R ilugc:devops file_name

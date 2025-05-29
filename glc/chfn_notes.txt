@@ -1,0 +1,31 @@
+chfn - change real user name and information
+
+
+$ chfn
+Password:
+Changing the user information for klug
+Enter the new value, or press ENTER for the default
+Full Name: klug
+Room Number [123]: 456
+Work Phone [9898]: 2323
+Home Phone [9999]: 4545
+
+
+To change the full name on the account
+$ sudo chfn -f kanchilug klug
+
+
+To change the work phone number on the account
+$ sudo chfn -w 9999988888 klug
+
+
+To change the room number on the account
+$ sudo chfn -r 8888 klug
+
+
+To change the home phone number on the account
+$ sudo chfn -h 7777 klug
+
+
+To change any other detail on the account
+$ sudo chfn -o "7th floor room 55555" klug
