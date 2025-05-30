@@ -39,6 +39,14 @@ bash start.sh
 ![Title Screen](img/Title_screen.png)
 
 
+
+
+
+
+
+
+
+
 ```
 nano -c main.sh 
 goto line no : 20
@@ -58,6 +66,7 @@ For example: man curl works only if curl is installed.
 But our glc help command is always available.
 
 glc curl — shows you how to install and use curl.
+
 
 
 
@@ -123,6 +132,17 @@ cnc@debian:~$ glc nmap
 The glc command provides usage instructions, install steps, and examples — even when man pages are not available. It’s a quick reference guide right in your terminal.
 
 
+
+### Todo
+
+- [X] Add colorful ASCII notes for terminal display
+- [ ] 
+- [ ] 
+- [ ] 
+
+
+
+![Title Screen](img/ASCII_notes.png)
 
 
 
