@@ -156,7 +156,14 @@ _show_help_from() {
   local help_file="${base_dir}/${folder}/${cmd}_notes.txt"
 
   if [[ -f "$help_file" ]]; then
-    cat "$help_file" | more
+    # cat "$help_file" | more
+    # Add colors with ANSI codes in your file.
+    # Use less -R instead of more to see colors in terminal
+    #
+    tmp_file=$(mktemp)
+    sed 's/\\e/\x1b/g' "$help_file" > "$tmp_file"
+    less -R "$tmp_file"
+    rm "$tmp_file"
   else
     # echo -e "${RED} No help file found for: $cmd"
     # echo -e "${RED} Try: man $cmd"

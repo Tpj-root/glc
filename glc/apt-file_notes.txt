@@ -1,52 +1,50 @@
-🔧 APT-FILE HELP
+\e[1;33m 🔧 APT-FILE HELP\e[0m
 
-## 1. Install and update:
+\e[32m ## 1. Install and update:\e[0m
 
-  sudo apt update
-  sudo apt install apt-file
-  sudo apt-file update
+\e[31m  sudo apt update
+\e[31m  sudo apt install apt-file
+\e[31m  sudo apt-file update
 
----
 
-## 2. Search for a file (e.g., a .so library):
+\e[32m ## 2. Search for a file (e.g., a .so library):\e[0m
 
-  apt-file search libbrotlicommon.so.1
+\e[31m  apt-file search libbrotlicommon.so.1
 
   Output:
     libbrotli1: /usr/lib/x86_64-linux-gnu/libbrotlicommon.so.1
 
----
 
-## 3. Search for a header file (.h):
+\e[32m ## 3. Search for a header file (.h):\e[0m
 
-  apt-file search stdio.h
+\e[31m  apt-file search stdio.h
 
   Output:
     libc6-dev: /usr/include/stdio.h
 
 ---
 
-## 4. Search for binary files:
+\e[32m ## 4. Search for binary files:
 
-  apt-file search bin/nano
-
----
-
-## 5. Find config files:
-
-  apt-file search etc/nginx/nginx.conf
+\e[31m  apt-file search bin/nano
 
 ---
 
-## 6. List all files in a package:
+\e[32m ## 5. Find config files:
 
-  apt-file list libbrotli1
+\e[31m  apt-file search etc/nginx/nginx.conf
 
 ---
 
-## 7. Search libraries:
+\e[32m ## 6. List all files in a package:
 
-  apt-file search /usr/lib/x86_64-linux-gnu/libm.so
+\e[31m  apt-file list libbrotli1
+
+---
+
+\e[32m ## 7. Search libraries:
+
+\e[31m  apt-file search /usr/lib/x86_64-linux-gnu/libm.so
 
 ---
 

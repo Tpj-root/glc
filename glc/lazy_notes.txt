@@ -1,0 +1,14 @@
+
+
+---
+
+After 70, I feel lazy,
+so I plan to write a script that copies PDF files into text.
+
+```bash
+grep -E '^(7[1-9]|[89][0-9]|1[0-9]{2}|2[0-9]{2}|3[0-9]{2}|400) ' PLAN | awk '{print $2}' | while read line; do touch "${line}_notes.txt"; done
+```
+
+This will generate about 330 text files.
+
+---

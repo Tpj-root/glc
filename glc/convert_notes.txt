@@ -2,12 +2,69 @@
 convert - convert between image formats as well as resize an image,blur, crop, despeckle, dither, draw on, flip, join, re- sample
 
 
+
 $ convert picture.jpg picture.png
+
 $ convert picture.png picture.jpg
+
 $ convert picture.jpg -rotate 45 picture.png
+
 $ convert picture.png -flip picture.png
-$ convert picture.jpg -font courier -fill black -pointsize 50 -
-annotate +50+50 'ILUGC' picture.jpg
+
+$ convert picture.jpg -font courier -fill black -pointsize 50 -annotate +50+50 'ILUGC' picture.jpg
+
 $ convert picture.jpg picture_flip.jpg -append appended.jpg
+
+
+
+simple Bash function to rotate an image 90° CCW using ImageMagick
+
+rotate_cw() {
+  convert "$1" -rotate 90 "$2"
+}
+
+rotate_ccw() {
+  convert "$1" -rotate -90 "$2"
+}
+
+
+-rotate -90 means 90° CCW.
+
+
+
+Value	Rotation Direction	Angle	Description
+90	 Clockwise (CW)	90°	Rotate image 90 degrees CW
+-90	Counterclockwise (CCW)	90°	Rotate image 90 degrees CCW
+180	Either (same)	180°	Rotate image upside down
+-180	Either (same)	180°	Rotate image upside down
+0	None	0°	No rotation
+Any positive angle	CW	angle degrees	Rotate clockwise by angle
+Any negative angle	CCW	abs(angle)°	Rotate counterclockwise
+
+
+Summary:
+
+    Positive angle → rotate clockwise.
+    Negative angle → rotate counterclockwise.
+
+
+
+Usage:
+$ rotate_ccw input.jpg rotated_image.jpg
+
+
+Bash function that scans all .jpg files in a folder, rotates them 90° CCW, and saves them with a rotated_ prefix:
+
+
+rotate_all_ccw() {
+  for file in *.jpg; do
+    convert "$file" -rotate 90 "rotated_$file"
+  done
+}
+
+
+Usage:
+$ cd /path/to/images
+$ rotate_all_ccw
 
 
