@@ -1,0 +1,19 @@
+
+truncate - shrink or extend the size of a file to the specified
+size
+
+
+To Clear contents of a file with truncate
+$ truncate -s 0 example.txt
+
+
+To truncate a file to a specific size
+$ truncate -s 200K example.txt
+
+
+To extend file size
+$ truncate -s +400K example.txt
+
+
+To reduce file size
+$ truncate -s -100k example.txt

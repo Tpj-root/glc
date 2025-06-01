@@ -1,0 +1,47 @@
+
+time - run programs and summarize system resource usage
+syntax
+$ time [options] [command]
+
+
+
+Real: This is the actual time taken by the processor of the
+computer to execute the command from pressing the button to
+complete the command.
+User: CPU time that is taken by the user mode.
+SYS: This is the time taken by the system or the Kernel to execute
+the command.
+
+
+
+To calculate execution time of commands
+$ time sleep 5
+$ time free -h
+$ time df -Th
+$ time ping google.com
+
+
+
+To display the time in portable POSIX format
+$ time -p sleep 5
+$ time -p free -h
+$ time -p df -Th
+$ time -p ping google.com
+
+
+
+To calculate the update time
+$ time sudo apt update
+
+
+
+To save the time command output in the text file
+$ /usr/bin/time -o sleep_output.txt sleep 5
+$ /usr/bin/time -o df_output.txt df -Th
+
+
+
+To get detailed summary of the executed time
+$ /usr/bin/time -v sleep 5
+$ /usr/bin/time -v df -Th
+$ /usr/bin/time -v free -h

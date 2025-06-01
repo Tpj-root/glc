@@ -1,0 +1,72 @@
+tr - is used to translate and/or delete characters from stdin
+input and writes to stdout
+
+
+$ cat example.txt
+linux os is powerful
+linux os is versatile
+linux os is best
+
+
+
+To change all lowercase letters in the text to uppercase and vice
+versa
+$ cat example.txt | tr [:lower:] [:upper:]
+or
+$ cat example.txt | tr [a-z] [A-Z]
+
+
+To save the results written to stdout in a file
+$ cat example.txt | tr [a-z] [A-Z] >output.txt
+
+
+To send input to tr using the input redirection and redirect the
+output to a file
+$ tr [a-z] [A-Z] < linux.txt >output.txt
+
+
+
+To delete characters and remove spaces
+$ cat domain.txt
+www. ilugc.in
+www. chennaipy. org
+www. google. com
+
+
+$ cat domains.txt | tr -d ''539
+
+
+
+To remove repeated characters in a sequence
+$ cat domains.txt
+www. ilugc...........innnn
+www. chennaipy. org
+www. google. com
+
+$ cat domains.txt | tr -s ''
+
+
+To delete all the letters and only leave the UID
+$ echo "My UID is $UID" | tr -cd "[:digit:]\n"
+
+
+
+To break a single line of words (sentence) into multiple lines
+$ echo "My UID is $UID"
+$ echo "My UID is $UID" | tr " " "\n"
+
+
+
+To translate multiple lines of words into a single sentence
+$ cat uid.txt
+My
+UID
+is
+1000
+$ tr "\n" " " < uid.txt
+
+
+
+To translate single character, for instance, a space into a “ : ”
+$ echo "ilugc.in =>linux,devops,cloud,programming" | tr " " ":"
+$ echo "ilugc.in =>linux devops cloud programming" | tr " " ":"

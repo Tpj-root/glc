@@ -1,0 +1,19 @@
+
+
+e2label - Change the label on an ext2/ext3/ext4 filesystem
+To display or change the filesystem label on the ext2, ext3, or
+ext4 filesystem located on device
+$ sudo e2label /dev/device
+$ sudo e2label /dev/device new-label-name-here
+
+
+To view the label name of partition
+$ sudo e2label /dev/sdb1
+
+
+To set label name of partition
+$ sudo e2label /dev/sdb1 mypartition
+
+
+To remove a partition label name by supplying an empty string
+$ sudo e2label /dev/sdb1 ""134

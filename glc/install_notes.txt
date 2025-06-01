@@ -1,0 +1,29 @@
+
+install - copy files and set attributes
+
+
+
+To move the files from one location or another location or
+directory
+$ install sample.txt data/
+to check
+$ ls data/
+
+
+
+To copy the data from one location to another location with the
+comparison
+$ install -C /file/* data/
+$ ls data/
+
+
+To use install command to change the ownership of the file
+$ install -D -o ilugc file.txt /data/
+
+
+To change the permission mode
+$ install -D -m 777 file1.txt /data/
+
+
+To get help
+$ install --help227

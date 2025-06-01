@@ -1,0 +1,7 @@
+
+prtstat - print statistics of a process
+
+
+To print the statistics of sshd
+$ pidof sshd
+$ prtstat -r <PID_sshd>

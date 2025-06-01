@@ -1,0 +1,48 @@
+
+ss - is used to dump socket statistics, and to investigate sockets
+To list all Connections
+$ ss
+
+
+To list Listening and Non-listening Ports
+$ ss -a
+
+
+To list Listening Sockets
+$ ss -l
+
+
+To list all TCP connections
+$ ss -t
+
+
+To list all listening TCP connections
+$ ss -lt
+
+
+To list all UDP connections
+$ ss -ua
+
+
+To list all listening UDP connections
+$ ss -lu
+
+
+To display PID of sockets
+$ ss -p
+
+
+To display summary statistics
+$ ss -s
+
+
+To display IPv4 and IPv6 socket connections
+$ ss -4
+$ ss -6
+
+
+To filter connections by port number
+$ ss -at '( dport = :22 or sport = :22 )'
+$ ss -at '( dport = :80 or sport = :80 )'
+$ ss -at '( dport = :ssh or sport = :ssh )'
+$ ss -at '( dport = :http or sport = :http )'

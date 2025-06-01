@@ -1,0 +1,30 @@
+
+gunzip - tool for decompressing gzip files.
+
+
+
+To decompress a .gz file
+$ gunzip file.gz
+
+
+gunzip will remove the compressed file , to keep the original file
+$ gunzip -k file.gz
+
+
+
+To keep the compressed file and decompress it to another location
+$ gunzip -c file.gz > /path/to/file
+$ gunzip -c mydoc.gz > /home/ilugc/mydoc
+
+
+
+To decompress multiple files
+$ gunzip file1.gz file2.gz file3.gz
+
+
+To recursively decompresses all files in a given directory
+$ gunzip -r directory
+
+
+To list the compressed file contents
+$ gunzip -lv file.gz199

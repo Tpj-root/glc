@@ -1,0 +1,22 @@
+
+shar - create a shell archive
+$ sudo apt install sharutils
+provides shar package
+
+
+
+To create a shar archive file.
+$ shar *.txt > mytext.shar
+$ shar *.pdf > mypdf.shar
+$ shar *.mp3 > mymp3.shar
+$ shar *.c > myc.shar
+
+
+
+remove all .txt , .pdf , .mp3 , .c files
+and then,
+To extract shar archive file
+$ unshar mytext.shar
+$ unshar mypdf.shar
+$ unshar mymp3.shar
+$ unshar myc.shar455

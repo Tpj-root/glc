@@ -1,0 +1,11 @@
+
+dir - list directory contents
+To display all the hidden files
+$ dir -a
+$ dir -A
+To Displays author of all the files
+$ dir -l --author
+To list in single column
+$ dir -1
+To list with commas
+$ dir -m119

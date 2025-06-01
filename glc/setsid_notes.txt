@@ -1,0 +1,28 @@
+
+setsid - run a program in a new session
+syntax
+
+
+$ setsid [options] program [arguments]
+
+
+
+$ cat add.sh
+#!/bin/bash
+# Take input from user and calculate sum.
+read -p "Enter first number: " num1
+read -p "Enter second number: " num2
+sum=$(( $num1 + $num2 ))
+echo "Sum is: $sum"
+:x
+To execute shell script in a new session.
+$ sudo setsid ./add.sh
+
+
+To set the controlling terminal to the current one.
+$ sudo setsid -c ./add.sh
+
+
+To wait for the execution of the program to end, and return
+the exit value of this program as the return value of setsid
+$ setsid -w ./add.sh

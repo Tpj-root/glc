@@ -1,0 +1,26 @@
+
+umask - is used to set default permissions for files or
+directories the user creates.
+
+
+To calculate umask value
+$ umask
+
+
+To Displays the current mask
+$ umask -p
+
+
+To set and update the default umask value
+$ umask 543
+
+
+To view symbolic representation
+$ umask -S
+
+
+To set the default permissions for all new files or folders to 644
+and 755 then umask value is
+$ umask 022
+for folders 777-022 = 755
+for files 666-022 = 644

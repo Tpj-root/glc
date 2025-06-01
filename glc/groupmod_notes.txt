@@ -1,0 +1,18 @@
+
+groupmod - The groupmod command modifies the definition of the
+specified GROUP by modifying the appropriate entry in the group
+database.
+
+
+
+To change the group “ilugc” to “klug”
+$ sudo groupmod -n klug ilugc
+
+To change groupid of a group
+$ sudo groupmod -g 1234 ilugc
+
+To change the group ID with non-unique
+$ sudo groupmod -o 0 ilugc
+
+To change the group password
+$ sudo groupmod -p pa55@123 ilugc184

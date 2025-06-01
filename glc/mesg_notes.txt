@@ -1,0 +1,14 @@
+
+mesg - it allows to control write access to your terminal by other users.
+
+
+To display the current write status of your terminal
+$ mesg
+
+
+To allow write access to your terminal
+$ mesg y
+
+
+To disallow write access to your terminal
+$ mesg n298

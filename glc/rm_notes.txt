@@ -1,0 +1,42 @@
+
+rm - remove files or directories
+
+
+To remove or delete file
+$ rm file.txt
+
+
+To delete the files interactively
+$ rm -i file.txt
+
+
+To delete a directory recursively
+$ rm -r old_data/
+
+
+To delete the files and sub-directories interactively
+$ rm -ir old_data/
+
+
+To Delete files forcefully
+$ rm -f file.txt
+
+
+To prompt once before deleting more than three files or recursive
+delete
+$ touch file1.txt file2.txt file3.txt file4.txt file5.txt
+$ rm -I file*
+rm: remove 5 arguments? y
+
+
+To delete all the .txt files or .mp4
+$ rm -f *.txt
+$ rm -f *.mp4419
+
+
+To remove multiple files
+$ rm file1.txt file2.txt file3.txt
+
+
+To remove everything from current directory
+$ rm -v *

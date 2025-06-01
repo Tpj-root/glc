@@ -1,0 +1,19 @@
+
+newusers - update and create new users in batch
+create users details in a file
+
+
+$ sudo vim users.txt
+ilugc:123:1002:1002:Foss Admin:/home/ilugc:/bin/bash
+klug:123:1003:1003:Foss:/home/klug:/bin/bash
+:x save and exit
+set the required permissions
+$ sudo chmod 0600 users.txt
+
+
+run the newusers command to add the users in the users.txt
+$ sudo newusers users.txt
+
+
+check for the users added
+$ cat /etc/passwd341

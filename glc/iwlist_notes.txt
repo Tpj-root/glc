@@ -1,0 +1,22 @@
+
+iwlist - Get more detailed wireless information from a wireless interface
+
+
+To list options
+$ iwlist
+
+
+To list frequency of wireless interface
+$ iwlist wlp2s0 frequency
+
+
+To list the bitrate of wl interface
+$ iwlist wlp2s0 bitrate
+
+
+To display power mode
+$ iwlist wlp2s0 power
+
+
+To list authentication
+$ iwlist wlp2s0 auth235

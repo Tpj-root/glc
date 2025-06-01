@@ -1,0 +1,4 @@
+
+pdf2ps - Ghostscript PDF to PostScript translator
+$ pdf2ps options input.pdf output.ps
+$ pdf2ps file.pdf file.ps362

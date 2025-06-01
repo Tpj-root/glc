@@ -1,0 +1,18 @@
+
+dpkg - package manager for Debian
+To install a package
+$ sudo dpkg -i package_name.deb
+To list all the installed packages
+$ sudo dpkg -l
+To remove a package
+$ sudo dpkg -r flashpluginnonfree
+To remove the package along with configuration file
+$ sudo dpkg -p flashpluginnonfree
+To view the content of a package
+$ sudo dpkg -c package_name.deb
+To check a package is installed or not
+$ sudo dpkg -s package_name.deb
+check the location of packages installed
+$ sudo dpkg -L package_name.deb108
+To display dpkg licence
+$ sudo dpkg --licence109

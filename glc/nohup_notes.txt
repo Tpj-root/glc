@@ -1,0 +1,23 @@
+
+nohup - run a command immune to hangups, with output to a non-tty
+create example.sh
+$ sudo vim example.sh
+#!/bin/bash
+echo "hello!!!"
+:x
+To run example.sh with nohup
+$ nohup bash example.sh
+$ cat nohup.out
+To run a process in the background with nohup
+$ nohup [command] &
+$ nohup bash example.sh &
+$ nohup ping -i 10 google.com &
+to bring the process to foreground
+fg
+To run multiple processes in the background with nohup
+$ nohup bach -c '[command1] && [command2]'
+$ nohup bash -c 'date && cal && ls && free'
+$ cat nohup.out
+To redirecting output to different file
+$ nohup [command] > /path/to/output/file.txt
+$ nohup bash -c 'date && cal && ls && free' > myfile.txt342

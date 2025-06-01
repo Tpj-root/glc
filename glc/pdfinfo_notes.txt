@@ -1,0 +1,16 @@
+
+pdfinfo - Portable Document Format (PDF) document information
+extractor
+
+To find info of pdf file
+$ pdfinfo file.pdf
+To print metadata of pdf file
+$ pdfinfo -meta file.pdf
+To print the page bounding boxes
+$ pdfinfo -box file.pdf
+To list available encodings
+$ pdfinfo -listenc file.pdf
+To print all JavaScript in the PDF
+$ pdfinfo -js file.pdf
+To print the undecoded date strings directly from the PDF file
+$ pdfinfo -rawdates file.pdf364

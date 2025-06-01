@@ -1,0 +1,57 @@
+
+lspci - is a utility on linux systems used to find out information
+about the PCI busses and devices connected to the PCI subsystem
+
+
+To list all PCI devices
+$ sudo lspci
+
+
+To dump PCI Info in different format
+$ sudo lspci -m
+$ sudo lspci -mm
+
+
+To display the output in tree format
+$ sudo lspci -t
+
+
+To get detailed device Information
+$ sudo lspci -v
+
+
+To get info in very verbose mode
+$ sudo lspci -vv
+
+
+To get info in more verbose mode
+$ sudo lspci -vvv
+
+
+To show PCI vendor and device codes as numbers
+$ sudo lspci -n
+
+
+To show PCI vendor and device codes as both numbers and names
+$ sudo lspci -nn
+
+
+To display info of a specific device
+$ sudo lspci -s [device_number]
+$ sudo lspci -s 00:02.0
+
+
+To show kernel drivers handling each device
+$ sudo lspci -k
+
+
+To get hexadecimal dump of the whole PCI configuration space
+$ sudo lspci -xxx
+
+
+To get bus centric view
+$ sudo lspci -b
+
+
+To get PCI domain numbers
+$ sudo lspci -D

@@ -1,0 +1,22 @@
+
+fold - wrap each input line to fit in specified width
+
+
+$ fold [OPTION]
+[FILE]
+$ fold testfile.txt
+
+
+To limit the width by number of columns
+$ fold -w[n] testfile.txt
+$ fold -w40 testfile.txt
+
+
+To limit the width of the output by the number of bytes
+$ fold -b[n] testfile.txt
+$ fold -b30 testfile.txt
+
+
+To break the lines on spaces so that words are not broken
+$ fold -w[n] -s testfile.txt
+$ fold -w30 -s testfile.txt168

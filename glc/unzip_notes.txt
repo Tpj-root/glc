@@ -1,0 +1,51 @@
+
+unzip - list, test and extract compressed files in a ZIP archive
+
+
+To extract all files from the zip archive
+$ unzip file.zip
+
+
+To unzip the file to another directory
+$ unzip file.zip -d /home/ilugc/Documents
+
+
+To display the content of the zip file without extracting
+$ unzip -l file.zip
+
+
+To extract zip files with suppressing output
+$ unzip -q file.zip
+
+
+To exclude files from extracting a zip file
+$ unzip file.zip -x file1 file2
+
+
+Not to overwrite the existing files
+$ unzip -n file.zip
+
+
+To unzip multiple files
+$ unzip '*.zip'
+$ unzip '*.txt'
+
+
+To unzip password protected files
+$ unzip -P Password file.zip
+
+
+To extract in quiet mode
+$ unzip -q file.zip
+
+
+To overwrite existing files
+$ unzip -o file.zip
+
+
+To view detailed contents of a zipped file
+$ unzip -Z file.zip
+
+
+To unzip one or more files from an archive
+$ unzip file.zip mydoc.txt

@@ -1,0 +1,13 @@
+
+e4defrag - online defragmenter for ext4 filesystem
+To defragment Linux partitions
+$ sudo e4defrag <location>
+or
+$ sudo e4defrag <device>
+$ sudo e4defrag /home/klug/directory
+$ sudo e4defrag /dev/sdb2
+
+
+
+To defragment your entire system
+$ sudo -v e4defrag /136

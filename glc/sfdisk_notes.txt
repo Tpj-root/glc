@@ -1,0 +1,39 @@
+
+sfdisk - display or manipulate a disk partition table
+
+
+To display partitions of all the disks in system
+$ sudo sfdisk -l
+
+
+To view disk partitions of a specific device
+$ sudo sfdisk -l /dev/vda
+
+
+To display Total Partition Size
+$ sudo sfdisk -s
+
+
+To display Partition size of specific partition
+$ sudo sfdisk -s /dev/vda
+
+
+To dump disk partition details to text file
+$ sudo sfdisk -d /dev/vda > vda.out
+
+
+To display Disk Geometry for Debugging
+$ sudo sfdisk -G
+
+
+To display the kernel’s idea of the geometry of the device
+$ sudo sfdisk -g
+
+
+To display All Disk Partition types
+$ sudo sfdisk -T
+
+
+To display the partition type of a specific partition
+$ sudo sfdisk --print-id
+/dev/vda 1

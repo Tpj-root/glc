@@ -1,0 +1,30 @@
+
+hdparm - is used to handle disk devices and hard disks. it get statistics about the hard disk, alter writing intervals, acoustic management, and DMA settings
+
+
+To display information of the hard drive
+$ sudo hdparm -I /dev/sda
+
+
+To display all the options
+$ sudo hdparm -h
+
+
+To test hard disk drive speed
+$ sudo hdparm -t /dev/sdb
+
+
+To measure hard disk cache read speed
+$ sudo hdparm -T /dev/sdb
+
+
+To get current settings
+$ sudo hdparm -d /dev/sdb
+
+
+To set DMA on for a device
+$ sudo hdparm -d1 /dev/sdb
+
+
+To print all settings
+$ sudo hdparm -v /dev/sda208

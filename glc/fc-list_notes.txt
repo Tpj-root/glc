@@ -1,0 +1,13 @@
+
+fc-list command is a part of the fontconfig system. It is used to
+list the available fonts and font styles
+To print all the file locations of the font files present in the
+system
+$ fc-list
+To print only the names of the font families
+$ fc-list : family
+To print only the names of the font families which support the
+tamil language code
+$ fc-list : family lang=ta
+
+

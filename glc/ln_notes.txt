@@ -1,0 +1,29 @@
+
+
+ln - command creates the hard and symbolic links between the files.
+
+
+
+To create hard link with the name sample_link_file.txt
+$ ln sample_file.txt sample_link_file.txt
+
+
+
+To create symbolic or soft link to a file
+$ ln -s file.txt link_file.txt
+
+
+To display the created soft link
+$ ls -l link_file.txt
+
+
+To create a symlink to a directory
+$ ln -s /home/ilugc/project ~/ilugc_project
+
+
+To view the created soft link
+$ ls -l ~/ilugc_project
+
+
+To overwrite an existing symbolic link forcefully
+$ ln -sf file.txt link_file.txt

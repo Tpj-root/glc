@@ -1,0 +1,65 @@
+
+
+source - is a built-in shell command that reads and executes the
+file content in the current shell.
+
+
+syntax
+$ source [filename] [arguments]
+
+
+
+To pass commands and arguments
+$ cat example.txt
+free -h
+pwd
+date
+time
+uptime
+$ source example.txt
+
+
+
+To read variables from a file
+$ cat example.sh
+#!/bin/bash
+VAR1="a"
+VAR2="b"
+VAR3="c"
+create bash script
+$ cat sample.sh
+#!/bin/bash
+source example.sh
+echo "VAR1 is $VAR1"
+echo "VAR2 is $VAR2"
+echo "VAR3 is $VAR3"
+$ source sample.sh
+
+
+
+To refresh the current shell environment
+$ alias ll = 'ls -l'
+$ alias c = 'clear'
+$ c
+$ ll
+This command only works in the current shell session
+
+
+
+To make it permanent
+$ sudo nano ~/.bashrc
+alias ll = 'ls -l'
+alias c = 'clear'
+:x
+Refresh the current shell environment and make it permanent for
+the user
+$ source ~/.bashrc
+
+
+
+To make it system wide change
+$ sudo vim /etc/profile
+alias ll = 'ls -l'
+alias c = 'clear'
+:x
+# source /etc/profile

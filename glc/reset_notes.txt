@@ -1,0 +1,5 @@
+
+reset - is used to initialize the terminal
+To wipe everything that is currently in the terminal, including
+the scrollback buffer and initialize the terminal
+$ reset

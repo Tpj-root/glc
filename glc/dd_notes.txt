@@ -1,0 +1,45 @@
+
+dd - convert and copy a file
+
+
+To backup the entire harddisk
+$ dd if=/dev/sdc of=/dev/sdd
+
+
+To create an image of a Hard Disk
+$ dd if=/dev/hdb of=~/hdbdisk.img
+
+
+To restore using the Hard Disk Image
+$ dd if=hdcdisk.img of=/dev/hdd
+
+
+To create a compressed disk image
+$ dd if=/dev/sdb | gzip -c >/tmp/sdbdisk.img.gz
+
+
+Backup a partition to another
+$ dd if=/dev/sdb1 of=/dev/sdc1 bs=4096 conv=noerror,sync
+
+
+To restore a disk or a partition image
+$ dd if=/tmp/sdbdisk.img of=/dev/sdb
+
+
+To restore compressed image
+$ gzip -dc /tmp/sdcdisk.img.gz | dd of=/dev/sdc124
+
+
+To convert case of a file
+$ cat file1
+abcdefgh
+
+
+$ dd if=~/file1 of=~/file2 conv=ucase
+
+
+$ cat file2
+ABCDEFGH
+
+
+$ dd if=~/file2 of=~/file3 conv=lcase125

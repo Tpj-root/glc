@@ -1,0 +1,14 @@
+
+lsusb - utility for displaying information about USB buses in the system and the devices connected to them
+
+
+To print usb devices connected
+$ sudo lsusb
+
+
+To display detailed information about usb devices in verbose mode
+$ sudo lsusb -v
+
+
+To display physical USB device hierarchy as a tree
+$ sudo lsusb -t291

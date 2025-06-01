@@ -1,0 +1,117 @@
+
+tar - an archiving utility
+syntax
+
+
+$ tar <options> <files>
+To create an archive file
+$ tar -cvf myfile.txt /home/ilugc/
+
+
+To create tar.gz Archive File
+$ tar cvzf mydoc.tar.gz /home/ilugc/Documents
+
+
+
+To create tar.bz2 archive file
+$ tar cvfj mydownloads.tar.bz2 /home/ilugc/Downloads
+
+
+
+To untar tar Archive file
+$ tar -xvf mydoc.tar
+
+
+To untar tar archive file in different location
+$ tar -xvf mydoc.tar -C /home/ilugc/Music/
+
+
+To uncompress tar.gz Archive File
+$ tar -xvf mydoc.tar.gz
+
+
+To Uncompress tar.bz2 Archive File
+$ tar -xvf mydownloads.tar.bz2
+
+
+To list Content of tar Archive File
+$ tar -tvf mydoc.tar
+
+
+To List Content tar.gz Archive File
+$ tar -tvf mydoc.tar.gz
+
+
+
+To List Content tar.bz2 Archive File
+$ tar -tvf mydownloads.tar.bz2
+
+
+To Untar Single file from tar File
+$ tar -xvf files.sh.tar file.sh
+
+
+To Untar Single file from tar.gz File
+$ tar -zxvf backup.tar.gz backup.html
+
+
+To Untar Single file from tar.bz2 File
+$ tar -jxvf Python.tar.bz2 demo.py
+
+
+To Untar Multiple files from tar, tar.gz, and tar.bz2 File
+$ tar -xvf file.tar "file1" "file2" "file3"
+$ tar -zxvf myfile.tar.gz "file1" "file2" "file3"
+$ tar -jxvf myfiles.tar.bz2 "file1" "file2" "file3"
+
+
+To Extract Group of Files using Wildcard
+$ tar -xvf Python.tar --wildcards '*.py'
+$ tar -zxvf Perl.tar.gz --wildcards '*.pl'
+$ tar -jxvf Bash.tar.bz2 --wildcards '*.sh'
+
+
+
+To add files or directories to the existing tar archive files
+$ tar -rvf file.tar file.txt
+$ tar -rvf file.tar demo.py
+
+
+
+To Add Files or Directories to tar.gz and tar.bz2 Files
+$ tar -rvf file.tar.gz sample.txt
+$ tar -rvf Php.tar.bz2 sample.php
+
+
+To verify any tar or compressed archive file
+$ tar tvfW sample.tar
+
+
+
+To Check the Size of the tar, tar.gz, and tar.bz2 Archive File
+$ tar -czf - sample.tar | wc -c
+$ tar -czf - mydocs.tar.gz | wc -c
+$ tar -czf - mydownloads.tar.bz2 | wc -c
+
+
+
+To Exclude Files and Directories When Creating Tar File
+$ tar --exclude='example.txt' -zcvf file.tar.gz /home/ilugc
+$ tar --exclude='/home/ilugc/songs' -zcvf backup.tar.gz
+/home/ilugc
+
+
+
+To exclude files with specific file extensions when creating a tar
+archive file,
+$ tar --exclude='*.txt' -zcvf backup.tar.gz /home/ilugc
+$ tar --exclude='*.py' -zcvf backup.tar.gz /home/ilugc
+
+
+To remove File and Directory from Tar Archive
+$ tar --delete -f backup.tar.gz sample.txt
+$ tar --delete -f backup.tar.gz '/home/ilugc/songs'
+
+
+To extract Specific File Extension in Tar Archive
+$ tar -xvf backup.tar.gz --wildcards '*.mp4'

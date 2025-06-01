@@ -1,0 +1,63 @@
+
+strace - is a CLI tool for debugging and troubleshooting programs
+
+
+To trace of all system calls made command free -h
+$ strace free -h
+$ strace df -Th
+
+
+To Trace Linux Process PID
+$ sudo strace -p <PID>
+
+
+To get summary of linux process
+$ sudo strace -c -p <PID>
+
+
+To Print Instruction Pointer During System Call
+$ sudo strace -i df -Th
+$ sudo strace -i free -h
+
+
+To show Time of Day For Each Trace Output Line
+$ sudo strace -t df -Th
+$ sudo strace -t free -h
+
+
+To Print Command Time Spent in System Calls
+$ sudo strace -T df -Th
+$ sudo strace -T free -h
+
+
+To trace Only Specific System Calls
+$ sudo strace -e trace=write df -Th
+$ sudo strace -e trace=write free -h
+$ sudo strace -e trace=all df -Th
+$ sudo strace -e trace=all free -h
+
+
+To trace System Calls Based on a Certain Condition
+To trace all system calls involving process management
+$ sudo strace -q -e trace=process df -Th
+$ sudo strace -q -e trace=process free -h
+
+
+To trace all system calls that take a filename as an argument,
+$ sudo strace -q-e trace=file df -Th
+$ sudo strace -q-e trace=file free -h
+
+
+To trace all system calls involving memory mapping
+$ sudo strace -q -e trace=memory df -Th
+$ sudo strace -q -e trace=memory free -h
+
+
+To redirect Trace Output to File
+$ sudo strace -o df_debug.txt df -Th
+$ sudo strace -o free_debug.txt free -h
+
+
+To show debugging information for strace
+$ strace -d df -Th
+$ strace -d free -h

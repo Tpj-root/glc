@@ -1,0 +1,6 @@
+
+hostid - is used to display the host id in hexadecimal format.
+
+
+$ hostid
+7c787dcd212

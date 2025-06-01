@@ -1,0 +1,28 @@
+
+lslocks - lists information about all the currently held file
+locks in a Linux system
+$ sudo lslocks [options]
+
+
+To list all file locks
+$ sudo lslocks
+
+
+To print the SIZE column in bytes
+$ sudo lslocks -b
+
+
+To print the all file locks in json format
+$ sudo lslocks -J
+
+
+To display the PID of all file locks
+$ sudo lslocks --output PID
+
+
+To display the COMMAND of file locks
+$ sudo lslocks --output COMMAND
+
+
+To display only the locks held by the process with specific pid
+$ sudo lslocks -p <PID>278

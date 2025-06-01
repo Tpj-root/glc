@@ -1,0 +1,7 @@
+
+do-release-upgrade - upgrade operating system to latest release
+
+
+$ sudo apt update
+$ sudo apt upgrade
+$ do-release-upgrade110

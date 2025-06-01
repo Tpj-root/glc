@@ -1,0 +1,49 @@
+
+gawk - used for pattern scanning and processing language
+
+
+$ cat staff.txt
+arun 0001
+babu 0002
+chandru 0003
+dhana 0004
+kiran 0005
+raj 0006
+sunil 0007
+teja 0008
+
+To print current count of the number of input line
+$ gawk '{print NR "-" $1 }' staff.txt
+
+
+
+gawk prints every line of data from the input line
+$ gawk '{print}' staff.txt
+
+
+
+To print the lines matching with the given pattern
+$ gawk '/babu/ {print}' staff.txt
+
+
+
+To print the second column records of the input file
+$ gawk '{print $2}' staff.txt197
+
+
+To display count of lines
+$ gawk '{print NR, $0}' staff.txt
+
+
+To find the length of the longest line present in the file
+$ gawk '{ if (length($0) > max) max = length($0) } END { print max }' staff.txt
+
+
+
+To count the lines in a file
+$ gawk 'END { print NR }' staff.txt
+
+
+
+To print lines with more than 11 characters
+$ gawk 'length($0) > 11' staff.txt198

@@ -1,0 +1,65 @@
+
+340 strip
+strip - discard symbols and other data from object files
+syntax
+
+
+
+$ strip [options] objfile...
+$ cat hello.c
+#include <stdio.h>
+int main() {
+// printf() displays the string inside quotation
+printf("Hello, World!");
+return 0;
+}
+$ gcc hello.c -o hello.out
+
+
+
+To strip the symbol table
+$ readelf -s hello.out
+$ strip -s hello.out
+check the symbol table
+$ readelf -s hello.out
+
+
+
+To remove debug symbols only
+$ strip --strip-debug hello.out
+check the symbol table
+$ readelf -a hello.out
+
+
+To Remove a particular section
+$ readelf -S hello.out493
+strip the .gnu.version section from the executable
+$ strip -R .gnu.version hello.out
+check the list of sections
+$ readelf -S hello.out
+
+
+To Remove unneeded symbols
+$ strip --strip-unneeded hello.out
+$ readelf -a hello.out
+
+
+To Shield a particular symbol from stripping
+$ strip -s -K hello.c hello.out
+$ readelf -s hello.out
+
+
+To strip off a particular symbol
+$ strip -N hello.c hello.out
+$ readelf -s hello.out
+
+
+To create a new stripped off file
+$ strip -s -o stripped_hello hello.out
+$ ls -lart stripped_hello
+
+
+To preserve the access and modification date/time
+check the access and modification time of the original file
+$ stat hello.out
+$ strip -s -p hello.out

@@ -1,0 +1,46 @@
+
+shred - overwrite a file to hide its contents, and optionally
+delete it
+syntax:
+$ shred [filename]
+$ shred sample.txt
+
+
+
+To designate number of times to overwrite a file
+$ shred -n 2 example.txt
+
+
+
+
+To overwrite and delete a file
+$ shred -uv sample1.txt
+
+
+
+To selectively overwrite bytes of text
+$ shred -s [number_of_bytes] [filename]
+$ shred -s 10 password.txt
+
+
+
+To run shred with verbose mode
+$ shred -v file.txt
+
+
+
+To change permissions to allow writing if necessary
+$ shred -f [filename]
+$ shred -f file.txt
+
+
+
+To hide shredding from the file system.
+$ shred -z filename
+$ shred -z file.txt
+
+
+
+To Display shred Basic Details and Version and help options
+$ shred --version
+$ shred --help

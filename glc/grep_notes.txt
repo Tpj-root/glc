@@ -1,0 +1,44 @@
+
+grep - print lines that match patterns
+$ cat grep_example.txt
+This is line number one
+this is line number two
+THIS is line number three
+this is line 4
+This is line 5
+To search for the given string in a single file
+$ grep "this" grep_example.txt
+this is line number two
+this is line 4
+To check for the given string in multiple files
+$ grep "this" grep_example.txt file2.txt
+To search case insensitive using grep -i
+$ grep -i "4" grep_example.txt
+this is line 4192
+To check for full words using grep -w
+$ grep -iw "is" grep_example.txt
+This is line number one
+this is line number two
+THIS is line number three
+this is line 4
+This is line 5
+To search in all files recursively using grep -r
+$ grep -r "key_word" *
+To count the number of matches using grep -c
+$ grep -c this grep_example.txt
+2
+To find out how many lines that does not match the pattern
+$ grep -v -c this grep_example.txt
+3
+To show line number while displaying the output using grep -n
+$ grep -n "this" grep_example.txt
+2:this is line number two
+4:this is line 4193
+To display the number of MP3 files , .txt files present in a
+directory
+$ ls ~/Music | grep -c .mp3
+$ ls /home/ilugc | grep -c .txt
+
+
+
+

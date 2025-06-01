@@ -19,3 +19,15 @@ $ sudo grep 1030 /etc/group
 
 To create group with group id with certain range of id
 $ sudo groupadd webadmin -K GID_MIN=1500 -K GID_MAX=2000
+
+
+To create a system group
+$ sudo groupadd -r 499 admin
+
+
+To create a new group ilugc with group ID from 5000 to 7000
+$ sudo groupadd ilugc -K GID_MIN=5000 -K GID_MAX=7000
+
+
+To use an encrypted password for the group
+$ sudo groupadd ilugc -p pa55code123!@#182

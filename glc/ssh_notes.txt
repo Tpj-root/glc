@@ -1,0 +1,61 @@
+
+ssh - is a program for logging into a remote machine and for executing commands on a remote machine
+
+
+To access remote server
+$ ssh 192.168.122.50
+$ ssh my.server.in
+
+
+To specify a username for SSH connection
+$ ssh username@hostname_or_ip
+$ ssh -l username@hostname_or_ip
+$ ssh -l user1@192.168.122.50
+$ ssh -l user1@my.server.in
+
+
+To use a different port number for ssh connection
+$ ssh my.server.in -p 2222
+$ ssh 192.168.122.50 -p 2222
+
+
+To run a command on a remote server from a local computer
+$ ssh 192.168.122.50 rm ~/Desktop/test_file.txt
+
+
+To execute multiple commands using SSH on remote nodes
+$ ssh 192.168.122.50 command1; command2; command3
+
+
+To make ssh to use protocol version 2
+$ ssh -2 user1@192.168.122.50
+
+
+To Print debug information
+$ ssh -v user1@192.168.122.50
+
+
+To increase the level of verbosity
+$ ssh -vv user1@192.168.122.50
+
+
+To get more level of verbosity
+$ ssh -vvv user1@192.168.122.50
+
+
+
+To enable X11 forwarding with ssh command
+$ ssh -X ip_address
+$ ssh -X 192.168.122.50
+
+
+To hide the error message
+
+
+
+$ ssh -q 192.168.122.50
+To change any default value to other possible values during ssh
+$ ssh -o option=value ip_address
+$ ssh -o Port=2222 192.168.122.50
+
+

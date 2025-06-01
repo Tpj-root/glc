@@ -1,0 +1,54 @@
+
+lsipc- show the system information on IPC facilities currently employed in
+
+
+To show the information on IPC in the system
+$ lsipc
+
+
+To drite information about active shared memory segments
+$ lsipc -m
+
+
+To print information about active message queues
+$ lsipc -q
+
+
+To print information about active semaphore sets
+$ lsipc -s
+
+
+To print the output data in the format of NAME=VALUE
+$ lsipc -e
+
+
+To print the output data in the JSON format
+$ lsipc -J
+
+
+To list the output format
+$ lsipc -l
+
+
+To display each information on a separate line
+$ lsipc -n
+
+
+To print without header line
+$ lsipc --noheadings
+
+
+To print raw output
+$ lsipc -r
+
+
+To Print size in bytes
+$ lsipc -b
+
+
+To print specific output columns
+$ lsipc -o RESOURCE
+$ lsipc -o DESCRIPTION
+$ lsipc -o LIMIT
+$ lsipc -o USED
+$ lsipc -o USE%286

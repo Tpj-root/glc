@@ -1,0 +1,36 @@
+
+Less - utility that can be used to read the contents of a text
+file one page(one screen) at a time
+
+
+$ less filename
+
+
+$ dmesg | less
+
+
+
+To display the specified text file with line numbers
+$ dmesg | less -N
+
+
+
+To make less to start at first occurrence of pattern
+“keyword_name” in the file.
+$ dmesg | less -p "KERNEL"
+$ less -p ERROR /etc/init/mysql.conf
+
+
+
+To remove multiple blank lines
+$ less -s file_name
+
+
+
+To open multiple files
+$ less filea.txt fileb.txt
+
+
+
+To keep content on screen after quitting
+$ dmesg | less -X249

@@ -1,0 +1,6 @@
+
+dirname - strip last component from file name
+$ dirname /home/ilugc/myscript.sh
+/home/ilugc
+$ dirname -z /home/klug/autoscript.sh
+/home/klug118

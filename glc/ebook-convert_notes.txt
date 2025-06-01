@@ -1,0 +1,13 @@
+
+ebook-convert - tool to convert ebooks format
+To convert .epub format to .docx
+$ ebook-convert
+
+
+book.epub book.docx
+To convert .docx to .epub
+$ ebook-convert book.docx book.epub
+
+
+To convert .epub .mobi
+$ ebook-convert book.epub book.mobi137

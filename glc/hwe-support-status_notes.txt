@@ -1,0 +1,9 @@
+
+hwe-support-status - Check HWE support status
+
+
+$ hwe-support-status
+Your Hardware Enablement Stack (HWE) is supported until April
+2025.
+To show help message
+$ hwe-support-status -h218

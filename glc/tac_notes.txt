@@ -1,0 +1,34 @@
+
+tac - is used to concatenate and print files in reverse
+syntax
+$ tac [OPTION]... [FILE]...
+$ cat example.txt
+This is line 1
+This is line 2
+This is line 3
+This is line 4
+This is line 5
+
+
+$ cat example1.txt
+This is msg 1
+This is msg 2
+This is msg 3
+This is msg 4
+This is msg 5
+
+
+To print files in reverse
+$ tac example.txt
+
+
+To attach the separator before instead of after
+$ tac -b example.txt example1.txt
+
+
+To make the STRING as the separator
+$ tac --separator="STRING" example1.txt example.txt
+
+
+To interpret the separator as a regular expression
+$ tac -r example.txt example1.txt

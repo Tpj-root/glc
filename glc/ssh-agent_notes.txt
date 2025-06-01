@@ -1,0 +1,25 @@
+
+ssh-agent -
+is a program to hold private keys used for public key
+authentication
+
+
+To start the ssh-agent
+$ ssh-agent
+
+
+To stop / kill the ssh-agent
+$ ssh-agent -k
+
+
+To run ssh-agent in debug mode
+$ ssh-agent -d
+
+
+To set bind socket name
+$ ssh-agent -a ~/demo-ssh-socket $SHELL
+
+
+To set expiry time for keys
+$ ssh-agent -t 1800 $SHELL
+$ ssh-agent -t 10D $SHELL

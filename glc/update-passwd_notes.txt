@@ -1,0 +1,15 @@
+
+update-passwd - safely update /etc/passwd, /etc/shadow and
+/etc/group
+syntax
+$ update-passwd [options]
+
+
+To make a dry run without any changes
+$ sudo update-passwd -n /etc/passwd
+$ sudo update-passwd -n /etc/shadow
+$ sudo update-passwd -n /etc/group
+
+
+To print options
+$ sudo update-passwd -h

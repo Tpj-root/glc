@@ -1,0 +1,20 @@
+
+dmesg - print or control the kernel ring buffer, it display
+message command and to display kernel-related messages
+$ sudo dmesg | less
+To read dmesg output in human readable format
+$ sudo dmesg -H
+To monitor real-time logs
+$ sudo dmesg --follow
+To print last or first 15 lines
+$ sudo dmesg | head -15
+$ sudo dmesg | tail -15
+To search for a specific string or patterns
+$ sudo dmesg | grep -i usb
+To check for hard disk and will display the messages wherever sda
+is listed
+$ sudo dmesg | grep -i sda
+To list all the informational messages
+$ sudo dmesg -l info116
+To display dmesg messages for eth0 user interface
+$ sudo dmesg | grep -i eth0117

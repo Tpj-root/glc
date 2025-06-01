@@ -1,0 +1,11 @@
+
+kmod - Program to manage Linux Kernel modules
+
+
+To view all the modules currently loaded in the system.
+$ sudo kmod list
+
+
+To list the information of static device nodes
+$ sudo kmod static-nodes243
+

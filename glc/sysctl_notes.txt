@@ -1,0 +1,44 @@
+
+sysctl - configure kernel parameters at runtime
+
+
+To view all current kernel parameters invoke the sysctl
+$ sudo sysctl -a
+
+
+To view the swappiness value
+$ sudo sysctl vm.swappiness
+$ sysctl kernel.hostname
+
+
+To Modify the Kernel Parameters
+$ sudo sysctl -w parameter=value
+
+
+To enable IPv4 packet forwarding
+$ sudo sysctl -w net.ipv4.ip_forward=1
+
+
+To set a parameter permanently
+$ sudo sysctl -w net.ipv4.ip_forward=1 >> /etc/sysctl.conf
+
+
+To read values from file
+$ sudo sysctl -p /etc/sysctl.d/file_name.conf
+
+
+To print variable names without values
+$ sudo sysctl -N vm.swappiness
+
+
+To print values only of the given variable
+$ sudo sysctl -n vm.swappiness
+
+
+To read values from all system directories
+$ sudo sysctl --system
+
+
+To print version and help options
+$ sudo sysctl --version
+$ sudo sysctl --help

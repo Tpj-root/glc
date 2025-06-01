@@ -1,0 +1,25 @@
+
+replace - makes modifications to strings of text in files or the
+standard input.replace command is provided by mariadb-server
+$ cat example.txt
+This is paragraph one
+This is paragraph two
+This is paragraph three
+
+
+To replace string with other string
+$ replace paragraph line -- example.txt
+it will be converted and renamed
+
+
+To print output to stdout
+$ replace paragraph line < example.txt
+
+
+To save output to a new file name
+$ replace paragraph line < example.txt > new_example.txt
+
+
+To Print more information about what the program does
+$ replace -v line paragraph -- example.txt
+$ replace -v line paragraph < example.txt > new_example.txt

@@ -1,0 +1,62 @@
+
+usermod - modify a user account
+syntax
+$ usermod [options] username
+
+
+To add Information to user account
+$ sudo usermod -c "This is test message" user1
+
+
+To change user home directory
+$ sudo usermod -d /home/user3/ user2
+
+
+To set user account expiry date
+$ sudo usermod -e 2025-04-04 user3
+
+
+To change user primary group
+$ sudo usermod -g devops user4
+
+
+To add group to an existing user
+$ sudo usermod -G web user5
+
+
+To add supplementary and primary group to user
+$ sudo usermod -aG wheel user6
+
+
+To change user login name
+$ sudo usermod -l new_username old_username
+$ sudo usermod -l user7 user6
+
+
+To lock user account
+$ sudo usermod -L user7
+
+
+To unlock user account
+$ sudo usermod -U user7
+
+
+To move user home directory to new location from /home/user7 to
+/var/user7
+$ sudo usermod -d /var/user7/ -m user7
+
+
+To create unencrypted password for user
+$ sudo usermod -p passcode123 user7
+
+
+To change user shell
+$ sudo usermod -s /bin/sh user1
+
+
+To change user ID
+$ sudo usermod -u 666 user2
+
+
+To modify the UID and GID.
+$ sudo usermod -u 555 -g 665 user3

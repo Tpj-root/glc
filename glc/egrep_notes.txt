@@ -1,0 +1,41 @@
+
+
+
+grep, egrep, fgrep, rgrep - print lines that match patterns
+$ egrep [ options ] 'PATTERN' files
+$ cat myfile.txt
+this is line one
+this is line two
+this is line three
+$ egrep this myfile.txt
+this is line two
+this is line three
+To count and print the number of lines that matched the pattern
+and not the lines
+$ egrep -c this myfile.txt
+3
+To Ignore the case of the pattern while matching
+$ egrep -i this myfile.txt
+This is line one
+this is line two
+this is line three145
+To Print only the names of the files that matched.
+$ egrep -l this myfile.txt
+myfile.txt
+To Print only the names of the files that did not have the pattern
+quite opposite to -l
+$ egrep -L this myfile.txt myfile
+myfile
+To recursively search for the pattern in all the files of the
+directory
+$ egrep -r -i '.conf' .
+. is current directory
+To print each matched line along with the respective line numbers
+$ egrep -n config myprogram.py
+To print only the matched parts of the line and not the entire
+line for each match
+$ egrep -o config myprogram.py
+To search for matches till the count reaches number mentioned as
+argument
+$ egrep -m 3 config myprogram.py146
+

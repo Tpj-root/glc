@@ -1,0 +1,22 @@
+
+firefox - a free and open source web browser from Mozilla
+
+
+
+To find out full path to firefox
+$ type -a firefox
+$ firefox
+or
+$ /usr/bin/firefox
+
+
+To open URL in a new window
+$ /usr/bin/firefox --new-window https://ilugc.in/
+
+
+To open Firefox options/preference
+$ /usr/bin/firefox --preferences
+
+
+To set the Firefox app as the default browser
+$ /usr/bin/firefox --setDefaultBrowser166

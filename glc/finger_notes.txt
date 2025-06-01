@@ -1,0 +1,14 @@
+
+finger - displays the user's login name, real name, terminal name
+and write status , idle time, login time, office location and
+office phone number
+$ finger user_name
+$ finger klug
+
+
+To get idle status and login details of a user
+$ finger -s ilugc
+
+
+To avoid printing PGP key, plan and project details
+$ finger -p klug163

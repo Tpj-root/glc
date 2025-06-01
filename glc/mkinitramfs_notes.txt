@@ -1,0 +1,14 @@
+
+mkinitramfs - low-level tool for generating an initramfs image
+
+
+To create an initramfs for current running kernel
+$ mkinitramfs -o ~/tmp/initramfs-$(uname -r)
+
+
+To create an initramfs for specific kernel and keep builddirs
+$ mkinitramfs -k -o ~/tmp/initramfs-2.6.21-686 2.6.21-686
+
+
+To get help options
+$ mkinitramfs --help309

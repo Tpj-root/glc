@@ -1,0 +1,21 @@
+
+
+ebook-meta - ebook-meta process tool
+$ ebook-meta ebook_file [options]
+
+
+To display the meta data of book
+$ ebook-meta my_book.pdf
+
+
+To change the meta data of publish date
+$ ebook-meta -d 2020-04-04T01:00:00+00:00 my_book.pdf
+$ ebook-meta my_book.pdf
+
+
+To change the meta data of author
+$ ebook-meta -a ilugc linux_book.pdf
+
+
+To set publisher in meta data
+$ ebook-meta -p FTE linux_book.pdf138

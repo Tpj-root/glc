@@ -1,0 +1,46 @@
+kill - used to terminate processes manually. kill command sends a signal to a process which terminates the process
+
+
+
+To display all the available signals
+$ kill -l
+
+
+To use PID with the kill command
+$ kill pid
+
+
+To send a kill signal to process ID 9898
+$ kill 9898
+
+
+To kill multiple processes at once
+$ kill 8282 9898 7474
+
+
+To forcefully kill single process
+$ kill -9 7890
+
+
+To forcefully kill multiple process
+$ kill -9 6789 7890240
+
+
+To find signal name
+$ kill -l 3
+$ kill -l 9
+$ kill -l 15
+
+
+To specify name of signal sending to other process with kill
+command
+$ kill -s KILL 6789
+$ kill -s
+
+
+To send the signal to interrupt the process 5656
+$ Kill -2 5656
+
+
+To send the signal to hang up the 8181 process
+$ kill -1 8181241

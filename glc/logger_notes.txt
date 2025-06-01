@@ -1,0 +1,33 @@
+
+logger - is used to log messages in the system log or syslog.
+
+
+To log the message to standard error and system logs
+$ logger -s "This is sample message"
+
+
+To log to message to the specified file
+$ logger -f file "This is a sample message"
+
+
+To log the message with specified priority
+$ logger -p 1 "This is sample message"
+
+
+To mark every line with specified tag
+$ logger -t TAG "This is sample message"
+
+
+To allow the message to start with a hyphen
+$ logger -- "This is sample message"
+
+
+To specify log size
+$ logger --size 10 this is a sample log message for testing
+purpose......
+view by
+$ tail -1 /var/log/syslog253
+
+
+To ignore empty lines
+$ logger -e -f file1.txt254

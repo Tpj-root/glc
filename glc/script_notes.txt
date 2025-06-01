@@ -1,0 +1,84 @@
+
+script - is used to typescript or record all terminal processes.
+syntax
+$ script [option] [filename]
+
+
+
+To start, type “script” without specifying any parameters
+$ script
+$ echo "This is ILUGC"
+$ exit
+it will create typescript file to save the recorded information
+
+
+
+
+To start the typescript, run any random command and save it in a
+text file
+$ script "ilugc.txt"
+$ echo "This is klug"
+$ date
+$ time
+$ cal
+$ exit
+now check with
+$ vim ilugc.txt
+
+
+
+To append the output, retaining the prior content of the file
+ilugc.txt
+$ script -a ilugc.txt
+$ free -h
+$ df -Th
+$ echo "This is test message"
+$ exit435
+now check with
+$ vim ilugc.txt
+
+
+To Run the command rather than an interactive shell
+$ script -c cal calender.txt
+
+
+
+To run in quiet mode
+$ script -q msg.txt
+$ echo "Test message"
+$ exit
+$ vim msg.txt
+
+
+
+To capture the terminal activity step by step and appears like a
+video
+$ script --timing=time_log ilugc
+$ echo "test message1"
+$ echo "test message2"
+$ pwd
+$ ls
+$ free
+$ exit
+
+
+
+To replay the terminal activity like video
+$ scriptreplay --timing=time_log ilugc
+
+
+To print help options
+$ script --help
+
+
+
+To run flush after each write
+$ script -f sample.txt
+$ pwd
+$ exit436
+$ vim sample.txt
+
+
+
+To save the script in some specific directory
+$ script --force /home/ilugc/test.txt

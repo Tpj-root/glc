@@ -1,0 +1,23 @@
+
+
+
+lsmod - Show the status of modules in the Linux Kernel
+$ lsmod
+
+
+Module Size Used by it has three columns
+1 module name
+2 shows the size of the module in bytes
+3 indicates how many instances of the module are currently used
+and what is using the particular module
+
+
+$ lsmod | grep kvm
+kvm_intel2826240
+kvm6635521 kvm_intel
+
+
+$ lsmod | grep realtek
+realtek
+24576
+1

@@ -1,0 +1,16 @@
+
+
+isosize - output the length of an iso9660 filesystem
+
+
+To view the length of the iso
+$ isosize Centos.iso
+
+
+
+To show sector number and sector size
+$ isosize -x Centos.iso
+
+
+To display the device size in a block of 1024 bytes
+$ isosize -d 1024 Centos.iso233

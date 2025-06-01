@@ -1,0 +1,119 @@
+
+ps - report a snapshot of the current processes.
+
+
+To display processes for the current shell
+$ ps
+
+
+To print all processes in different formats
+$ ps -A
+
+
+To Display processes in BSD format
+$ ps aux
+
+
+To display full-format listing
+$ ps -ef
+
+
+To print user running processes
+$ ps -x
+
+
+To print user processes by real user ID or name
+$ ps -fU ilugc
+
+
+To display user processes by effective user ID or name
+$ ps -fu ilugc
+
+
+To display all processes running as root
+$ ps -U root -u root
+
+
+To print group processes
+$ ps -fG docker
+
+
+
+To display all processes owned by effective group name
+$ ps -fg docker
+
+
+To print processes by PID
+$ ps -fp <PID>
+
+
+To list process by PPID
+$ ps -f --ppid <PPID>
+
+
+To list process using a PID list
+$ ps -fp PID1, PID2, PID3
+
+
+To display processes by TTY
+$ ps -t pts/0
+$ ps -ft tty1
+
+
+To print process tree
+$ ps -e --forest
+
+
+To print a process tree for a given process
+$ ps -f --forest -C sshd
+
+
+To print all threads of a process
+$ ps -fL -C sshd
+
+
+To list all format specifiers
+$ ps L
+
+
+To display the PID, PPID, user name, and command of a process.
+$ ps -eo pid,ppid,user,cmd
+
+
+To display file system group, nice value, start time, and elapsed
+time of a process.
+$ ps -p 1154 -o pid,ppid,fgroup,ni,lstart,etime
+
+
+To find a process name using its PID.
+$ ps -p <PID> -o comm=
+
+
+To display parent and child processes
+$ ps -C sshd
+
+
+To print all PIDs of all instances of a process
+$ ps -C sshd -o pid=
+
+
+To check the execution time of a process
+$ ps -eo comm,etime,user | grep sshd
+
+
+To print top running processes by highest memory
+$ ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem | head
+
+
+To print top running processes by highest cpu
+$ ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%cpu | head
+
+
+To display security context
+$ ps -eM
+$ ps --context
+
+
+To display security information in a user-defined format
+$ ps -eo
+euser,ruser,suser,fuser,f,comm,label

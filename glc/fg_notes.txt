@@ -1,0 +1,14 @@
+
+fg command in linux used to put a background job in foreground.
+
+
+$ ping ilugc.in
+^Z
+
+
+$ jobs -l
+[1]+ 25365 Stopped
+
+
+$ fg %1
+ping ilugc.in

@@ -1,0 +1,13 @@
+
+findfs - will search the block devices in the system
+looking for a filesystem or partition with specified
+$ findfs LABEL=<label>
+$ findfs LABEL=klug
+$ findfs UUID=<uuid>
+$ findfs UUID=cbbf8b34-7bf1-4dba-9eb0-59e85ade7083
+/dev/sda5
+
+
+$ findfs PARTUUID=<uuid>
+$ findfs PARTLABEL=<label>
+tag

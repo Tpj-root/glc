@@ -1,0 +1,19 @@
+
+logrotate - it allows automatic rotation, compression, removal,
+and mailing of log files
+
+
+To force the log rotation
+$ sudo logrotate -f /etc/logrotate.conf
+
+
+To test the log rotation
+$ sudo logrotate -d /etc/logrotate.conf
+
+
+To set to verbose mode
+$ sudo logrotate -v /etc/logrotate.conf
+
+
+To display help
+$ sudo logrotate --usage259

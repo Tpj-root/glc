@@ -1,0 +1,49 @@
+
+ip - show / manipulate routing, network devices, interfaces and tunnels
+
+
+
+To displays info about all network interfaces
+$ sudo ip a
+$ sudo ip -4 a
+$ sudo ip -6 a
+$ sudo ip a show eth0
+$ sudo ip a list eth0
+$ sudo ip a show dev eth0
+
+
+
+To show running interfaces
+$ sudo ip link ls up
+
+
+
+To assign the IP address to the interface
+$ sudo ip a add xx.xx.xx.xx/255.255.255.0 dev eth0
+
+
+
+To remove / delete the IP address from the interface
+$ sudo ip a del xx.xx.xx.xx/255.255.255.0 dev eth0
+
+
+
+To check
+$ sudo ip addr show228
+
+
+
+To enable network interface
+$ sudo ip link set eth1 up
+
+
+To disable network interface
+$ sudo ip link set eth1 down
+
+
+To check route table
+$ sudo ip route show
+
+
+To add default gateway
+$ sudo ip route add default via xx.xx.xx.xx229

@@ -1,0 +1,40 @@
+
+patch - is used for adding patch files to source code or text
+files. It takes input as a patch file and applies differences to
+original files
+
+
+
+$ cat first.py
+#!/usr/bin/python3
+print ("hello ILUGC")
+copy the content of first.py in the new_first.py
+$ cp first.py new_first.py
+do some changes in the newly-created file new_first.py
+$ vim new_first.py
+#!/usr/bin/python3
+print ("hello ILUGC")
+print ("hello KLUG")
+:x
+Check Difference
+create a patch file named as myfile.patch
+$ touch myfile.patch
+$ diff -u first.py new_first.py >myfile.patch
+$ cat myfile.patch
+To apply patch
+$ patch < myfile.patch
+To take backup before applying patch
+$
+patch -b < myfile.patch
+To set backup file version
+$ patch -b -V numbered < myfile.patch
+To make a dry run
+$ patch --dry-run < myfile.patch
+To reverse a patch that is already applied
+$ patch < myfile.patch
+$ ls -l first.py
+$ cat first.py
+$ patch -R < myfile.patch
+to check
+$ ls -l first.py
+$ cat first.py

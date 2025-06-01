@@ -1,0 +1,10 @@
+
+iwconfig - configure a wireless network interface
+
+
+To display all the wireless interfaces
+$ iwconfig
+
+
+To displays help
+$ iwconfig --help234

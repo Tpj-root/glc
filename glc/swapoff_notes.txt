@@ -1,0 +1,20 @@
+
+swapoff - disables swapping on the specified devices and files
+
+
+To deactivate the swap
+$ sudo swapoff /dev/vda5
+$ sudo swapoff -v /dev/vda5
+
+
+To disable all swaps from /proc/swaps
+$ sudo swapoff -a
+$ sudo swapoff -av
+
+
+To check if the swap area has been disabled
+$ free -h
+or
+$ sudo swapon --show
+
+

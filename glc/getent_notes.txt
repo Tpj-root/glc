@@ -1,0 +1,27 @@
+
+getent - The getent command supported by the Name Service displays Switch entries from databases libraries
+To Fetch the list of user accounts on a Linux system
+$ getent passwd
+
+
+To fetch details for a particular user
+$ getent passwd user_name
+
+
+To fetch a list of group accounts
+$ getent group
+
+
+To find the service name and its protocol
+$ getent services 20
+ftp-data
+20/tcp
+$ getent services 53
+domain
+53/tcp
+$ getent services 22
+ssh
+22/tcp
+$ getent services 3306
+mysql
+3306/tcp

@@ -1,0 +1,47 @@
+
+pkcon - is the command line client for PackageKit
+
+
+To search for a package type
+$ sudo pkcon search <characters to be searched for>
+
+
+To install a package type
+$ sudo pkcon install <package to be installed>
+
+
+To Install a downloaded package using pkcon
+$ sudo pkcon install-local <package to be installed>
+
+
+To remove a package using pkcon
+$ sudo pkcon remove <package to be removed>
+
+
+
+To refresh the package cache of pkcon
+$ sudo pkcon refresh
+
+To update packages with pkcon
+$ sudo pkcon update
+
+To List all available packages
+$ pkcon get-packages
+
+To List all configured package repositories.
+$ pkcon repo-list
+
+To List available updates
+$ pkcon get-updates
+
+To List the available filters.
+$ pkcon get-filters
+
+To List the available package groups
+$ pkcon get-groups
+
+To List the roles that a transaction can have
+$ pkcon get-roles
+
+To Print information about the PackageKit backend in use
+$ pkcon backend-details

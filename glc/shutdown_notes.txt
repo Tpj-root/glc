@@ -1,0 +1,59 @@
+
+shutdown - is used to shutdown the system in a safe way
+syntax
+$ shutdown [OPTIONS] [TIME] [MESSAGE]
+
+
+
+To shutdown the system at a specified time 6 P.M
+$ sudo shutdown 18:00
+
+
+
+To schedule a system shutdown in 30 minutes from now
+$ sudo shutdown +30
+
+
+
+
+To shutdown the system immediately
+$ sudo shutdown now
+
+
+
+
+To shutdown the system in 30 minutes from now and notify the users
+with message “system upgrade”
+
+
+
+$ sudo shutdown +30 "system upgrade"
+To halt your system
+$ sudo shutdown -H
+
+
+
+
+To make shutdown power-off machine
+$ sudo shutdown -P
+
+
+
+To reboot using shutdown
+$ sudo shutdown -r
+
+
+
+To specify a time argument and a custom message
+$ sudo shutdown -r +10 "system upgrade"
+
+
+
+To cancel a scheduled shutdown
+$ sudo shutdown -c
+
+
+
+To cancel a scheduled shutdown, and to broadcast a message to all
+users
+$ sudo shutdown -c "reboot is cancelled"

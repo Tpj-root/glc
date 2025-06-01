@@ -1,0 +1,6 @@
+
+dpkg-reconfigure - reconfigure an already installed package
+
+
+$ sudo dpkg-reconfigure -f package_name
+$ sudo dpkg-reconfigure phpmyadmin106

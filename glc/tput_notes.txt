@@ -1,0 +1,39 @@
+
+tput - is used to query the terminfo terminal database and check
+if that terminal supports a specific feature.
+
+
+To Set the Cursor Position using tput cup
+$ tput cup 5 6
+$ tput cup 10 10
+
+
+To Clear the Screen Using tput clear
+$ tput clear
+
+
+To Get the Number of Columns and Lines of a Terminal
+$ tput cols
+$ tput lines
+
+
+To Execute Multiple tput Commands
+$ tput -S <<END
+> clear
+> cup 2 4
+> END
+
+
+To Turn On and Turn Off Highlighting
+$ echo `tput bold`ilugc`tput sgr0`
+$ echo `tput sgr0`ilugc`tput sgr0`
+
+
+To Underline Text using smul and rmul
+$ echo `tput smul`ilugc`tput rmul`
+$ echo `tput rmul`ilugc`tput rmul`
+
+
+To Hide and Unhide the Cursor using civis and cnorm
+$ tput civis
+$ tput cnorm

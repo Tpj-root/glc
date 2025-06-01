@@ -1,0 +1,86 @@
+
+lslogins - display information about known users in the system
+
+
+
+To display information about known users in the system
+$ lslogins
+
+
+
+To Display data about the date of last password change and the
+account expiration date
+$ sudo lslogins -a
+
+
+To print separate info about each user with a colon instead of a
+newline
+$ lslogins -c
+
+
+To print output data in the format of NAME=VALUE
+$ lslogins -e
+
+
+To display data about the users' last failed login attempts
+$ lslogins -f
+
+
+To show information about supplementary groups
+$ lslogins -G
+
+
+To print data of users belonging
+$ lslogins --groups=<group_name>
+
+
+To display help
+$ lslogins --help to groups
+
+
+To print data containing information about the users' last sessions
+$ lslogins -L
+
+
+
+To display each piece of information on a separate line
+$ lslogins -n
+
+
+To print without header line
+$ lslogins --noheadings
+
+
+
+To print specific output columns
+$ lslogins -o USER
+$ lslogins -o PROC
+$ lslogins -o GECOS
+$ lslogins -o UID
+$ lslogins -o USER
+
+
+
+To print all available columns
+$ lslogins --output-all
+
+
+To display information related
+$ lslogins --pwd
+
+
+To print raw output
+$ lslogins -r
+
+
+To show system accounts
+$ lslogins -s
+
+
+To show user accounts
+$ lslogins -u to login by password login288
+
+
+
+To display the users' security context
+$ lslogins -Z

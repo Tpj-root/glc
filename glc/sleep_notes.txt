@@ -1,0 +1,32 @@
+
+sleep - is used to delay for a fixed amount of time during the
+execution of any script
+syntax
+$ sleep number[suffix]
+
+
+To make sleep command without any suffix
+$ sleep 20s
+
+
+To display help options
+$ sleep --help
+$ cat sleep.sh
+
+
+#!/bin/bash
+echo "Waiting for 10 seconds..."
+sleep 10
+echo "Task Completed"
+:x
+
+
+
+$ sh sleep.sh
+
+
+Waiting for 10 seconds...
+Task Completed
+sleep command in the terminal with other commands
+$ ll && sleep 20 && pwd && free -h
+

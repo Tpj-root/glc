@@ -1,0 +1,20 @@
+
+eject - eject removable media
+To eject default cdrom drive
+$ eject -v
+
+
+To list default device name
+$ eject -d
+
+
+To display available help commands
+$ eject -h
+
+
+To give out more information about the command’s execution
+$ eject -v
+
+
+To display the selected device, but perform no action
+$ eject -n147

@@ -1,0 +1,19 @@
+
+insmod - Simple program to insert a module into the Linux Kernel
+
+
+To insert the LinuxKernelModule file (.ko) into the Linux Kernel
+$ sudo insmod sample.ko
+to check
+$ dmesg | tail -1
+or
+$ sudo lsmod | grep sample
+
+
+
+To pass the string parameter “user” and prints a message which
+includes the passed parameter.
+$ sudo insmod sample.ko user="ilugc"
+$ dmesg | tail -2
+or
+$ sudo lsmod | grep sample

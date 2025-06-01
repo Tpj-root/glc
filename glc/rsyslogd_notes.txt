@@ -1,0 +1,51 @@
+
+rsyslogd - rsyslogd is used to log messages and it is based on
+syslogd
+
+
+To start the rsyslog service
+$ sudo rsyslogd
+
+
+To suppress the warnings
+$ sudo rsyslogd -w
+
+
+To Turn on Debugging
+$ sudo rsyslogd -d
+
+
+To disable the DNS for remote messaging
+$ sudo rsyslogd -x
+
+
+To send UDP messages to all the targets
+$ sudo rsyslogd -A
+
+
+To make rsyslogd to listen to IPv4 addresses only
+$ sudo rsyslogd -4
+
+
+To make rsyslogd to listen to IPv6 addresses only
+$ sudo rsyslogd -6
+
+
+To selects the desired backward compatibility mode
+$ sudo rsyslogd -c 4.2
+
+
+To specify the alternative configuration file
+$ sudo rsyslogd -f /etc/myconfigfile
+
+
+To specify the hostnames to be logged
+$ sudo rsyslogd -l remote_host.com
+
+
+To specify the alternate pid file
+$ sudo rsyslogd -i /var/
+
+
+To do a config check
+$ sudo rsyslogd -N 1

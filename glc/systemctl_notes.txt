@@ -1,0 +1,96 @@
+
+systemctl - Control the systemd system and service manager
+syntax
+$ systemctl [OPTION] [SERVICE]
+
+
+To start service
+$ sudo systemctl start mariadb.service
+$ sudo systemctl start sshd
+
+
+To stop service
+$ sudo systemctl stop mariadb.service
+$ sudo systemctl stop sshd
+
+
+To restart or reload service
+$ sudo systemctl reload mariadb.service
+$ sudo systemctl restart mariadb.service
+
+
+To reload a service default, but if reload is not available for
+that service. It will restart it
+$ sudo systemctl reload-or-restart mariadb.service
+
+
+To check status of service
+$ sudo systemctl status mariadb.service
+$ sudo systemctl status sshd
+
+
+To enable service
+$ sudo systemctl enable mariadb.service
+$ sudo systemctl enable sshd506
+
+
+To disable service
+$ sudo systemctl disable mariadb.service
+$ sudo systemctl disable sshd
+
+
+To check Service is enabled or disabled
+$ sudo systemctl is-active mariadb.service
+$ sudo systemctl is-active sshd
+$ sudo systemctl is-enabled mariadb.service
+$ sudo systemctl is-enabled sshd
+
+
+
+To see the status of all services
+$ sudo systemctl list-units --type=service
+
+
+To List services by status
+$ sudo systemctl list-units --type=service --state=active
+$ systemctl list-units --type=service --state=running
+$ systemctl list-units --type=service --state=stopped
+$ systemctl list-units --type=service --state=enabled
+$ systemctl list-units --type=service --state=disabled
+$ systemctl list-units --type=service --state=failed
+
+
+To prevent service from starting
+$ sudo systemctl mask {servicename}
+
+
+To Kill a service with signal 15
+$ sudo systemctl kill {servicename}
+
+
+To Kill a service with signal 9
+$ sudo systemctl kill -s 9 {servicename}
+
+
+To Reboot
+$ sudo systemctl reboot
+
+
+To shutdown
+$ sudo systemctl poweroff
+
+
+To change default to GUI
+$ sudo systemctl set-default graphical.target
+
+
+To switch to multi-user.target
+$ sudo systemctl isolate multi-user.target
+
+
+To reload daemon
+$ systemctl daemon-reload
+
+
+To find version
+$ systemctl --version

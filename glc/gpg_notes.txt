@@ -1,0 +1,65 @@
+
+gpg - gpg is the OpenPGP part of the GNU Privacy Guard (GnuPG).
+
+
+It is a tool to provide digital encryption and signing services
+using the OpenPGP standard
+
+
+
+To check gpg version
+$ gpg --version
+
+
+
+To generate a new Key pair Using gpg command
+$ gpg --gen-key
+
+
+
+To list all the public keys using gpg command
+$ gpg --list-keys
+
+
+To export a public key
+$ gpg --export ilugc > ilugc-pub.gpg
+
+
+
+To get the key ID from a public key file
+$ gpg --show-keys ilugc-pub.gpg
+
+
+To simulate import of a public key
+$ gpg --dry-run --import ilugc-pub.gpg
+
+
+To delete private key of a public key
+$ gpg --delete-secret-keys xxxxxyyyyyyyzzzzz53453553185
+
+
+
+To delete a public key
+$ gpg --delete-key xxxxxyyyyyyyzzzzz53453553
+
+
+
+To import a public key
+$ gpg --import ilugc-pub.gpg
+
+
+
+To encrypt a file with password
+$ gpg -c helloworld.py
+
+
+To decrypt a file using gpg command
+$ gpg -d helloworld.py.gpg
+
+
+To use a user's public key to encrypt a file
+$ gpg --recipient ilugc --encrypt hello.txt
+
+
+To check all the options available with gpg command
+$ gpg --dump-options186

@@ -1,0 +1,19 @@
+
+shasum - Print or Check SHA Checksums
+syntax
+
+
+$ shasum [OPTION]... [FILE]...
+$ cat sha_example.txt
+This is test message for shasum
+$ shasum sha_example.txt
+$ sha1sum sha_example.txt
+$ sha256sum sha_example.txt
+or
+$ shasum -a 256 sha_example.txt
+$ sha512sum sha_example.txt
+To generate the SHA value for text on the console
+$ sha256sum -t
+This is test message
+Ctrl+d
+(Enter)

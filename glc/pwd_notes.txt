@@ -1,0 +1,20 @@
+
+pwd - print name of current/working directory
+
+
+To get working directory path
+$ pwd
+
+
+To print the physical working directory and avoid listing symbolic
+links it prints the actual path.
+$ pwd -P
+
+
+To print the working directory path, including any symlinks
+it prints the symbolic path.
+$ pwd -L
+
+
+To print $PWD Variable Contents
+$ echo $PWD

@@ -1,0 +1,28 @@
+
+gcc - GNU project C and C++ compiler
+To compile a C code without options
+$ gcc hello.c
+
+
+To specify explicitly mention the output file name
+$ gcc hello.c -o output
+
+
+To see the warnings when compile C program
+$ gcc -wall hello.c -o output
+
+
+To get preprocessed output
+$ gcc -E hello.c > output.i
+
+
+To get intermediate files using
+$ gcc -save-temps hello.c
+
+
+To see the error while compiling the C Program
+$ gcc hello.c -Werror -o output
+
+
+To debug C Program in Linux during compilation
+$ gcc -ggdb hello.c -wall -o output196

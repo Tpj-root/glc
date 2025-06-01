@@ -1,0 +1,23 @@
+
+findmnt - it will list all mounted filesystems or search for a filesystem
+
+
+To display a list of currently mounted file systems
+$ sudo findmnt
+
+
+To display the information as an ordinary list
+$ sudo findmnt -l
+
+
+To display only file systems of a specific type using the -t
+$ sudo findmnt --fstab -t ext4
+
+
+To print all /etc/fstab filesystems and convert LABEL= and UUID=
+tags to the real device name
+$ sudo findmnt --fstab --evaluate
+
+
+To monitor mount, unmount, remount and move actions on a directory
+$ sudo findmnt --poll --mountpoint /mnt/my_dir165

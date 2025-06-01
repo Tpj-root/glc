@@ -1,0 +1,24 @@
+
+telnet - is used for interactive communication with another host using the TELNET protocol
+
+
+
+$ telnet -l [username] [remote machine IP] [port (optional)]
+
+
+To connect to the device with specific IP address
+$ telnet 192.168.122.105
+
+
+To quit the connected machine
+$ logout
+To connect remote server with user and port number
+$ telnet -l remote_user 192.168.122.105 3000
+To connect to the telnet shell
+$ telnet
+telnet>
+To print help options
+$ telnet
+telnet > h
+To exit the telnet shell
+telnet > quit

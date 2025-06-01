@@ -1,0 +1,14 @@
+
+poweroff - Instructs the system to power down.
+
+
+To Power off the system
+$ sudo poweroff
+
+
+To Halt the system
+$ sudo poweroff --halt
+
+
+To Reboot the system
+$ sudo poweroff --reboot

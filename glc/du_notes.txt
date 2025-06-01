@@ -1,0 +1,32 @@
+
+du - estimate file space usage
+To check the disk usage summary of a directory
+$ du /etc
+$ du /home
+To check disk usage in a human-readable format
+$ du -h /etc
+$ du -h /home/ilugc
+To check the total usage size of a particular directory
+$ du -sh /etc
+To list the disk usage of all files in human readable format
+including directories
+$ du -ah /home/ilugc
+To print the grand total for a directory
+$ du -ch /home/ilugc
+To change the default block size output to Kilobytes, Megabytes or
+Gigabytes
+$ du -BK /home/klug
+$ du -BM /home/klug104
+$ du -BG /home/ilugc
+To check the size of all the sub-directories in their current
+location
+$ du -h --max-depth=1 /home/ilugc
+or
+$ du -h -d1 /home/ilugc
+To exclude a particular type of file ex. python files while
+calculating the disk size
+$ du -h --exclude="*.py" /home/ilugc/Documents
+To check the disk usage of the last modification time
+$ du -ha --time log
+To show summary of size
+$ du -s /home/ilugc/Documents105

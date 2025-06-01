@@ -1,0 +1,18 @@
+
+dmsetup — low level logical volume management
+To list the device mapper devices:
+$ sudo dmsetup ls
+To get information about any DM device
+$ sudo dmsetup info /dev/VG01/LV01
+To list the DM device dependencies
+$ sudo dmsetup deps /dev/VG01/LV01
+To get the status of a DM device
+$ sudo dmsetup status /dev/VG01/LV01
+To destroy the inactive table for a device
+$ sudo dmsetup clear /dev/VG01/LV01
+To remove all the devices
+$ sudo dmsetup remove_all
+To rename the device
+$ dmsetup /dev/VG01/LV01 /dev/VG07/LV07112
+To output the table for a device
+$ sudo dmsetup table /dev/VG01/LV01113

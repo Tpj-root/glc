@@ -1,0 +1,8 @@
+
+sg - execute command as different group ID
+
+
+To execute command as different group ID
+$ sg group-name -c 'command'
+$ sg dev-group -c 'sleep 100'
+$ sg admin-group -c 'ping 8.8.8.8'

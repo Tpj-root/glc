@@ -1,0 +1,32 @@
+
+systemd - is a system and service manager for Linux operating
+systems
+
+
+To find boot process duration
+$ systemd-analyze
+$ systemd-analyze time
+
+
+To analyze time taken by each process at boot
+$ systemd-analyze blame
+
+
+To analyze critical chain at boot
+$ systemd-analyze critical-chain
+
+
+To Determine the initial start-up transaction
+$ systemd --test
+
+
+To make not to pipe output into a pager
+$ systemd --test --no-pager
+
+
+To Dump understood unit configuration items
+$ systemd --dump-configuration-items
+
+
+To dump exposed bus properties
+$ systemd --dump-bus-properties

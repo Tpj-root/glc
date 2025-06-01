@@ -1,0 +1,34 @@
+
+swapon - enable devices and files for paging and swapping
+syntax
+$ swapon <option>
+
+
+To enable all swap devices and files listed in the /etc/fstab
+$ sudo swapon -a
+$ sudo swapon -av
+
+
+To enable swap device with device name
+$ sudo swapon -a /dev/vda5
+$ sudo swapon -av /dev/vda5
+
+
+To display the swap usage summary of all enabled swap devices and
+files
+$ sudo swapon -s
+To enable the swap discards if the device supports the discard
+operation
+$ sudo swapon -d
+
+
+To reinitialize the swap space
+$ sudo swapon -f
+
+
+To display a summary table with selected columns
+$ swapon --show=NAME,SIZE
+
+
+To print the raw output format
+$ sudo swapon --raw

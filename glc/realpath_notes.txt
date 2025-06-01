@@ -1,0 +1,30 @@
+
+realpath - print the resolved path
+syntax
+$ realpath /path/to/file
+$ ls -l /etc/os-release
+$ realpath /etc/os-release
+
+
+To display each output line with NUL, not newline
+$ realpath -z /etc/os-release
+
+
+To suppress most error messages
+$ realpath -q /etc/os-release
+
+
+To print the resolved path relative to DIR
+$ realpath --relative-to=DIR /etc/os-release
+
+
+To print absolute paths unless paths below DIR
+$ realpath --relative-base=DIR /etc/os-release
+
+
+To resolve symlinks as encountered
+$ realpath -P /etc/os-release
+
+
+To resolve '..' components before symlinks
+$ realpath -L /etc/os-release

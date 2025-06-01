@@ -1,0 +1,16 @@
+dig - DNS lookup utility
+To perform a DNS lookup
+$ dig ilugc.in
+$ dig @8.8.8.8 google.com
+To display only the IP address associated with the domain name
+$ dig google.com +short
+$ dig ilugc.in +short
+The +trace option lists each different server the query goes
+through to its final destination
+$ dig google.com +trace
+To look up a domain name by its IP address
+$ dig -x yy.zz.aa.bb
+yy.zz.aa.bb ip address
+Batch Mode for Reading Host Names From a File
+store domain names in domain.txt and give input to dig command
+$ dig -f domain.txt +short120

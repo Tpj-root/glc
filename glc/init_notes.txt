@@ -1,0 +1,10 @@
+
+init - to create processes from script stored in the file
+/etc/inittab which is a configuration file which is to be used by
+initialization system.
+To restart the system
+$ init 6
+
+
+To shut down system
+$ init 0225

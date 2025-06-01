@@ -1,0 +1,53 @@
+
+type - is used to display information about the command type
+syntax
+$ type [OPTIONS] FILE_NAME
+
+
+To find the type of ls command
+$ type ls
+
+
+
+To find the type of wc command
+$ type wc
+$ type type
+
+
+
+To display more than one argument
+$ type df free sleep head
+
+
+
+To display the command is an alias, keyword or a function and path
+of an executable
+$ type -a pwd
+$ type -a ls
+
+
+
+To print a single word describing the type of the command
+$ type -t ls
+$ type -t pwd
+$ type -t df
+$ type -t du
+$ type -t while
+
+
+
+To display the name of the disk file which would be executed by
+the shell
+$ type -p bash
+
+
+To search the PATH for an executable file on the disk even if the
+command is not file
+$ type -P pwd
+
+
+
+To suppress shell function lookup
+$ type -f while
+$ type -f ls
+$ type -f pwd

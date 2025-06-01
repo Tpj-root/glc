@@ -1,0 +1,25 @@
+
+pidof - find the process ID of a running program
+syntax
+$ pidof [OPTIONS] PROGRAM_NAME
+
+
+To find the PID of the SSH
+$ pidof sshd
+
+
+To force pidof to display only one PID
+$ pidof -s sshd
+
+
+To return only the PIDs of the processes that are running with the
+same root directory
+# pidof -c pid sshd
+
+
+To print PIDs of shells running scripts with a matching name
+$ pidof -x sshd
+
+
+To List zombie and I/O waiting processes
+$ pidof -z sshd

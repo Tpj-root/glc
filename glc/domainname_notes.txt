@@ -1,0 +1,18 @@
+
+
+domainname - show or set the system's NIS/YP domain name
+To show alias names
+$ domainame -a
+To show all long host names (FQDNs)
+$ domainname -A
+To print DNS domain name
+$ domainame -d
+To print addresses for the host name
+$ domainname -i
+To show all addresses for the host
+$ domainname -I
+To show short host name
+$ domainname -s
+To show NIS/YP domain name
+$ domainname -y111
+

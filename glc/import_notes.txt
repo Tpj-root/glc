@@ -1,0 +1,29 @@
+
+import - used for capturing a screenshot for any of the active
+pages we have and it gives the output as an image file
+To join images into a single multi-image file
+$ import -adjoin image.png
+
+
+To include window border in the output image
+$ import -border image1.png
+
+
+To obtain image by descending window hierarchy
+$ import -descend image2.png
+
+
+To include window manager frame
+$ import -frame image3.png
+
+
+To identify the format and characteristics of the image
+$ import -identify image.png
+
+
+To suppress all warning messages
+$ import -quiet image4.img
+
+
+To monitor the progress
+$ import -monitor image5.png223

@@ -1,0 +1,13 @@
+
+unmkinitramfs - extract content from an initramfs image
+syntax
+$ unmkinitramfs [options] initramfs-file directory
+
+
+To extract the /boot/initrd.img-5.14.0-8-amd64 file into the
+current working directory
+$ unmkinitramfs /boot/initrd.img-5.14.0-8-amd64 .
+
+
+To print verbose output
+$ unmkinitramfs -v /boot/initrd.img-5.14.0-8-amd64 .

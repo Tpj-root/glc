@@ -1,0 +1,25 @@
+
+rmdir - remove empty directories
+To remove a single empty directory
+$ rmdir ~/Downloads/files
+
+
+To remove multiple directories using rmdir
+$ rmdir ~/Downloads/old_data1 old_data2 old_data3
+
+
+To print verbose output
+$ rmdir -v ~/Downloads/files
+
+
+To suppress fail on non-empty message
+$ rmdir -v --ignore-fail-on-non-empty old_data1 old_data2
+old_data3
+
+
+To remove directory and its parent directories
+$ rmdir -v -p files/data/project/
+
+
+To remove multiple directories with dir-
+$ rmdir -v dir-*

@@ -1,0 +1,72 @@
+
+nano - is a user-friendly, simple text editor
+To create and open a new file
+$ nano file.txt
+This is line 1
+This is line 2
+This is line 3
+To save the above file
+press Ctrl+o
+it asks File Name to Write: file.txt
+hit ENTER
+To exit a file
+press Ctrl+x
+To cut a line move to the line and
+Ctrl+k
+To paste the above cut line hit
+Ctrl+u
+To cut a select word, select the word by
+SHIFT + right arrow
+and cut by
+Ctrl+k
+and paste by
+Ctrl+u331
+To search a word in a file
+Press Ctrl+w
+Search: <keyword>
+It will place the cursor in the first letter of the first
+occurrence of the word.
+To do spell check
+$ sudo apt install spell
+press Ctrl+t
+To replace a word with another word
+Ctrl+\
+Search (to replace): line1
+Replace with: line2
+Replace this instance?
+It will ask to replace first instance of the word press : Y
+to replace all the occurrences of the word
+press : A
+To show the current cursor position in the text
+Ctrl + c
+To Justify the current paragraph
+Ctr l+ J
+To go to the specified line and column number in a file
+Ctrl + _
+Enter line number, column number:
+To go to beginning of paragraph
+Ctrl + W
+To go to end of paragraph
+Ctrl + o
+To go to first line
+Ctrl + y
+To go to last line
+Ctrl + v
+To cancel
+Ctrl + c
+To get help
+Ctrl + g
+To exit from nano editor
+Ctrl + x
+To go to beginning of current line
+Ctrl + a
+To go to end of current line
+Ctrl + e
+To go to previous line
+Ctrl + p
+To go to next line
+Ctrl + n333
+To go one screenful up
+Ctrl + y
+To go one screenful down
+Ctrl + v

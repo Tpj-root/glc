@@ -1,0 +1,14 @@
+
+ebook-polish – ebook-polish Polishing tries to minimize the
+changes to the internal code of your e-book
+$ ebook-polish [options] input_file [output_file]
+
+
+To compress the images losslessly in ebook with quality
+$ ebook-polish -i input book.epub new_book.epub
+
+
+Upgrade the internal structures of the book
+upgrades EPUB 2 books to EPUB 3 books
+$ ebook-polish -U input book.epub new_book.epub
+

@@ -1,0 +1,31 @@
+
+find - search for files in a directory hierarchy
+To find all the files whose name is ilugc.txt in
+current working
+directory
+$ find . -name ilugc.txt
+
+
+To find files in home directory
+$ find /home -name ilugc.txt
+
+
+To find all directories whose name is klug in / directory
+$ find / -type d -name klug
+
+
+To find all python files whose name is myprogram.py in current
+working directory
+$ find . -type f -name myprogram.py
+
+
+To find all python files in a directory
+$ find . -type f -name "*.py"
+
+
+To find all the files with permission 777
+$ find . -type f -perm 0777 -print
+
+
+To find all empty files
+$ find /home -type d -empty162

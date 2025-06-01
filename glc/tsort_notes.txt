@@ -1,0 +1,17 @@
+
+tsort - perform topological sort
+
+
+To perform topological sort
+$ cat demo.txt
+a b c
+d e
+f
+g z
+b c d h
+$ tsort demo.txt
+
+
+
+To redirect output to a file
+$ tsort > demo_out.txt

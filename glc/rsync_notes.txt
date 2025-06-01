@@ -1,0 +1,94 @@
+
+rsync - a fast, versatile, remote (and local) file-copying tool
+syntax
+$ rsync options SOURCE DESTINATION
+
+
+To copy a single file locally
+$ rsync -v /home/ilugc/Desktop/file.txt
+/home/ilugc/Documents/backup/
+
+
+
+To copy multiple files locally
+$ rsync -v /home/ilugc/Desktop/sample.txt
+/home/ilugc/Desktop/sample2.txt /home/ilugc/Documents/backup
+$ rsync -v file1.txt file2.txt /home/ilugc/Documents/backup
+
+
+
+To copy a directory and all subdirectories locally (Copy Files and
+Directories Recursively)
+$ rsync -av /home/ilugc/Desktop/Linux /home/ilugc/Documents/backup
+
+
+
+To copy a file or directory from local to remote machine
+$ rsync -av /home/ilugc/Desktop/test
+192.168.122.50:/home/ilugc/Documents/backup
+$ rsync -av /home/ilugc/Desktop/test
+user1@192.168.122.50:/home/ilugc/Documents/backup
+$ rsync -av /home/ilugc/Desktop/file.txt
+user1@192.168.122.50:/home/ilugc/Documents/backup
+
+
+
+To copy multiple files or directories from local to remote machine
+$ rsync -av /home/ilugc/Desktop/test/ /home/ilugc/Music
+192.168.122.50:/home/ilugc/Desktop/backup
+
+
+To specify rsync protocol for remote transfers
+$ rsync -e ssh /home/ilugc/Desktop/sample.txt
+192.168.122.50:/home/ilugc/Desktop
+
+
+
+To copy a file or directory from a remote to a local machine
+current directory
+$ rsync -av 192.168.122.50:/home/ilugc/Desktop/Test_Dir .
+
+
+
+To show rsync progress during data transfer
+$ rsync -av --progress /home/ilugc/Desktop/Test_Dir
+192.168.122.50:/home/ilugc/Desktop/backup
+
+
+
+To delete source files after transfer
+$ rsync -v --remove-source-files /home/ilugc/backup/monthly.zip
+192.168.122.50:/home/ilugc/Desktop/backup/
+
+
+To make rsync dry run
+$ rsync -av --dry-run --delete /home/ilugc/Desktop/Test_Dir1
+192.168.122.50:/home/ilugc/Desktop/backup
+
+
+To set maximum file size for transfer
+$ rsync -av --max-size=1024k /home/ilugc/Desktop/Dir1
+192.168.56.100:/home/ilugc/Desktop/backup/
+
+
+To set minimum file size for transfer
+$ rsync -av --min-size=50k /home/ilugc/Desktop/
+192.168.122.50:/home/ilugc/Desktop/backup/
+
+
+To set the maximum transfer speed to 100KB/s
+$ rsync -av --bwlimit=100 --progress /home/ilugc/Desktop/Test_Dir1
+192.168.122.50:/home/ilugc/Desktop/backup/
+
+
+
+To copy specific file type
+$ rsync -v /home/ilugc/Documents/*.txt /home/ilugc/Desktop/backup/
+$ rsync -v /home/ilugc/Documents/*.mp4 /home/ilugc/Desktop/backup/
+$ rsync -v /home/ilugc/Documents/*.pdf /home/ilugc/Desktop/backup/
+
+
+
+To show the difference between the source and destination files
+$ rsync -avi /home/ilugc/Desktop/Test_Dir1/
+/home/ilugc/Desktop/backup/

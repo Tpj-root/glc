@@ -1,0 +1,30 @@
+
+tee - read from standard input and write to standard output and files
+syntax
+$ [command] | tee [options] [filename]
+
+
+To create a file that stores information about a network interface
+$ ifconfig enp1s0 | tee demo.txt
+
+
+To append a line of text to a file
+$ echo "This is demo msg " | tee -a demo.txt
+check with
+$ cat demo.txt
+
+
+To write to multiple files
+$ echo "This is demo msg " | tee demo1.txt demo2.txt
+
+
+To hide the output
+$ df -Th | tee sample.txt > /dev/null
+
+
+To redirect output of one command to another command
+$ cat example.txt | tee demo3.txt | grep "sample"
+
+
+To Ignore Interrupts
+$ ping ilugc.in | tee -i file.txt

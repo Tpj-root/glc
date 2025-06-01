@@ -1,0 +1,24 @@
+
+logsave - it will execute cmd_prog with the specified argument, and save a copy of its output to logfile
+
+
+$ sudo logsave [filename] [command]
+
+
+To save the output of free -h command
+$ sudo logsave log_file.txt free -h
+$ cat log_file.txt
+
+
+To append the output of the df -Th command to an already existing
+file log_file.txt
+$ sudo logsave log_file.txt df -Th
+$ cat log_file.txt
+
+
+To save the output of du -hs /home/ilugc in /tmp/output.txt
+$ sudo logsave /tmp/output.txt du -hs /home/ilugc
+
+
+To save the output of ls in /tmp/log_output.txt
+$ sudo logsave /tmp/log_output.txt ls260

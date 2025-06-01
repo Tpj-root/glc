@@ -1,0 +1,29 @@
+
+file - determine file type
+$ file [option] [filename]
+To display just file type in brief mode
+$ file -b filename.py
+$ file -b file.img
+$ file -b file.txt
+$ file -b file.pdf
+
+
+To display all files’s file type
+$ file *
+
+
+To display all files filetypes in particular directory
+$ file /my_home_dir/*
+
+
+To display the file type of files in specific range
+$ file [a-d]*
+$ file [e-h]*
+
+
+To view mime type of file
+$ file -i filename.txt160
+
+
+To view file type inside compressed files
+$ file -z file.bz2161

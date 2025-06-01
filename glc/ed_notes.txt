@@ -1,0 +1,51 @@
+
+
+
+ed - line-oriented text editor
+Type ed
+$ ed
+To get into insert mode press
+"a"
+$ ed
+a
+this is line one
+this is line two
+this is line three
+.
+when you are done writing stop it by “.” (dot)
+To view the last line enter “p” into the ed command prompt.
+p
+To print all the lines that we inserted in the buffer by using
+“,p”
+,p
+To save these lines into a file write “f [filename]”.
+f myfile.txt142
+To write the data into the file and see how many bytes are written
+w
+To exit to the terminal by pressing “Q”
+Q
+To summarize all
+$ ed
+a
+this is line one
+this is line two
+this is line three
+.
+p
+this is line three
+,p
+this is line one
+this is line two
+this is line three
+f myfile.txt
+myfile.txt
+w
+53
+Q143
+To check
+$ cat myfile.txt
+this is line one
+this is line two
+this is line three144
+
+

@@ -1,0 +1,26 @@
+
+faillog - display faillog records or set login failure limits
+To display the faillog records for all the users
+$ sudo faillog -a
+
+
+To lock an account klug for 2 minute / 120 seconds after failed
+login
+$ sudo faillog -l 60 -u username
+
+
+To set the maximum number of login failures
+$ sudo faillog -m 5 username
+
+
+To reset the counters of login failures
+$ sudo faillog -r username
+
+
+To display faillog records more recent than days
+# faillog -t 5 username
+# faillog --time DAYS username
+
+
+To display faillog record or maintains failure counters and limits
+$ sudo faillog -u username

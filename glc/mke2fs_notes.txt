@@ -1,0 +1,49 @@
+
+mke2fs - create an ext2/ext3/ext4 filesystem
+
+
+To list the available mkfs* commands in a system.
+$ ls mkfs*
+
+
+To create a filesystem in a specific device
+$ sudo mke2fs -t ext4 /dev/sda3
+
+
+To create a filesystem with Journal
+$ sudo mke2fs /dev/sda3 -j
+
+
+To create an ext4 filesystem with 7500 bytes per inode,
+with a volume label MYDATA
+$ sudo mke2fs -t ext4 -L MYDATA -i 7500 /dev/sdb1
+to check the inode
+$ df -i /dev/sdb1
+
+
+To check for bad blocks on a device
+$ sudo mke2fs -c /dev/sda3
+
+
+To force to create a filesystem on a mounted partition
+$ sudo mke2fs -F /dev/sda3
+
+
+To set the volume label for partition
+$ sudo mke2fs -L MYVOL /dev/sd3
+
+
+To view the label name
+$ sudo e2label /dev/sda3305
+
+
+To simulate a filesystem creation
+$ sudo mkfs -t ext4 -n /dev/sda3
+
+
+To create a filesystem with specific number of inodes
+$ sudo mkfs ext4 -v -N 600000 /dev/sda3
+
+
+To check the above created filesystem inode
+$ tune2fs -l /dev/sda3 | grep -i inode

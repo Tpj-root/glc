@@ -1,0 +1,92 @@
+
+mdadm (Multiple Disk and Device Management) - aka Linux Software RAID manage MD devices
+$ sudo apt-get install mdadm
+syntax
+$ sudo mdadm [mode] <raiddevice> [options] <component-devices>
+
+
+
+
+To create RAID 0 array https://www.acnc.com/raid/?raid-level=0
+$ sudo mdadm --create /dev/md0 --level=0 --raid-devices=2
+/dev/sdc1 /dev/sdd1
+
+
+
+
+To create RAID 1 array https://www.acnc.com/raid/?raid-level=1
+$ sudo mdadm --create /dev/md1 --level=1 --raid-devices=2
+/dev/sdc1 /dev/sdd1
+
+
+
+
+To create RAID 5 array https://www.acnc.com/raid/?raid-level=5
+$ sudo mdadm --create /dev/md5 --level=5 --raid-devices=3
+/dev/sdc1 /dev/sdd1 /dev/sde1
+
+
+
+
+To create RAID 10 array https://www.acnc.com/raid/?raid-level=10
+$ sudo mdadm --create /dev/md2 --level=10 --raid-devices=3
+/dev/sdc1 /dev/sdd1 /dev/sde1
+
+
+
+To check if it is an md device or a component of an md array
+$ sudo mdadm -Q /dev/md0
+
+
+
+To print detail of md devices
+$ sudo mdadm -D /dev/md0315
+
+
+
+To add the RAID arrays to the configuration file
+$ sudo mdadm -D -s > /etc/mdadm.conf
+
+
+
+To create a file system on a RAID drive
+$ sudo mkfs.ext4 /dev/md0
+
+
+
+To mount the RAID device
+$ sudo mkdir /mnt/raid
+$ sudo mount /dev/md0 /mnt/raid
+
+
+
+To deactivate or delete a RAID array
+first stop the RAID device
+$ sudo mdadm -S /dev/md0
+then
+$ sudo mdadm --zero-superblock /dev/sdc1 /dev/sdd1
+To add a disk to an existing array
+$ sudo mdadm --add /dev/md0 /dev/sdc1
+
+
+To remove a disk from an array
+$ sudo mdadm /dev/md0 --fail /dev/sdb1 --remove /dev/sdb1
+
+
+
+To assemble and start all arrays listed in the standard config
+file
+$ sudo mdadm -A -s
+
+
+
+To print help
+$ sudo mdadm --help
+$ sudo mdadm --create --help
+$ sudo mdadm --assemble --help
+$ sudo mdadm --build --help316
+$ sudo mdadm --manage --help
+$ sudo mdadm --misc --help
+$ sudo mdadm --grow --help
+$ sudo mdadm --incremental --help
+$ sudo mdadm --monitor --help

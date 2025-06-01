@@ -1,0 +1,30 @@
+
+od - dump files in octal and other formats
+
+
+$ cat file.txt
+This is test message1
+This is test message2
+This is test message3
+To print file.txt file content in octal format
+$ od -b file.txt
+To print file.txt file content in character format
+$ od -c file.txt
+To display files in hexadecimal bytes format
+$ od -t x1 file.txt
+To print in character format but with no offset information
+$ od -An -c file.txt
+To print with customize the width of hexadecimal format
+$ od -w1 -c -Ad file.txt
+To display the result as a decimal integer
+$ od -i file.txt
+To display the result as octal 2-byte units
+$ od -o file.txt349
+To print the result as hexadecimal 2-byte units
+$ od -x file.txt
+To print help
+$ od --help
+To accept input from the command line.
+$ od -c -
+ilugc
+give the input then ENTER , then Ctrl+d gives the od output350

@@ -1,0 +1,137 @@
+
+ufw - program for managing a netfilter firewall
+
+
+To check ufw status
+$ sudo ufw status
+
+
+To enable ufw
+$ sudo ufw enable
+
+
+To disable ufw
+$ sudo ufw disable
+
+
+To show ufw rules, along with their numbers
+$ sudo ufw status numbered
+
+
+To reset ufw to its default state
+$ sudo ufw reset
+
+
+To view firewall reports
+$ sudo ufw show added
+$ sudo ufw show raw
+
+
+To set ufw logging levels
+$ sudo ufw logging on
+$ sudo ufw logging high
+$ sudo ufw logging medium
+$ sudo ufw logging low
+$ sudo ufw logging full
+
+
+To allow service
+$ sudo ufw allow openssh
+
+
+To deny service
+$ sudo ufw deny openssh
+
+
+To view all application profiles
+$ sudo ufw app list
+
+
+To get more information about a particular profile and defined
+rules
+$ sudo ufw app info 'Apache'
+
+
+To reject outgoing FTP connections
+$ sudo ufw reject out ftp
+
+
+To add a new rule at a specific number
+$ sudo ufw insert 1 allow 80/tcp
+$ sudo ufw insert 2 allow 443/tcp
+
+
+To Delete rules by specifying their numbers
+$ sudo ufw status numbered
+$ sudo ufw delete 1
+(will delete above rule allow 80/tcp)
+
+
+
+To Deleting rules by service
+$ sudo ufw delete allow ftp
+$ sudo ufw delete allow openssh
+
+
+To allow or deny a specific port for a given IP address
+$ sudo ufw allow from 192.168.122.100 to any port 8081
+$ sudo ufw deny from 192.168.122.100 to any port 8080
+
+
+To allow an entire subnet
+$ sudo ufw allow from 10.0.1.0/16
+
+
+To Allow Network Subnets to Specific Port
+$ sudo ufw allow from 192.168.1.0/24 to any port 22
+
+
+To Allow Specific Network Interface
+$ sudo ufw allow in on eth1 to any port 22
+
+
+To open all ports for a particular IP address
+$ sudo ufw allow from 192.168.122.100
+
+
+To allow all ports in a range by specifying a port range
+$ sudo ufw allow 20:450/tcp
+
+
+To get a numbered list of added rules
+$ sudo ufw status numbered
+
+
+To check all added rules before starting the firewall
+$ sudo ufw show added
+
+
+To Allow only TCP traffic over HTTP/80
+$ sudo ufw allow http/tcp
+$ sudo ufw allow 80/tcp
+
+
+To deny incoming FTP traffic
+$ sudo ufw deny ftp/tcp
+$ sudo ufw deny 21/tcp
+
+
+To add a new rule to allow SSH
+$ sudo ufw allow ssh
+$ sudo ufw allow 22/tcp
+
+
+To rate limiting service
+$ sudo ufw limit ssh/tcp
+
+
+To print verbose
+$ sudo ufw status verbose
+
+
+To reload ufw
+$ sudo ufw reload
+
+
+To Dry Run UFW Rules
+$ sudo ufw --dry-run enable

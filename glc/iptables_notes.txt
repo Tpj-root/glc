@@ -1,0 +1,72 @@
+
+iptables - administration tool for IPv4/IPv6 packet filtering and NAT
+
+
+To check all IPtables firewall rules
+# iptables -L -n -v
+
+
+To block specific IP Address in IPtables firewall
+# iptables -A INPUT -s xx.xx.xx.xx -j DROP
+
+
+To unblock IP address in IPtables firewall
+# iptables -D INPUT -s xxx.xxx.xxx.xxx -j DROP
+
+
+To block outgoing connections on a specific port
+# iptables -A OUTPUT -p tcp --dport xxx -j DROP
+
+
+To allow incoming connections
+# iptables -A INPUT -p tcp --dport xxx -j ACCEPT
+
+
+To allow multiple ports on IPtables using multiport
+# iptables -A INPUT -p tcp -m multiport --dports 22,80,443 -j ACCEPT
+
+
+
+To allow specific network range on particular Port on IPtables
+# iptables -A OUTPUT -p tcp -d xx.xx.xx.xx/24 --dport 22 -j ACCEPT
+
+
+
+To block twitter on IPtables firewall
+# host twitter.com
+
+
+twitter.com has address 104.244.42.65
+$ whois 104.244.42.65 | grep CIDR
+
+
+
+CIDR: 104.244.40.0/21
+# iptables -A OUTPUT -p tcp -d 104.244.40.0/21 -j DROP
+
+
+
+To setup port forwarding in IPtables
+# iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 22 -j REDIRECT --to-port 2222
+
+
+
+To block access to specific MAC address on IPtables
+# iptables -A INPUT -m mac --mac-source aa:bb:cc:dd:ee:ff -j DROP
+
+
+
+To flush IPtables firewall chains or rules
+# iptables -F
+
+
+To save IPtables rules to a file
+# iptables-save > ~/iptables.rules
+
+
+To restore IPtables rules from a file
+# iptables-restore < ~/iptables.rules
+
+
+To block connection on network interface
+# iptables -A INPUT -i eth0 -s xx.xx.xx.xx -j DROP231

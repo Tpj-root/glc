@@ -1,0 +1,87 @@
+
+qemu-img - used to create, convert and modify images offline by
+Xen and KVM
+syntax
+$ qemu-img subcommand [options]
+
+
+
+To get help
+$ qemu-img -h
+
+
+To create disk image
+$ qemu-img create ubuntu.img 25G
+
+
+To create qcow2 disk image
+$ qemu-img create -f qcow2 -o size=25G ubuntu.img
+
+
+To create VMDK disk image
+$ qemu-img create -f vmdk -o size=20G debian.img
+
+
+To get Information about disk image
+$ qemu-img infoubuntu.img
+$ qemu-img infodebian.img
+$ qemu-img infofedora.img
+
+
+To shrink disk image
+$ qemu-img convert -O qcow2
+centos.qcow2 centos_shrink.qcow2
+
+
+
+To compress disk image
+$ qemu-img convert -O qcow2 -c
+fedora.qcow2 fedora_compress.qcow2
+
+
+
+To check disk image for errors
+$ qemu-img check ubuntu.qcow2
+$ qemu-img check debian.qcow2
+$ qemu-img check centos.qcow2
+
+
+To increase disk image size
+$ qemu-img resize ubuntu.qcow2 +5GB
+$ qemu-img resize debian.qcow2 +5GB
+
+
+
+To create a new disk image on the file system.
+$ qemu-img create -f raw ubuntu.img 25G
+$ qemu-img create -f vmdk ubuntu.vmdk 25G
+
+
+To converts an existing disk image from one format to another
+$ qemu-img convert -O qcow2 ubuntu.vmdk ubuntu.qcow2
+$ qemu-img convert -O qcow2 debian.vmdk debian.qcow2
+
+
+To manage snapshots of an existing disk image
+$ qemu-img snapshot -c ubuntu_snap1 ubuntu.qcow2
+$ qemu-img snapshot -c centos_snap1 centos.qcow2
+
+
+To list snapshots of VM
+$ qemu-img snapshot -l ubuntu.qcow2
+$ qemu-img snapshot -l centos.qcow2
+
+
+To restore the state of the saved snapshot
+$ qemu-img snapshot -a 1ubuntu.qcow2
+$ qemu-img snapshot -a 1centos.qcow2
+
+
+To delete snapshot
+$ qemu-img snapshot -d 1 ubuntu.qcow2
+$ qemu-img snapshot -d 1 centos.qcow2
+
+
+To create a new base image based on an existing disk image
+$ qemu-img rebase -b ubuntu.raw ubuntu.qcow2
+$ qemu-img rebase -b centos.raw centos.qcow2

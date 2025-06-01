@@ -1,0 +1,24 @@
+
+manpath - determine search path for manual pages
+To print the search path for man pages
+$ sudo manpath
+
+
+To Specify the configuration file to use , default is
+/etc/manpath.config
+$ sudo manpath -C
+config_file
+
+
+
+To print debugging information
+$ sudo manpath -d
+
+
+To produce a manpath consisting of all paths named as
+"global" within the man-db configuration file
+$ sudo manpath -g
+
+
+To produce a catpath as opposed to a manpath
+$ sudo manpath -c

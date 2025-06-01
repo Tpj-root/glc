@@ -1,0 +1,39 @@
+
+
+partx - tell the
+on-disk partitions
+kernel about the presence and numbering of
+
+
+To list the partition table of disk
+$ sudo partx --show <device_name>
+$ sudo partx --show /dev/vda
+
+
+To lists the length in sectors and human-readable size
+$ sudo partx -o SECTORS,SIZE
+/dev/vda
+
+
+To remove the last partition on /dev/sdd
+$ sudo partx -d --nr :-1 /dev/sdd
+
+
+To Print the SIZE column in bytes
+$ sudo partx -b /dev/vda
+
+
+To add the specified partitions, 3 to 5 (inclusive) on /dev/sdc
+$ sudo partx -a --nr 3:5 /dev/sdc
+
+
+List the partitions using the raw output format
+$ sudo partx -r /dev/vda
+
+
+List supported partition types and exit
+$ sudo partx --list-types /dev/vda
+
+
+To update the specified partitions
+$ sudo partx -u /dev/vda355

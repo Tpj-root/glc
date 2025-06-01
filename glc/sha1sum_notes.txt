@@ -1,0 +1,38 @@
+
+sha1sum - compute and check SHA1 message digest
+syntax
+$ sha1sum [OPTION] [FILE_NAME]
+
+
+To create the SHA-1 of a file
+$ sha1sum example.txt
+
+
+To create the SHA-256 of a file
+$ sha256sum example.txt
+
+
+To write the SHA-1 of a file to a file
+$ sha1sum example.txt > example.sha1
+add some contents to example.txt
+and check with
+$ sha1sum -c example.sha1
+example.txt: FAILED
+sha1sum: WARNING: 1 computed checksum did NOT match
+updated the SHA-1 file against the example.txt
+$ sha1sum new.txt > example.sha1
+$ sha1sum -c example.sha1
+example.txt: OK
+
+
+
+
+To forcefully change the command’s capabilities to read in binary
+mode
+$ sha1sum -b example.sha1453
+To print help commands
+$ sha1sum - -help
+To get a list of other sha-related commands
+$ sha + TAB
+
+

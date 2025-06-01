@@ -1,0 +1,89 @@
+
+netstat - netstat
+- Print network connections, routing tables,
+interface statistics, masquerade connections, and multicast
+memberships
+
+
+To show both listening and non-listening sockets.
+$ netstat -a | more
+
+
+To List all tcp ports
+$ netstat -at
+
+
+To List all udp ports
+$ netstat --au
+
+
+To List only listening ports
+$ netstat -l
+
+
+To List only listening TCP ports
+$ netstat -lt
+
+
+To List only listening UDP ports
+$ netstat -lu
+
+
+To List only the listening UNIX ports
+$ netstat -lx
+
+
+To List the statistics for all ports.
+$ netstat -s
+
+
+To List the statistics for TCP ports
+$ netstat -st
+
+
+
+To List the statistics for UDP ports
+$ netstat -su
+
+
+
+To display the PID and program names
+$ netstat -pt
+
+
+
+To print the netstat information continuously
+$ netstat -c
+
+
+To get the kernel routing information
+$ netstat -r
+
+
+
+To get the port on which a program is running
+$ netstat -ap | grep <program_name>
+$ netstat -ap | grep ftp
+$ netstat -ap | grep ssh
+
+
+
+To get the process which is using the given port
+$ netstat -an | grep ':<port_number>'
+$ netstat -an | grep ':443'
+$ netstat -an | grep ':80'
+$ netstat -an | grep ':53'
+
+
+
+To get the list of network interfaces
+$ netstat -i
+
+
+To display extended information on the interfaces327
+$ netstat -ie
+
+
+To print the selected information every
+$ netstat -c
+second continuously

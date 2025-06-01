@@ -10,3 +10,19 @@ To check
 $ sudo alias -p
 $ sudo unalias d
 will remove the shortcut d for df -Th
+
+
+unalias - is used to remove entries from the current user’s list
+of aliases
+To list all aliases
+$ alias
+or
+$ alias -p
+if user had an alias named h for the history command
+alias could be removed
+$ unalias h
+
+
+
+To remove all aliases from the current session
+$ unalias -a

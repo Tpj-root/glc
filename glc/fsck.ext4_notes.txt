@@ -1,0 +1,41 @@
+
+e2fsck - it is used to check Linux ext2/ext3/ext4 file system
+$ sudo fsck [OPTIONS] [FILESYSTEM]
+Unmount the device
+$ sudo umount /dev/sdaX
+
+
+To repair the file system
+$ sudo fsck -p /dev/sdaX
+
+
+when the file system is repaired, mount the partition
+$ sudo mount /dev/sdaX
+
+
+To do a dry run with fsck
+$ sudo fsck -N /dev/sda
+
+
+To fix potential problems without getting any prompts
+$ sudo fsck -y /dev/sda
+
+
+To skip repair but print fsck errors in the output
+$ sudo fsck -n /dev/sdc
+
+
+To force fsck to do a filesystem check
+$ sudo fsck -f /dev/sdc172
+
+
+To run fsck on all filesystems at once
+$ sudo fsck -AR
+
+
+To skip fsck on a specific filesystem
+$ sudo fsck -AR -t noext2 -y
+
+
+To skip fsck on mounted filesystems
+$ sudo fsck -M /dev/sdc173

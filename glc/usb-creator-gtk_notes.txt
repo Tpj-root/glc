@@ -1,0 +1,14 @@
+
+usb-creator-gtk ‐ Ubuntu startup disk creation tool for Gtk+
+
+
+To start the startup disk creator
+$ sudo usb-creator-gtk
+
+
+To provide a source image to pre-populate the UI
+$ sudo usb-creator-gtk -i /path/to/ubuntu22.04.iso
+
+
+To allow writing to system-internal devices
+$ sudo usb-creator-gtk --allow-system-internal

@@ -1,0 +1,14 @@
+
+unset - is used to remove variables or functions.
+syntax
+
+
+$ unset <var-name>
+$ VAR1='welcomt to linux'
+$ echo $VAR1
+$ unset VAR1
+$ echo $VAR1
+$ export ILUGC=foss
+$ printenv ILUGC
+$ unset ILUGC
+$ printenv ILUGC

@@ -1,0 +1,46 @@
+
+ssh-keygen - is used to generate a public/private authentication
+key pair
+
+
+
+To generate ssh key without any arguments
+$ ssh-keygen
+
+
+To define key type
+$ ssh-keygen -t rsa
+$ ssh-keygen -t dsa
+
+
+To define bit size default is 2048
+$ ssh-keygen -b 4096
+
+
+To assign passphrase
+$ ssh-keygen -P "myp@ssword"
+
+
+To change passphrase of the private key
+$ ssh-keygen -p
+
+
+To create keys with custom filename
+$ ssh-keygen -f my-rsa-key
+
+
+To add custom comment to the key
+$ ssh-keygen -C "This key is for my.server.in"
+
+
+To change comment of the key
+$ ssh-keygen -c485
+
+
+To hash the content of known_hosts file
+$ ssh-keygen -H
+
+
+To delete all the keys related to 192.168.122.101 host from
+known_hosts file
+$ ssh-keygen -R 192.168.122.101

@@ -1,0 +1,29 @@
+
+groupmems - administer members of a user's primary group
+user : ilugc
+group : foss
+To make the user ilugc a member of the group foss
+$ sudo groupmems -g foss -a ilugc
+
+
+To add a user to a group
+$ sudo groupmems -a ilugc -g foss
+
+
+To delete/remove a user from a group
+$ sudo groupmems -d ilugc foss -g foss
+
+
+To change the group name
+$ sudo groupmems -g linux
+
+
+To remove the users from group
+$ sudo groupmems -p -g ilugc
+or
+$ sudo groupmems --purge -g ilugc
+
+
+
+To list the members of the group
+$ sudo groupmems -l -g foss191

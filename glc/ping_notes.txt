@@ -1,0 +1,55 @@
+
+ping - send ICMP ECHO_REQUEST to network hosts
+syntax
+$ ping [option] [hostname] or [IP address]
+
+
+
+To check whether a remote host is up
+$ ping google.com
+$ ping ilugc.in
+
+
+
+To request IPv6
+$ ping -6 hostname/IPv6
+
+
+
+To request IPv4
+$ ping -4 hostname/IPv4
+
+
+
+To change time Interval between ping packets
+$ ping -i 0.5 ilugc.in
+$ ping -i 5 ilugc.in
+
+
+To change ping packet size
+$ ping -s 1000 google.com
+$ ping -s 512 google.com
+
+
+To flood network using ping to test performance
+$ sudo ping -f hostname-IP
+
+
+To limit the number of pings
+$ ping -c 5 google.com
+$ ping -c 10 ilugc.in
+
+
+To set time limit for ping command
+$ ping -w 10 google.com
+$ ping -w 20 ilugc.in
+
+
+To print only summary statistics
+$ ping -c 5 -q google.com
+$ ping -c 10 -q ilugc.in
+
+
+To add timestamp before each line in ping output
+$ ping -D google.com
+

@@ -1,0 +1,27 @@
+
+
+info - read Info documents
+To use all matching manuals and display them for a particular
+command
+$ info -a ls
+
+
+To look up STRING in all indices of all manuals and then display
+the same
+$ info -k cat
+
+
+To display DIR to INFOPATH
+$ info -d ls
+
+
+To go to command-line options node
+$ info -O du
+
+
+To print physical location of Info file
+$ info -w df
+
+
+To print help message
+$ info --help224

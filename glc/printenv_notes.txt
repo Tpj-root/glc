@@ -1,0 +1,15 @@
+
+printenv - print all or part of environment
+
+
+To print HOME variable value
+$ printenv HOME
+
+
+To Display all variables
+$ printenv
+
+
+To display the values of SHELL environment variables
+$ printenv SHELL
+$ printenv LANG390

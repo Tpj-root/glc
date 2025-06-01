@@ -1,0 +1,11 @@
+
+rlogin - remotely logs in to a system.
+To login remote host
+
+
+$ rlogin 192.168.122.55
+To Specify the user login name remote host
+
+
+$ rlogin <remote_host> -l <username>
+$ rlogin 192.168.122.55 -l ilugc

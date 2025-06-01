@@ -1,0 +1,20 @@
+
+showkey - examine the codes sent by the keyboard
+To examine the codes sent by the keyboard
+$ sudo showkey
+
+
+To display print options
+$ sudo showkey -h
+
+
+To start showkey in scan code dump mode
+$ sudo showkey -s
+
+
+To start showkey in keycode dump mode
+$ sudo showkey -k
+
+
+To start showkey in `ascii‘ dump mode.
+$ sudo showkey -a

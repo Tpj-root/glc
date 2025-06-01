@@ -1,0 +1,26 @@
+
+unlink - is a command-line utility for removing a single file.
+Call the unlink function to remove the specified FILE
+syntax
+$ unlink filename
+$ unlink dir_name
+
+
+To delete symbolic link
+$ unlink linkname
+$ ll
+lrwxrwxrwx 1 dhana dhana
+/home/dhana/example.txt
+23 Dec
+1 10:08 example.txt ->
+$ unlink example.txt
+
+
+To delete symbolic link directory
+$ unlink link_dir_name
+$ ll
+lrwxrwxrwx 1 dhana dhana
+/home/dhana/Music/
+$ unlink Music
+18 Dec
+1 10:10 Music ->

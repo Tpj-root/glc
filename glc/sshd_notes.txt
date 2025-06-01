@@ -1,0 +1,36 @@
+
+sshd - is the daemon program for ssh
+
+
+
+To use either IPv4 or IPv6 only
+# /usr/sbin/sshd -4
+# /usr/sbin/sshd -6
+
+
+
+To display debug modes
+# /usr/sbin/sshd -D
+#
+/usr/sbin/sshd -d -d -d
+
+
+
+
+To send the error messages to the standard error
+# /usr/sbin/sshd -d -e
+
+
+
+To use own config file for sshd apart default /etc/ssh/sshd_config
+# /usr/sbin/sshd -f /root/conf/custom_sshd.conf
+
+
+
+To customize SSHD grace time
+# /usr/sbin/sshd -g 180
+
+
+
+To specify options in command line
+# /usr/sbin/sshd -o "AllowUsers user3 user4"

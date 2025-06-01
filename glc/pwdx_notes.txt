@@ -1,0 +1,15 @@
+
+pwdx - report current working directory of a process
+syntax
+$ pwdx pid
+$ pwdx pid1 pid2 pid3
+for example change directory to /opt
+$ cd /opt
+$ sleep 100
+check for pidof sleep
+$ pidof sleep
+66135
+then check for dir with
+$ pwdx <pid_sleep>
+$ pwdx 66135
+66135: /opt

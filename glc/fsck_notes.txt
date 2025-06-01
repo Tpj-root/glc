@@ -1,0 +1,32 @@
+
+fsck - check and repair a Linux filesystem it is used to check and
+optionally repair one or more Linux
+filesystems
+fsck [OPTIONS] [FILESYSTEM]
+Unmount the device first
+$ sudo umount /dev/sdb1
+$ sudo fsck -p /dev/sdb1
+
+
+when file system is repaired, mount the partition
+$ sudo mount /dev/sdb1
+
+
+To do a dry run with fsck
+$ sudo fsck -N /dev/sdb1
+
+
+To fix detected errors automatically with fsck
+$ sudo fsck -y /dev/sdb1
+
+
+To skip repair but print fsck errors in the output
+$ sudo fsck -n /dev/sdb1
+
+
+To force fsck to do a filesystem check
+$ sudo fsck -f /dev/sdb1
+
+
+To run fsck on all filesystems at once
+$ fsck -AR171

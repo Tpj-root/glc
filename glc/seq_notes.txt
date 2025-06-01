@@ -1,0 +1,41 @@
+
+seq - print a sequence of numbers
+syntax
+$ seq [option] FIRST INCREMENT LAST
+
+
+To display Seq LAST , default increment is 1
+$ seq 20
+
+
+To print with Seq FIRST and LAST
+$ seq 5 20
+
+
+To print Seq FIRST INCREMENT LAST
+$ seq 4 2 50
+
+
+To add the strings before the sequence number
+$ seq -f NUM%02g 10
+
+
+To print the formatted strings starting from 5 and incrementing by
+5 up to 25
+$ seq -f NUM%02g 5 5 25
+
+
+To display the output on the same line
+$ seq -s " " 5 5 50
+
+
+To append the leading zeros to equalize the width
+$ seq -ws " " 3 2 120
+
+
+To display with separators
+$ seq -s - 100
+
+
+To generate a sequence containing the floating values
+$ seq -f "%f" 2 0.5 10

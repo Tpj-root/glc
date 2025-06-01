@@ -1,0 +1,24 @@
+
+pvck - Check metadata on physical volumes
+syntax
+$ sudo pvck [options]
+
+
+To scan the physical volume metadata
+$ sudo pvck PhysicalVolume /dev/sda3
+
+
+To specify the starting sector from where it should scan
+$ sudo pvck --labelsector sector
+
+
+To debug the physical volume metadata
+$ sudo pvck -d
+
+
+To print help
+$ pvck -h
+
+
+To operate in verbose mode
+$ sudo pvck -v

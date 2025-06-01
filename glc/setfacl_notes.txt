@@ -1,0 +1,33 @@
+
+setfacl - set file access control lists
+syntax
+$ setfacl option file
+
+
+To modify ACLs of file to give read and write permission to user1
+$ setfacl -m u:user1 rw file
+
+
+To remove all extended ACL entries
+$ setfacl -b file.txt
+
+
+To remove entries from the ACL of file, To remove group 'ilugc'
+from a file's ACL
+$ setfacl -x g:ilugc file.txt
+
+
+To remove the default ACL
+$ setfacl -k file
+
+
+To apply operations to all files and directories recursively
+$ setfacl -m g:ilugc:rw -R directory
+
+
+To restore a permission backup
+$ setfacl --restore=file
+
+
+To copy the ACL of one file to another
+$ getfacl example.txt | setfacl --set-file=- f sample.txt

@@ -1,0 +1,25 @@
+
+tload - graphic representation of system load average
+syntax
+$ tload [options] [terminal]
+
+
+To display the representation of the average system load as a
+graph on the terminal
+$ tload
+
+
+To set delay between graph update in seconds
+$ tload -d 2
+
+
+To change the scale of the graph
+$ tload -s 10
+
+
+To print a graph of the current system load average to a specified tty
+$ tload -d 2 -s 10 /dev/tty3
+
+
+To run tload over the ssh based session
+$ ssh -t user1@192.168.122.100 tload -d 2

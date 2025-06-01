@@ -1,0 +1,6 @@
+
+logname - print the name of the current login user
+
+
+To display user’s login name
+$ logname257

@@ -1,0 +1,12 @@
+
+dpkg-query - a tool to query the dpkg database
+Display package status details
+$ dpkg-query -s apache2
+List files 'owned' by package
+$ dpkg-query -L apache2
+List packages concisely
+$ dpkg-query -l apache2
+Show information on package
+$ dpkg-query -W apache2
+Find package owning file
+$ dpkg-query -S apache2107

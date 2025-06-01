@@ -1,0 +1,11 @@
+
+gpg-zip - encrypts or signs files into an archive. 
+It is a gpg-ized tar using the same format as PGP's PGP Zip.
+To encrypt the contents of directory dirX for user ilugc to file
+fileY
+$ gpg-zip --encrypt --output fileY --gpg-args
+
+
+To list the contents of archive fileY
+$ gpg-zip --list-archive fileY
+-r ilugc dirX187

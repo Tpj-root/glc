@@ -1,0 +1,64 @@
+
+look - display lines beginning with a given string. it also uses
+binary search if the file is sorted. If file is not specified, the
+file /usr/share/dict/words is used
+
+
+
+$ cat words.txt
+files
+Files
+fiction
+fig
+fix
+find
+Find
+
+
+To search for the given string fil in a specified file words.txt
+$ look fil words.txt
+files
+
+
+
+To search for the given string fi in a specified file words.txt
+$ look fi words.txt
+files
+fiction
+fig
+fix
+find
+
+
+
+To search for the given string in a specified file
+$ look "#include" program.c
+# include <stdio.h>
+# include <string.h>
+# include <stdlib.h>
+
+
+
+To ignore case of alphabetic character use -f option
+$ look -f fil words.txt
+files
+Files
+
+
+
+To verify the spelling of the word
+$ look apple
+$ look ban
+$ look cat
+
+
+
+To use binary search on the given word list
+$ look -bf fi words.txt
+files
+Files
+fiction
+fig
+fix
+find
+Find262

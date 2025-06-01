@@ -1,0 +1,22 @@
+
+rmmod - Simple program to remove a module from the Linux Kernel
+syntax
+$ rmmod [options] module_name
+
+
+To remove a module
+$ rmmod bluetooth
+$ rmmod ath10k_core
+
+
+To delete multiple modules
+$ rmmod module_1 module_2 module_3
+$ rmmod bluetooth ath10k_core
+
+
+To print verbose output
+$ rmmod -v bluetooth
+
+
+To send errors to syslog instead of standard error
+$ rmmod -s bluetooth

@@ -1,0 +1,24 @@
+
+traceroute - traces path to a network host
+
+
+To find the network path from my machine to google.com
+$ traceroute google.com
+
+
+To Disable IP address and host name mapping
+$ traceroute google.com -n
+$ traceroute ilugc.in -n
+
+
+To Configure Response Wait Time
+$ traceroute google.com -w 0.1
+
+
+To configure number of queries per hop
+$ traceroute google.com -q 5
+
+
+To Configure the TTL value to start with
+$ traceroute google.com -f 8
+$ traceroute ilugc.in -f 10

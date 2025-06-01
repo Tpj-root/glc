@@ -1,0 +1,29 @@
+
+runlevel - Print previous and current SysV runlevel
+
+
+0 - Halt
+1 - Single-user mode
+2 - Not used (user-definable)
+3 - Full multi-user mode
+4 - Not used (user-definable)
+5 - Full multi-user mode (with an X-based login screen)
+6 - Reboot
+
+
+
+To see the current runlevel of the system
+$ runlevel
+N 3
+Full multi-user mode in CLI mode
+To temporarily change the runlevel to 5 (Full multi-user mode with
+an X-based login screen) from 3
+$ init 5
+
+
+To permanently change the runlevel to 5 from 3
+$ sudo vim /etc/default/grub
+GRUB_CMDLINE_LINUX="5"
+:x
+$ sudo update-grub
+$ sudo reboot

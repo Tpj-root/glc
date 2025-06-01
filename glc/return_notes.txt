@@ -1,0 +1,9 @@
+
+return - is used to exit from a shell function
+syntax
+$ return [N]
+
+
+$ function add { add=$(($1+$2)); return $add; }
+$ add 4 4
+$ echo $?

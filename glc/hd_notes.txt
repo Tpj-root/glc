@@ -1,0 +1,44 @@
+
+hd - hd or hexdump is used to filter and display the specified
+files, or standard input in a human readable specified format
+
+
+
+$ cat dummy.txt
+this is ubuntu linux
+this is centos linux
+this is arch linux
+one-byte octal display
+
+
+
+$ hexdump -b dummy.txt
+
+
+one-byte character display
+$ hexdump -c dummy.txt
+
+
+canonical hex + ASCII display
+$ hexdump -C dummy.txt
+
+
+Two-byte decimal display
+$ hexdump -d dummy.txt
+
+
+Two-byte octal display
+$ hexdump -o dummy.txt204
+
+
+Two-byte hexadecimal display
+$ hexdump -x dummy.txt
+
+
+Hexdump had the option of deciding a specific number of bytes from
+a file to hexdump
+$ hexdump -s 2 -c dummy.txt
+
+
+hexdump to display all input data
+$ hexdump -v -b dummy.txt205

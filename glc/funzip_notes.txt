@@ -1,0 +1,12 @@
+
+funzip - filter for extracting from a ZIP archive in a pipe
+
+
+To extract the first member file of the archive myfile.zip and to pipe it into more
+
+
+$ funzip myfile.zip | more
+
+
+To test the first member file of myfile.zip
+$ funzip myfile.zip > /dev/null176

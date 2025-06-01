@@ -1,0 +1,30 @@
+
+netcat - is a networking , security or network monitoring tool,it
+can perform any operation in Linux related to TCP, UDP, or UNIX-
+domain sockets.
+
+
+
+To scan a single port (port no. 22)
+$ nc -v -w 2 z 192.168.122.10 22
+
+
+To scan multiple ports 22 , 80 , 53
+$ nc -v -w 2 z 192.168.122.10 22 80 53
+
+
+To scan range of ports (20-85)
+$ nc -v -w 2 z 192.168.122.10 20-85
+
+
+
+To find service running on port
+$ nc -v -n 192.168.122.10 443
+$ nc -v -n 192.168.122.10 8080
+
+
+To transfer files using nc
+on receiving server
+$ nc -l -p 9899 > file.txt
+on sending server
+$ nc -w 2 192.168.122.10 9899 < file.txt

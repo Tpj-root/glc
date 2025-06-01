@@ -1,0 +1,43 @@
+
+route - show / manipulate the IP routing table
+
+
+To display the IP/kernel routing table.
+$ route
+
+
+To display routing table in full numeric form
+$ route -n
+
+
+To add a default gateway
+$ sudo route add default gw 192.168.122.1
+
+
+To list kernel’s routing cache information
+$ route -Cn
+
+
+To reject routing to a particular host or network
+$ sudo route add -host 192.168.122.101 reject
+
+
+To get details of the kernel/IP routing table using ip command
+$ ip route
+
+
+To delete the default gateway
+$ route del default
+
+
+To get the details of the local table with destination addresses
+assigned to the localhost
+$ ip route show table local
+
+
+To get output related to IPv4
+$ ip -4 route
+
+
+To get output related to IPv6.
+$ ip -6 route

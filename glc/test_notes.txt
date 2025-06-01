@@ -1,0 +1,40 @@
+
+test - check file types and compare values
+
+
+To print “Yes, that’s true.” when 100 is greater than 99.
+$ test 100 -gt 99 && echo "Yes, that's true." || echo "No, that's
+false."
+
+
+To print "No, that's false." when 99 is greater than 100.
+$ test 99 -gt 100 && echo "Yes, that's true." || echo "No, that's
+false."
+
+
+
+To check if a file exists and is a regular file
+$ test -f /etc/resolv.conf && echo "File /etc/resolv.conf found."
+|| echo "File /etc/resolv.conf not found."
+$ test -f /etc/ssh/sshd_config && echo "File /etc/ssh found." ||
+echo "File /etc/ssh not found."
+
+
+
+To print 0 when the expression is true and two strings are
+identical.
+$ [ "awesome" = "awesome" ]; echo $?
+To print 1 when the expression is false and two strings are not
+identical.
+$ 
+
+
+[ "awesome" = "1awesome" ]; echo $?
+
+
+To print "1" because the expression is false
+$ [ 7 -eq 10 ]; echo $?
+
+
+To print "0" because the expression is true
+$ [ 10 -eq 10 ]; echo $?

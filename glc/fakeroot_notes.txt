@@ -1,0 +1,13 @@
+
+fakeroot - fakeroot runs a command in an environment wherein it
+appears to have root privileges for file manipulation. 
+This is useful for allowing users to create archives (tar, ar, .deb etc.) with files in them with root permissions/ownership
+
+
+
+$ fakeroot
+# echo "fake root access given" > root.txt
+# ls -l root.txt
+# ls -l /root
+# exit
+$ ls -l root.txt

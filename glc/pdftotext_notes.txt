@@ -1,0 +1,25 @@
+
+pdftotext - Portable Document Format (PDF) to text converter
+syntax
+$ pdftotext PDF-file text-file
+
+
+
+To convert file.pdf to file.txt
+$ pdftotext file.pdf file.txt
+
+
+To convert range of pages(10-20) from file.pdf to file.txt
+$ pdftotext -f 10 -l 20 file.pdf file.txt
+
+
+To convert a pdf file protected and encrypted by owner password
+$ pdftotext -opw 'password' file.pdf file.txt
+
+
+To convert a pdf file protected and encrypted by user password
+$ pdftotext -upw 'password' file.pdf file.txt
+
+
+To generate a simple HTML file, including the meta information
+$ pdftotext -htmlmeta file.pdf file.html

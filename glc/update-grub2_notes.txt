@@ -1,0 +1,10 @@
+
+update-grub2 - update the grub
+
+
+To update grub
+$ sudo update-grub2
+
+
+To generate a grub2 config file
+$ sudo update-grub2 -o /boot/grub/grub.cfg

@@ -1,0 +1,26 @@
+
+taskset - is used to set or retrieve the CPU affinity of a running
+process
+
+
+To fetch the CPU Affinity of a Process
+$ pidof sshd
+$ taskset -p <PID_of_sshd>
+
+
+To get the CPU range of a process
+$ taskset -cp <PID_of_sshd>
+
+
+To change the CPU affinity of a process by assigning the new value
+to the PID of the existing process
+$ taskset -p 0x7 <PID_of_sshd>
+
+
+To Change CPU range
+$ taskset -cp 0,2 <PID_of_sshd>
+
+
+To set the CPU core
+$ taskset -c 3,5 sshd
+$ taskset -c 0-4 sshd

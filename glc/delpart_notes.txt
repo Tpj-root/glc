@@ -1,0 +1,4 @@
+
+delpart - tell the kernel to forget about a partition
+$ sudo umount /dev/sdb2
+$ sudo delpart /dev/sdb 2127

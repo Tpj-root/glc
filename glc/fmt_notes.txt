@@ -1,0 +1,20 @@
+
+fmt - simple optimal text formatter Reformat each paragraph in the files, writing to standard output
+$ cat file.txt
+
+
+Hai
+all Welcome
+to
+ILUGC
+$ fmt file.txt
+
+
+Hai all Welcome to ILUGC
+To split long lines, but don’t refill them
+$ fmt -s file.txt
+
+
+To make one space between words and two spaces after sentences for
+formatting
+$ fmt -u file.txt

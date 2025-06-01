@@ -1,0 +1,30 @@
+
+Evince - is a document viewer capable of displaying multiple
+single
+page document formats like PDF and Postscript
+To Run evince in fullscreen mode.
+$ evince -f your_book.pdf
+
+
+To run evince in presentation mode.
+$ evince -s your_book.pdf
+
+
+To open the document on the page with the specified page index
+$ evince -i 5 your_book.pdf
+
+
+To run evince as a previewer
+$ evince -w your_book.pdf
+
+
+Opening a document at a specific page
+$ evince --page-label=3 book.pdf
+
+
+open multiple files
+$ evince book1.pdf book2.pdf
+
+
+To open files on the web
+$ evince http://url_path/file.pdf

@@ -1,0 +1,35 @@
+
+hostnamectl - control the system hostname , also used to query and
+change the system hostname and related settings
+
+
+To check the current host name
+$ hostnamectl
+
+
+To change static host name to ilugc
+$ hostnamectl set-hostname ilugc --static
+
+
+To set transient name to klug
+$ hostnamectl set-hostname klug --transient
+
+
+check with
+$ hostnamectl
+
+
+To set pretty hostname to foss
+$ hostnamectl set-hostname "foss" --pretty
+
+
+To verify the change
+$ hostnamectl --pretty status
+
+
+To change the host names remotely
+$ hostnamectl set-hostname ilugc-server -H root@server_ip
+
+
+To display the help
+$ hostnamectl --help213

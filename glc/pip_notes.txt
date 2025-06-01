@@ -1,0 +1,69 @@
+
+pip - A tool for installing and managing Python packages
+
+
+
+To print version of pip3
+$ pip3 --version
+To upgrade pip3
+$ python -m pip3 install --upgrade pip
+To downgrade pip3
+$ python -m pip3 install pip==19.0
+To install a Python package
+$ pip3 install <package_name>
+To install the package of a specific version
+$ pip3 install package_name==version
+To display package information
+$ pip3 show <package_name>
+$ pip3 show numpy
+To list of locally installed Python modules
+$ pip3 list
+To uninstall packages
+$ pip3 uninstall <package_name>
+$ pip3 uninstall numpy
+To search packages
+$ pip3 search <package_name>
+$ pip3 search numpy
+Install packages from requirements.txt
+$ vim requirements.txt
+numpy
+botocore
+future
+:x
+$ pip3 install requirements.txt
+To list packages that don’t come pre-installed with Python
+$ pip3 freeze
+To upgrade packages
+$ pip3 install --user --upgrade package_name
+$ pip3 install --user --upgrade numpy
+To Downgrade packages
+$ pip3 install --user package_name==version
+$ pip3 install --user pip install numpy==1.22.2
+To check that installed packages are compatible
+$ pip3 check
+
+
+To manage local and global configuration
+$ pip3 config list
+$ pip3 config edit
+$ pip3 config get
+$ pip3 config set
+$ pip3 config unset
+
+
+To Install package from a Git repository
+$ pip3 install git+https://github.com/psf/requests.git
+
+
+To Install package from a directory
+$ pip3 install /home/user/src/requests
+
+
+
+To Download a package and all of its dependencies
+$ pip3
+download <package_name>
+
+
+To debug
+$ python3 -m pip debug

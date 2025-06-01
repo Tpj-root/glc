@@ -1,0 +1,6 @@
+
+groupdel - delete a group
+
+
+$ sudo groupdel GROUP_NAME
+$ sudo groupdel webadmin183

@@ -1,0 +1,75 @@
+
+split - is used to split large files into smaller files
+
+syntax
+$ split {options} {file_name} {prefix}
+
+
+
+$ cat example.txt
+This is line 1
+This is line 2
+This is line 3
+This is line 4
+This is line 5
+This is line 6
+This is line 7
+This is line 8
+This is line 9
+This is line 10
+
+
+To split example.txt with verbose option
+$ split example.txt --verbose
+
+
+To split files with customize line numbers
+$ split -l5 example.txt --verbose
+
+
+To split files with file size
+$ split -b 4 example.txt --verbose (in bytes)
+$ split -b 2K <file_name> --verbose (in Kb)
+$ split -b 2M <file_name> --verbose (in Mb)
+$ split -b 1G <file_name> --verbose (in Gb)475
+
+
+
+To create Split files with numeric suffix instead of alphabetic
+$ split -d example.txt --verbose
+x00
+
+
+
+To split file with customize suffix
+$ split -l5 example.txt ilugc_file
+
+
+To generate n chunks output files
+$ split -n5 <file_name>
+
+
+To Prevent Zero Size Split output files
+$ split -n60 -e example.txt
+
+
+To create split output files of customize suffix length
+$ split -b 4 example.txt -a 3
+$ split -b 4 example.txt -a 4
+
+
+To split ISO file and merge it into a single file
+$ split -n5 ubuntu-22.04.iso Split_IS0_
+it will split ISO file into 5 pieces
+
+
+
+To merge these files into a single
+$ cat Split_IS0_a* > ubuntu22.04_new.iso
+
+
+To verify the integrity of merge file using md5sum
+before split of iso
+$ md5sum ubuntu22.04.iso
+after split and merge
+$ md5sum ubuntu22.04_new.iso476

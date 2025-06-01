@@ -1,0 +1,42 @@
+
+uncompress - it is used to uncompress files that were compressed
+using the compress command.
+$ cat demo.txt
+This is line one
+This is line two
+This is line three
+This is line four
+This is line five
+This is line six
+This is line seven
+This is line eight
+This is line nine
+This is line ten
+To compress the file
+
+
+$ compress demo.txt
+demo.txt.Z
+
+
+To uncompress the file
+$ uncompress demo.txt.Z
+
+
+To write to the standard output
+$ uncompress -c demo.txt.Z
+
+
+To print verbose output
+$ uncompress -v demo.txt.Z
+
+
+To uncompress forcefully
+$ uncompress -f demo.txt.Z
+$ uncompress -cvf demo.txt.Z
+combining with tar command
+$ tar -cvf - dir1 dir2 | compress > file.tar.Z
+
+
+To uncompress
+$ uncompress -c file.tar.Z|tar -xvf -

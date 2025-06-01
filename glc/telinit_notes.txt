@@ -1,0 +1,23 @@
+
+telinit - Change SysV runlevel
+syntax
+$ sudo telinit [options] {runlevel}
+
+
+To change the runlevel for a system without rebooting or changing
+the /etc/inittab
+$ sudo telinit 0halt
+$ sudo telinit 1single-user mode
+$ sudo telinit 2Not used (user-definable)
+$ sudo telinit 3Full multi-user mode
+$ sudo telinit 4Not used (user-definable)
+$ sudo telinit 5
+
+
+screen)Full multi-user mode (with an X-based login
+$ sudo telinit 6Reboot
+$ sudo telinit q
+
+
+Reload daemon configuration equivalent
+systemctl daemon-reload

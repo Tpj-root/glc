@@ -3,3 +3,58 @@ CPU info:
 
 
 $ lscpu
+
+
+
+lscpu - is used to get CPU information of the system
+To display the complete info about the processor
+$ lscpu
+
+
+To display in Human Readable Format
+$ lscpu -e
+$ lscpu -e=cpu
+
+
+To display the processor information in a parsing-friendly format
+$ lscpu -p
+
+
+To display output in hexadecimal
+$ lscpu -x
+
+
+To print the CPU info in json format
+$ lscpu -J
+
+
+To print a help message
+$ lscpu --help
+
+
+To display sizes in bytes
+$ lscpu --bytes
+
+
+To display both online and offline CPUs
+$ lscpu -a -e
+$ lscpu -a -p
+
+
+
+To display only offline CPUs
+$ lscpu --offline -p
+
+
+To display only online CPUs
+$ lscpu --online -e
+or
+$ lscpu --online -p
+
+
+To display information about caches
+$ lscpu -C
+
+
+To print output to a text file
+$ lscpu | tee /home/ilugc/cpu_info.txt271

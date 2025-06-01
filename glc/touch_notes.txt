@@ -1,0 +1,39 @@
+
+touch - change file timestamps
+
+
+To Create an Empty File
+$ touch file.txt
+
+
+To Create Multiple Files
+$ touch file1.txt file2.txt file3.txt file4.txt
+
+
+To Change File Access and Modification Time
+$ touch -a file.txt
+
+
+To Set File Timestamp Using Date String
+$ touch -d tomorrow demo
+
+
+To Avoid Creating New File
+$ touch -c file.txt
+
+
+To Change File Modification Time
+$ touch -m sample.txt
+
+
+To Explicitly Set the Access and Modification times
+$ touch -c -t YYDDHHMM sample.txt
+
+
+To Use the time stamp of example.txt to sample.txt
+$ touch -r sample.txt example.txt
+
+
+To Create a File using a specified time
+$ touch -t YYMMDDHHMM.SS demofile
+$ touch -t 2211260600.26 demofile

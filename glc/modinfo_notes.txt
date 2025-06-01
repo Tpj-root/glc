@@ -1,0 +1,45 @@
+
+modinfo - Show information about a Linux Kernel module
+
+
+To list available modules
+$ less /proc/modules
+$ lsmod
+
+
+To show the information on a module
+$ modinfo <module_name>
+$ modinfo bluetooth
+$ modinfo ath10k_pci
+$ modinfo snd
+$ modinfo thermal_sys
+
+
+To print the help options
+$ modinfo --help
+
+
+To print version
+$ modinfo -V
+
+
+To information about a kernel other than the running one
+$ modinfo -0 ath10k_pci301
+
+
+
+To print shortcuts used for the –field flag’s author, description,
+license, parm
+and filename arguments
+$ modinfo ath10k_pci -a
+$ modinfo bluetooth -n
+$ modinfo bluetooth -d
+$ modinfo ath10k_pci -l
+$ modinfo ath10k_pci -p
+
+
+
+To print only provided FIELD
+$ modinfo -F parm ath10k_pci
+$ sudo modinfo -F parm bluetooth
+$ sudo modinfo -F parm snd302

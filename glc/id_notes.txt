@@ -1,0 +1,29 @@
+
+id - print real and effective user and group IDs
+To print your own id without any options
+$ id
+
+
+To find a specific users id
+$ id -u ilugc
+
+
+To find a specific users GID
+$ id -g ilugc
+
+
+To find out UID and all groups associated with a username
+$ id ilugc
+
+
+To find out all the groups a user belongs
+$ id -G ilugc
+
+
+To display a name instead of numbers
+$ id -nG ilugc
+
+
+To display real id instead of effective id
+$ id -r -g ilugc
+$ id -r -G ilugc219

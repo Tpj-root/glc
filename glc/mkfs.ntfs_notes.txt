@@ -1,0 +1,12 @@
+
+
+mkfs.ntfs - create an NTFS file system
+mkfs.vfat - create a vfat file system
+
+
+To create a NTFS file system
+$ sudo mkfs -t ntfs /dev/sdb
+
+
+To create a vfat file system
+$ sudo mkfs.vfat /dev/sdc

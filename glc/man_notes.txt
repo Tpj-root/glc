@@ -1,0 +1,67 @@
+
+man - an interface to the system reference manuals
+it shows the section numbers of the manual and types of pages they
+contain
+
+1 Executable programs or shell commands
+
+2 System calls (functions provided by the kernel)
+
+3 Library calls (functions within program libraries)
+
+4 Special files (usually found in /dev)
+
+5 File formats and conventions, e.g. /etc/passwd
+
+6 Games
+
+7 Miscellaneous (including e.g. macro packages and conventions),
+man(7), groff(7)
+
+8 System administration commands (usually only for root)
+
+9 Kernel routines [Non standard]
+
+$ man [COMMAND NAME]
+
+
+To display the whole manual of the command
+$ man ls
+$ man df
+
+
+To display only a specific section of a manual
+$ man 1 ls
+$ man 1 ps
+$ man 8 modprobe
+$ man 8 modinfo
+
+
+To display the section in which the given command is present
+$ man -f modprobe
+$ man -f modinfo
+$ man -f ls
+$ man -f df
+
+
+To search by Considering Input command as a Regular Expression
+$ man -k ls
+$ man -k cd
+$ man -k df
+
+
+To display all available intro manual pages contained in each
+section, one at a time
+$ man -a intro
+
+
+To display location of man pages
+$ man -w ls
+$ man -w du
+$ man -w df
+$ man -w cat
+
+
+To search for manual pages using case-sensitivity
+$ man -I Ls
+$ man -I ls

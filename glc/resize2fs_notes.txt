@@ -1,0 +1,32 @@
+
+resize2fs - is used to enlarge or shrink an ext2/3/4 file system
+on a device
+syntax
+$ resize2fs [options] {device/file system name} [desired size]
+
+
+
+To resize a extended file system
+$ sudo resize2fs /dev/vda1
+
+
+
+To forcefully resize the file system
+$ sudo resize2fs -f /dev/vda1
+
+
+To flush the filesystem device’s buffer caches
+$ sudo resize2fs -F /dev/vda1
+
+
+To shrink the filesystem to the minimum size
+$ sudo resize2fs -M /dev/vda1
+
+
+To prints out a percentage completion bars for each resize2fs
+operation
+$ sudo resize2fs -p /dev/vda1
+
+
+To print the minimum size of the filesystem
+$ sudo resize2fs -P /dev/vda1

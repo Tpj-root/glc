@@ -1,0 +1,63 @@
+
+pstree - is used to display the parent-child relationship in a
+hierarchical format
+
+
+To print pstree without any option
+$ pstree
+
+
+To Display the tree hierarchy of a user processes
+$ pstree -p ilugc
+
+
+To display the process tree
+$ pstree <PID>
+
+
+To show the command line arguments
+$ pstree -a
+
+
+To Use ASCII characters to draw the tree
+$ pstree -A
+
+
+To Disable compaction of identical subtrees
+$ pstree -c
+
+
+To Use VT100 line drawing characters
+$ pstree -G
+
+
+To print the current process and its ancestors
+$ pstree -h
+
+
+To print the specified process instead
+$ pstree -H
+
+
+To Display long lines
+$ pstree -l
+
+
+To Sort processes with the same ancestor by PID instead of by name
+$ pstree -n
+
+
+To show PIDs
+$ pstree -p
+
+
+To show the uid transactions
+$ pstree -u
+
+
+To Use UTF-8 (Unicode) line drawing characters
+$ pstree -U
+
+
+To show the security context
+$ pstree -Z

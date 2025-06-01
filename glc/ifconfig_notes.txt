@@ -1,0 +1,68 @@
+
+Ifconfig - used to configure the kernel-resident network interfaces
+
+
+To display all the interfaces available
+$ sudo ifconfig -a
+
+
+To display a short list
+$ sudo ifconfig -s
+
+
+To run in verbose mode
+$ sudo ifconfig -v
+
+
+To activate the driver for the given interface
+$ sudo ifconfig eth0 up
+or
+$ sudo ifup eth0
+
+
+
+To deactivate the driver for the given interface
+$ sudo ifconfig eth0 down
+or
+$ sudo ifdown eth0
+
+
+To view network settings of Specific Interface
+$ sudo ifconfig eth0220
+
+
+To assign an IP address to network interface
+$ sudo ifconfig eth0 xx.xx.xx.xx
+
+
+To assign netmask to network interface
+$ sudo ifconfig eth0 netmask 255.255.255.224
+
+
+To assign a broadcast to network interface
+$ sudo ifconfig eth0 broadcast xx.xx.xx.xx
+
+
+To assign IP, netmask, and broadcast to network interface
+$ sudo ifconfig eth0 xx.xx.xx.xx netmask 255.255.255.224 broadcast
+xx.xx.xx.xx
+
+
+To enable promiscuous mode
+$ sudo ifconfig eth0 promisc
+
+
+To disable promiscuous mode
+$ sudo ifconfig eth0 -promisc
+
+
+To add new alias to network interface
+$ sudo ifconfig eth0:0 xx.xx.xx.xx
+
+
+To remove alias to network interface
+$ sudo ifconfig eth0:0 down221
+
+
+To change the MAC address of network interface
+$ sudo ifconfig eth0 hw ether DD:DF:CW:DQ:EZ:FS222

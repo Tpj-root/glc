@@ -1,0 +1,49 @@
+
+timedatectl - Control the system time and date
+To display the current settings
+$ timedatectl
+
+
+To Show current time settings
+$ timedatectl status
+
+
+To Show properties of systemd-timedated
+$ timedatectl show
+
+
+To change settings
+$ sudo timedatectl set-timezone Asia/Hong_Kong
+$ sudo timedatectl set-timezone Asia/Tokyo
+
+
+To list the time zones
+$ timedatectl list-timezones | column
+
+
+To display the number of time-zones available
+$ timedatectl list-timezones | wc -l
+
+
+To Show status of systemd-timesyncd
+$ timedatectl timesync-status
+
+
+To Show properties of systemd-timesyncd
+$ timedatectl show-timesync
+
+
+To Show all properties, including empty ones
+$ timedatectl -a
+
+
+To Set system time
+$ timedatectl set-time <TIME>
+
+
+To Set system time zone
+$ timedatectl set-timezone <ZONE>
+
+
+To Show this help options
+$ timedatectl --help

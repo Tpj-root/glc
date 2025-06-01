@@ -1,0 +1,23 @@
+
+troff - it performs typesetting functions and formats documents
+Troff the input file
+
+
+$ troff example.txt
+troff command
+$ troff
+Hello world!
+^D
+
+
+
+To pipe the output of troff
+$ troff > output
+Welcome to Linux world
+^D
+
+
+To append the output of troff
+$ troff >> output
+Welcome to python
+^D

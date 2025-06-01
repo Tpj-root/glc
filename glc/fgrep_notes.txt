@@ -1,0 +1,23 @@
+
+grep, egrep, fgrep, rgrep - print lines that match patterns
+To display the count of number of matches
+$ fgrep -c "config_value" file.txt
+2
+To display the matched lines
+$ fgrep -h "config.py" file.txt
+
+
+To display case insensitive search
+$ fgrep -i "Linux" file.txt
+
+
+To display the file names that match the pattern
+$ fgrep -l "config.py" file1 file2
+
+
+To show line number of file with the line matched
+$ fgrep -n "ubuntu" file.txt
+
+
+To display only lines matched entirely
+$ fgrep -x "Keyword_exact_match" file.txt158

@@ -1,0 +1,54 @@
+
+more - is used to view the text files in the command prompt,
+displaying one screen at a time in case the file is large
+
+
+To help the user to navigate the long files , Press space to
+continue,
+‘q’ to quit. and display Press ‘h’ for instructions.
+$ more -d file.txt
+
+
+
+To display as it is and not to wrap the lines
+$ more -f file.txt
+
+
+
+To clear the screen and then displays the text
+$ more -p file.txt
+
+
+
+To display the pages on the same area by overlapping the
+previously displayed text.
+$ more -c file.txt
+
+
+
+To compress multiple blank lines into one single blank line
+$ more -s file.txt
+
+
+To omit the underlines in a file
+$ more -u file.txt
+
+
+
+To search the string inside file
+$ more +/<string> file.txt
+$ more +/default file.txt311
+
+
+To display the text after the specified number of lines of the
+file
+$ more +20 file.txt
+$ more +50 file.txt
+
+
+To display first N lines of a file
+$ more -10 file.txt
+
+
+To use pipe to see long outputs
+$ cat file.txt | more312

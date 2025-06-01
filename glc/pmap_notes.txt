@@ -1,0 +1,48 @@
+
+pmap - report memory map of a process
+syntax
+
+
+$ pmap [options] pid [...]
+
+To display the memory map of chrome process
+$ pidof chrome
+$ pmap <pid_chrome>
+
+
+To display the memory map in an extended format
+$ pmap -x <pid_chrome>
+
+
+To display the full path to the files
+$ pmap -p <pid_chrome>
+
+
+To display the device format
+$ pmap -d <pid_chrome>
+
+
+To ignore the column names while displaying the report of the
+memory map
+$ pmap -q -d <pid_chrome>
+
+
+To display everything the kernel provides
+$ pmap -xx <pid_chrome>
+
+
+To create a new configuration
+$ pmap -n
+
+
+To read the default configuration
+$ pmap -c <pid_chrome>
+
+
+To print in quiet
+mode and to hide header and footer lines
+$ pmap -q <pid_chrome>
+
+
+To display pmap of multiple processes
+$ pmap <PID1> <PID2> <PID3>

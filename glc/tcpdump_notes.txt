@@ -1,0 +1,52 @@
+
+tcpdump - prints
+out a description of the contents of packets on
+a network interface
+
+
+To capture packets from Specific Interface
+$ sudo tcpdump -i eth1
+
+
+To capture only N number of packets
+$ sudo tcpdump -c 4 -i eth1
+
+
+To display the package in ASCII format
+$ sudo tcpdump -A -i eth1
+
+
+To Display Available Interfaces
+$ sudo tcpdump -D
+
+
+To Display Captured Packets in HEX and ASCII
+$ sudo tcpdump -XX -i eth1
+
+
+To capture and save packets in a file
+$ sudo tcpdump -w 0002.pcap -i eth1
+
+
+To read captured packets file
+$ sudo tcpdump -r 0002.pcap
+
+
+To capture IP address packets
+$ sudo tcpdump -n -i eth1
+
+
+To capture only TCP packets.
+$ sudo tcpdump -i eth1 tcp
+
+
+To capture packet from specific port
+$ sudo tcpdump -i eth1 port 22
+
+
+To capture packets from source IP
+$ sudo tcpdump -i eth1 src 192.168.122.50
+
+
+To capture packets from destination IP
+$ sudo tcpdump -i eth1 dst 192.168.122.100

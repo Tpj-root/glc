@@ -1,0 +1,15 @@
+
+tbl - format tables for troff
+
+
+To format a table in a file using the tbl command
+$ tbl -C example.txt | troff
+$ tbl -C example.txt | nroff
+
+
+tbl command, piped to the troff
+$ tbl example.txt | troff -T ascii
+
+
+tbl with eqn
+$ tbl example.txt | eqn | troff

@@ -1,0 +1,18 @@
+
+
+pwconv - used to recover shadow file from passwd file , if shadow
+file is deleted by any means replace the encrypted password in /etc/shadow with an x.
+
+
+
+from root user delete /etc/shadow
+# rm /etc/shadow
+check with
+# cat /etc/shadow
+
+
+
+To recover /etc/shadow file from the /etc/passwd file
+# pwconv
+and check with
+# cat /etc/shadow

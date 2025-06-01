@@ -1,0 +1,28 @@
+
+ssh-copy-id - use locally available keys to authorise logins on a
+remote machine
+create ssh key
+$ ssh-keygen -t rsa
+
+
+To copy ssh key to remote machine
+$ ssh-copy-id -i /home/ilugc/.ssh/id_rsa.pub user@192.168.122.101
+
+
+
+To enable forced mode to copy ssh key to remote machine
+$ ssh-copy-id -f -i /home/dhana/.ssh/id_rsa.pub
+dhana@192.168.122.101
+
+
+
+To perform dry-run that prints the keys intended for installation
+without installing them on the remote host
+$ ssh-copy-id -n -i /home/dhana/.ssh/id_rsa.pub
+dhana@192.168.122.101
+
+
+To connect to a remote host when the default SSH port is not being
+used.
+$ ssh-copy-id -i -p <custom_port> /home/dhana/.ssh/id_rsa.pub
+dhana@192.168.122.101

@@ -1,0 +1,18 @@
+
+halt - used to instruct the hardware to stop all the CPU functions
+
+
+To cease all CPU function on the system
+$ sudo halt
+
+
+To power off the system using halt command
+$ sudo halt -p
+
+
+To halt with -w option to write shutdown record
+$ sudo halt -w
+
+
+To reboot the system
+$ sudo halt --reboot200

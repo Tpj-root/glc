@@ -1,0 +1,34 @@
+
+pkg-config - Return metainformation about installed libraries
+
+
+To Print the Link Flags
+$ pkg-config openssl --libs
+
+
+To Print Compile Flags
+$ pkg-config openssl --cflags
+
+
+To get a version of the library
+$ pkg-config openssl --modversion
+
+
+To print errors
+$ pkg-config openssl --print-errors
+
+
+To display variables in a package
+$ pkg-config --print-variables openssl
+
+
+To list packages
+$ pkg-config --list-all
+
+
+To get the value of a variable declared in a package’s .pc file
+$ pkg-config --variable=libdir openssl
+
+
+To get help messages
+$ pkg-config --help

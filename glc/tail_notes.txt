@@ -1,0 +1,45 @@
+
+tail - output the last part of files
+To display the last 10 lines of a file
+$ tail /var/log/messages
+
+
+To Display the last N lines in a file
+$ tail -n 4 /var/log/messages
+
+
+To Print filename header
+$ tail -v example.txt
+$ tail -v /var/log/messages
+
+
+To Display the last n lines from multiple files
+$ tail -n 4 file1.txt file2.txt
+$ tail -n 4 /var/log/messages /var/log/apache2/access.log
+
+
+To Save the output of tail command to a text file
+$ tail -n 10 /var/log/apache2/access.log
+> output.txt
+To append to output.txt
+$ tail -n 10 /var/log/messages >> output.txt
+
+
+
+To monitor real-time log files
+$ tail -f /var/log/messages
+
+
+To use pipes
+$ tail -file.txt | sort
+$ tail /var/log/messages | sort
+$ tail /var/log/messages | tail -n 6 | sort
+
+
+To Print N number of bytes data from a file
+$ tail -c 500 /var/log/messages
+$ tail -c 10M /var/log/messages
+
+
+To print help options
+$ tail --help

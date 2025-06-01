@@ -1,0 +1,86 @@
+
+ulimit - is a built-in Linux shell command that allows viewing or
+limiting system resource amounts that individual users consume
+
+
+Syntax
+$ ulimit [flags][limit]
+
+
+
+To set the physical memory size in kilobytes
+$ ulimit -m 10000
+
+
+To view the detailed soft limits for the current user
+$ ulimit -Sa
+
+
+To view the detailed hard limits for the current user
+$ ulimit -Ha
+
+
+To find the resource amount that the current user has access to use
+$ ulimit
+
+
+
+To get a detailed report with all resource limits for the current
+user
+$ ulimit -a
+
+
+
+To limit the process number to 10
+$ ulimit -u 10
+
+
+
+To set the maximum file size that a user can make
+$ ulimit -f 100
+
+
+To limit maximum virtual memory
+$ ulimit -v 1500
+
+
+To limits the number of simultaneously opened files
+$ ulimit -n 10
+
+
+To display maximum users process
+$ ulimit -u
+
+
+To show maximum memory size limit
+$ ulimit -v
+
+
+To display the Hard limit
+$ ulimit -Hn
+
+
+To display Soft Limit
+$ ulimit -Sn
+
+
+To check out the max scheduling priority of the current user
+$ ulimit -e
+
+
+To check the maximum stack size of the current user
+$ ulimit -s
+
+
+To report the time each process is allowed to run
+$ ulimit -t
+
+
+
+To check out how many file descriptors a process
+$ ulimit -n
+
+
+
+To check out the help options
+$ ulimit --help

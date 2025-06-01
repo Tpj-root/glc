@@ -1,0 +1,38 @@
+
+systemd-analyse - Analyze and debug system manager
+
+
+To determine system boot-up performance statistics
+$ systemd-analyze
+
+
+To Print time required to boot the machine
+$ systemd-analyze time
+
+
+To Print list of running units ordered by time to init
+$ systemd-analyze blame
+
+
+To Print a tree of the time critical chain of units
+$ systemd-analyze critical-chain
+
+
+Output state serialization of service manager
+$ systemd-analyze dump
+
+
+Output SVG graphic showing service initialization
+$ systemd-analyze plot
+
+
+To List load directories for units
+$ systemd-analyze unit-paths
+
+
+To List exit status definitions
+$ systemd-analyze exit-status
+
+
+To Analyze security of unit
+$ systemd-analyze security

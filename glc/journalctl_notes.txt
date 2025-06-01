@@ -1,0 +1,29 @@
+
+journalctl - used to query the contents of the systemd
+To display newest log entries first
+$ journalctl -r
+
+
+To display specific number of recent log entries
+$ journalctl -n 4
+
+
+To display log entries of specific priority
+$ journalctl -p [ debug, info, notice, warning, err, crit, alert,
+and emerg ]
+$ journalctl -p debug
+$ journalctl -p info
+
+
+To display log entries only for specific systemd unit
+$ journalctl -u ntpd
+$ journalctl -u ftpd
+
+
+To format the output
+$ journalctl -o verbose
+
+
+To combine all the options
+$ journalctl -n 3 -p debug
+$ journalctl -n 4 -p info238

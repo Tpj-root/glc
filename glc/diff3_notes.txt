@@ -1,0 +1,28 @@
+
+GNU diff3 - compare three files line by line
+$ cat f1.txt
+Hello
+This is f1 file.
+
+
+$ cat f2.txt
+This is f2 file.
+
+
+$ cat f3.txt
+This is f3 file.
+
+
+==== : It means all the files are different.
+====1 : File 1 is different.
+====2 : File 2 is different.
+====3 : File 3 is different.
+
+
+
+$ diff3 f1.txt f2.txt f3.txt
+treat all files as text
+
+
+
+$ diff3 -a f1.txt f2.txt f3.txt132

@@ -1,0 +1,13 @@
+
+sh - is a command language interpreter that executes commands read
+from a command line string, the standard input, or a specified
+file.
+
+
+
+To Invoke the Bourne shell
+$ sh
+
+
+To run the bash script
+$ sh example.sh

@@ -1,0 +1,45 @@
+
+stat - display file or file system status
+
+
+To view the file details
+$ stat example.txt
+
+
+To view information about multiple files
+$ stat sample.pdf example.txt
+
+
+To display file system status
+$ stat -f /home
+
+
+To display information in terse form
+$ stat -t sample.pdf
+$ stat -t example.txt
+$ stat -t sample.pdf example.txt
+
+
+To enable following of symbolic links
+$ stat /usr/share/zoneinfo/Asia/Calcutta
+
+
+To get information on the file that the links points
+$ stat -L /usr/share/zoneinfo/Asia/Calcutta
+
+
+To format sequencing
+To display inode of a file only
+$ stat --printf='%i\n' example.txt
+
+
+To display access rights and uid (User ID)
+$ stat --printf='%a:%u\n' example.txt489
+
+
+To print out a new line without requiring an additional operand.
+$ stat --format='%a:%F' example.txt
+
+
+To display help options
+$ stat --help

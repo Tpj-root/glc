@@ -1,0 +1,16 @@
+
+Pdffonts - lists the fonts used in a Portable Document Format
+(PDF) file
+along with various information for each font
+$ pdffonts input.pdf
+$ pdffonts file.pdf
+To find out which fonts are used in range of pages of a document
+for example pages 10-20 pages
+$ pdffonts -f 10 -l 20 file.pdf
+
+
+To extract fonts from a password-protected PDF
+$ pdffonts -opw password
+$ pdffonts -upw password
+-opw - owner password
+-upw - user password363

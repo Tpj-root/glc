@@ -1,0 +1,32 @@
+
+umount - it is used to unmounts a mounted filesystem, informing
+the system to complete any pending read or write operations, and
+safely detaching it
+
+
+To unmount all the filesystems mentioned in /etc/mtab
+$ sudo umount -a
+
+
+To forcefully unmount a filesystem
+$ sudo umount -f /backup
+
+
+To lazy unmount of a filesystem
+$ sudo umount -l /backup
+
+
+To unmount a Partition or Filesystem
+$ sudo umount /mnt
+
+
+To recursively unmount a target with all its children
+$ sudo umount -R /mnt
+
+
+To umount without writing in /etc/mtab
+$ sudo umount -n /mnt
+
+
+To unmount more than mount point in a single execution
+$ sudo umount /mnt /backup

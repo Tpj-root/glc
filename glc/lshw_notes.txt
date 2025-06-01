@@ -1,0 +1,48 @@
+
+lshw - used to generate the detailed information of the system’s
+hardware configuration from various files in the /proc directory
+
+
+To display full hardware information
+$ lshw
+
+
+To list hardware in a compact format
+$ lshw -short
+
+
+To lists all disks and storage controllers in the system
+$ lshw -class disk -class storage
+
+
+To lists all network interfaces in HTML file
+$ lshw -class network
+
+
+To check hardware information without the serial number or
+any other sensitive information
+$ lshw -sanitize
+
+
+To check numeric IDs of class disk.
+$ lshw -class disk -numeric
+
+
+To print hardware information in html format
+$ lshw -html
+
+
+To print hardware configuration details in xml format
+$ lshw -xml
+
+
+To enable the speed parameter
+$ lshw -enable spd
+
+
+To disable the speed parameter
+$ lshw -disable spd
+
+
+To get help
+$ lshw --help

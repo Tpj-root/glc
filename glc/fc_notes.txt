@@ -1,0 +1,43 @@
+
+fc - shell built-in command used to list, edit and re-execute the
+most recently entered commands
+To display the last 16 commands
+$ fc -l
+
+
+To reverse the order of the commands
+$ fc -r
+
+
+To suppress the line numbers using
+$ fc -ln
+
+
+To list the result starting from a specific command
+$ fc -l 2060
+
+
+To list a commands within a specific range
+$ fc -l 2055 2060
+
+
+To list the commands starting from fallocate command up to the
+latest command
+$ fc -l f
+
+
+To list between falloacate to ls command (in this case)
+$ fc -l f l
+
+
+To edit the last command and re-run it again
+$ fc
+
+
+To change the default editor to edit commands
+$ fc -e vim154
+
+
+To set "vim" as the new default editor, edit your ~/.profile
+FCEDIT=vim save and exit
+$ source ~/.profile

@@ -1,0 +1,61 @@
+
+tune2fs - is used to manipulate the filesystem parameters of a
+ext 2/3/4 type file system
+syntax
+$ sudo tune2fs option device
+
+
+To list file system parameters
+$ sudo tune2fs -l /dev/vda1
+
+
+To set the volume label
+$ sudo tune2fs -L my_vol /dev/vda1
+
+
+To find out maximum mount count and mount count
+$ sudo tune2fs -l /dev/vda1 | grep -i mount
+
+
+
+To set maximum mount count
+$ sudo tune2fs -c 80 /dev/vda1
+
+
+To Display Check Interval of a filesystem
+$ sudo tune2fs -l /dev/vda1 | grep interval
+
+
+
+To set time intervals between two filesystem checks
+$ sudo tune2fs -i 5m /dev/vda1
+$ sudo tune2fs -i 5d /dev/vda1
+$ sudo tune2fs -i 5w /dev/vda1
+
+
+
+To disable filesystem check on reboot set the maximum mount count
+to -1 or 0.
+$ sudo tune2fs -c 0 /dev/vda1
+$ sudo tune2fs -i 0 /dev/vda1
+
+
+
+To set mount counts
+$ sudo tune2fs -C 30 /dev/vda1
+
+
+To Set the last-mounted directory
+$ sudo tune2fs -M mount_mydir /dev/vda1
+
+
+To Set the last time checked of a filesystem
+$ sudo tune2fs -T now /dev/vda1
+
+
+To Change the error behavior of a filesystem
+$ sudo tune2fs -e continue /dev/vda1
+
+
+To generate a new random UUID of the filesystem
+$ sudo tune2fs -U random /dev/vda1

@@ -1,0 +1,8 @@
+
+logout - it performs the task of logging out the logged-in user
+from the system in that session. Logout only works in logon
+shells, not in the non-logon shells
+
+
+To logout the user from the current session from logon shell
+$ logout

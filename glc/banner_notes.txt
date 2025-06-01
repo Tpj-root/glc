@@ -1,0 +1,11 @@
+
+banner - print large banner
+To install banner
+$ sudo apt install sysvbanner
+syntax
+$ banner text
+$ banner 12345
+$ banner ilugc
+$ banner klug
+By default it prints in Upper case letters only
+It will print only alphanumeric not special characters.351

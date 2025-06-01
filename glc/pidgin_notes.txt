@@ -1,0 +1,26 @@
+
+pidgin - start Instant Messaging client in command line
+
+
+To start pidgin instant Messaging client
+$ pidgin
+
+
+To print debugging messages to stdout
+$ pidgin -d
+
+
+To force online, regardless of network status
+$ pidgin -f
+
+
+To not automatically login
+$ pidgin -n
+
+
+To enable specified account
+$ pidgin -l
+
+
+To display this help
+$ pidgin -h

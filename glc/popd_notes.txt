@@ -1,0 +1,32 @@
+
+popd - is used to remove directories from the directory stack
+syntax
+$ popd [OPTIONS] [DIRECTORY]
+$ dirs -l -v
+0/home/ilugc/Templates
+1/home/ilugc/Pictures
+2/home/ilugc/Videos
+3/home/ilugc/Music
+4/home/ilugc/Downloads
+5/home/ilugc/Documents
+6/home/ilugc/Desktop
+7/home/ilugc
+
+
+To delete directories in the directory stack
+$ popd
+
+
+To Delete a directory from the stack without changing the current
+directory
+$ popd -n384
+
+
+To remove a directory from any position
++N is used, the Nth directory is deleted from the top
+$ popd +N
+$ popd +1
+-N is used, the Nth directory is deleted from the bottom
+$ popd -N
+$ popd -1
+where N is numerical parameter

@@ -1,0 +1,15 @@
+
+systemd-machine-id-setup - Initialize the machine ID in
+/etc/machine-id
+
+
+To clear the original “machine-id”
+$ sudo rm /etc/machine-id
+
+
+To create the new “machine-id” value
+$ sudo systemd-machine-id-setup
+
+
+To verify the new value of machine-id.
+$ cat /etc/machine-id

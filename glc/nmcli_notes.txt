@@ -1,0 +1,66 @@
+
+nmcli - command-line tool for controlling NetworkManager
+
+
+To check networkmanager is running
+$ nmcli -t -f RUNNING general
+
+
+To get general status of networkmanager
+$ nmcli general
+
+
+To list all the available device
+$ nmcli dev status
+
+
+To list all the available connections
+$ nmcli con show
+
+
+To list all the configuration of interface
+$ nmcli con show <network_interface>
+$ nmcli con show eth0
+$ nmcli con show docker0
+$ nmcli con show virbr0
+
+
+
+To check physical network device status
+$ nmcli dev status
+
+
+To change hostname using nmcli
+check
+$ nmcli general hostname
+
+
+then update the hostname
+$ nmcli general hostname server.example.com
+
+To reload connection
+$ nmcli con reload
+
+
+
+To Interactively add or edit a connection
+$ nmcli con edit
+eth0
+
+
+
+To display selected fields with values of connection
+$ nmcli -g ip4.address connection show eth0
+$ nmcli -g ipv4.dns connection show eth0
+
+
+To activate a connection
+$ nmcli con up eth0
+
+
+To deactivate a connection
+$ nmcli con down eth0
+
+
+To delete connection
+$ nmcli con del <interface_name>

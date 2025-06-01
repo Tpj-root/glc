@@ -1,0 +1,41 @@
+
+getfacl - getfacl displays the file name, owner, the group, and the Access Control List (ACL)
+
+
+
+example:
+To get the ACL’s of a file
+$ getfacl file_name
+
+
+To display the file access control list
+$ getfacl -a file.txt
+
+
+
+To display the default access control list
+$ getfacl -d file.txt
+
+
+To avoid displaying comment header
+$ getfacl --omit-header file.txt
+
+
+To Print all effective rights comments
+$ getfacl -e file.txt
+
+
+To skip files that only have the base ACL entries
+$ getfacl -s file.txt
+
+
+To list the ACL’s recursively
+$ getfacl -R /dir_name179
+
+
+To get the tabular output format
+$ getfacl -t /home/ilugc/file.txt
+
+
+To list the numeric user and group IDs
+$ getfacl -n file.txt180

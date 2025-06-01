@@ -1,0 +1,50 @@
+
+nisdomainname - show or set the system's NIS/YP domain name
+
+
+To print alias name
+$ nisdomainname -a
+
+
+
+To print all long host names (FQDN)
+$ nisdomainname -A
+
+
+
+To set default hostname if none available
+$ nisdomainname -b
+
+
+
+To print DNS domain name
+$ nisdomainname -d
+
+
+
+To display long host name (FQDN)
+$ nisdomainname -f
+
+
+
+To read host name or NIS domain name from given file
+$ nisdomainname -F
+
+
+
+To print ip addresses for the host name
+$ nisdomainname -i
+
+
+
+To print all addresses for the host
+$ nisdomainname -I
+
+
+
+To print short host name
+$ nisdomainname -s
+
+
+To print NIS/YP domain name
+$ nisdomainname -y

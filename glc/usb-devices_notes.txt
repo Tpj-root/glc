@@ -1,0 +1,6 @@
+
+usb-devices - print USB device details
+
+
+To print usb device details
+$ usb-devices

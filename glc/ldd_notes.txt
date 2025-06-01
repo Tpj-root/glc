@@ -1,0 +1,17 @@
+
+ldd - prints the shared objects (shared libraries) required by
+each program or shared object specified on the command line
+
+
+To display the dependencies of cp command
+$ ldd /bin/cp
+
+
+To display dependencies of the command with details
+$ ldd -v /bin/cp
+
+
+To display unused direct dependencies of the command
+$ ldd -u /bin/cp
+$ ldd -u /bin/grep247
+

@@ -1,0 +1,56 @@
+
+passwd - change user password
+$ passwd [options] [username]
+
+
+To change system user’s password
+$ passwd
+
+
+To change password for root
+$ sudo passwd root
+
+
+To display user status Information
+$ sudo passwd -S ilugc
+
+
+To display information of all users
+$ sudo passwd -Sa
+
+
+To delete user’s password
+$ sudo -d ilugc
+
+
+To force expire the password to the user , force the user to
+change the password in the next login
+$ sudo passwd -e ilugc
+
+
+To lock a user password
+$ sudo passwd -l ilugc
+to check
+$ sudo passwd -S ilugc356
+
+
+
+To unlock user password
+$ sudo passwd -u ilugc
+
+
+To set Inactive days after password expiry
+$ sudo -i 10 ilugc
+to check
+$ sudo passwd -S ilugc
+
+
+
+To force system users to change its password in 100 number of days
+$ sudo passwd -n 100 ilugc
+
+
+To set warning days before password expiry
+$ sudo passwd -w 15 ilugc
+to check
+$ sudo passwd -S ilugc357

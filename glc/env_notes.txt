@@ -1,0 +1,20 @@
+
+env - run a program in a modified environment
+To print out a list of all environment variables
+$ env
+
+
+To run a command with an empty environment
+$ env -i /bin/sh
+$ env
+PWD=/home/klug/test
+$ exit
+
+
+To remove variable from the environment
+$ env -u variable_name
+
+
+
+To end each output line with NULL
+$ env -0148

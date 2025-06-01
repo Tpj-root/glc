@@ -1,0 +1,36 @@
+
+jobs - used to list the jobs that you are running in the background and in the foreground
+
+
+
+$ ping google.com
+CTRL+Z
+
+
+
+To lists jobs running in background
+$ jobs
+[1]+
+Stopped
+ping google.com
+To display the process ID or jobs for the job whose name begins
+with “p”
+$ jobs %p
+
+
+
+To display PIDs only
+$ jobs -p
+
+
+
+To display jobs with process id
+$ jobs -l
+
+
+To display only running jobs
+$ jobs -r236
+
+
+To make the job to run in foreground
+$ fg %1237

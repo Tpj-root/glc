@@ -1,0 +1,11 @@
+
+tgz - makes a gzip'd tar archive
+syntax
+
+$ tgz [ destination [ source ...
+] ]
+
+
+$ tar -cvzf <name of tarball>.tgz /path/to/source/folder
+$ tar -cvzf <name of tarball>.tgz /path/to/source_file
+$ tar -cvzf file.tgz /home/ilugc/Documents/file.pdf

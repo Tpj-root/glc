@@ -1,0 +1,38 @@
+
+pr - is used to prepare a file for printing by adding suitable
+footers, headers, and the formatted text.
+Syntax:
+$ pr [options][filename]
+
+
+
+To print k number of columns
+$ pr -k file.txt
+
+
+To print 2 number of columns
+$ pr -2 file.txt
+
+
+To print 3 number of columns
+$ pr -3 file.txt
+
+
+To suppress the headers and footers
+$ pr -t file.txt
+
+
+To Double the paces input, reduces clutter
+$ pr -d file.txt
+
+
+To provide number lines which helps in debugging the code
+$ pr -n file.txt
+
+
+To omit page headers and trailers, eliminate any pagination
+$ pr -T file.txt
+
+
+To print help
+$ pr -h

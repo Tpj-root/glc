@@ -1,0 +1,49 @@
+
+lsof - it provides a list of files that are opened by which process
+
+
+To list out all the files that are opened by any process in the
+system
+$ sudo lsof
+
+
+To list all files opened by a specific user
+$ sudo lsof -u USER_NAME
+
+
+To list all open files by a particular Process
+$ sudo lsof -c mariadb
+
+
+To list all open files that are opened by a particular process
+$ sudo lsof -p process_ID
+
+
+To find out the list of files opened by parent process Id
+$ sudo lsof -R
+
+
+To lists out the files which are opened by a particular directory
+$ sudo lsof -D path/to/directory
+
+
+To find out files opened by network connections
+$ sudo lsof -i
+
+
+To find out files opened by processes running on specific port
+$ lsof -i TCP:22
+
+
+To list only IPv4 and IPv6 open files
+$ sudo lsof -i 4
+$ sudo lsof -i 6
+
+
+To list all the running processes of open files of TCP Port ranges
+from 1-1024
+$ sudo -i TCP:1-1024
+
+
+To find what files and commands a specific user used
+$ sudo lsof -i -u USER_NAME

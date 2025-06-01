@@ -1,0 +1,48 @@
+
+nl - is used for numbering lines, accepting input either from a
+file or from STDIN
+$ cat file.txt
+Apache
+Squid
+Samba
+DNS
+DHCP
+
+
+
+
+To display a file with line numbers
+$ nl file.txt
+
+
+
+To number all lines including empty lines
+$ nl -b a file.txt
+
+
+
+To make line number increment at each line
+$ nl -i 2 file.txt
+$ nl -i 3 file.txt
+
+
+
+To make the starting line number different
+$ nl -v 5 file.txt
+
+
+
+To add a string lafter line numbers
+$ nl -s "..." file.txt
+$ nl -s "###" file.txt
+
+
+To change column for line numbers
+$ nl -w2 file.txt
+$ nl -w3 file.txt
+
+
+To print the lines using a different number format
+$ nl -n ln file.txt
+$ nl -n rn file.txt
+$ nl -n rz file.txt338

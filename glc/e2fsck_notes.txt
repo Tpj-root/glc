@@ -1,0 +1,22 @@
+
+e2fsck - check a Linux ext2/ext3/ext4 file system
+To check a partition
+$ sudo e2fsck /dev/sdc1
+
+
+To perform automatic repair using e2fsck
+$ sudo e2fsck -p /dev/sdc1
+or
+$ sudo e2fsck -y /dev/sdc1
+
+
+To check only using e2fsck
+$ sudo e2fsck -n /dev/sdc1
+
+
+To force the filesystem check
+$ sudo e2fsck -f /dev/sdc1
+
+
+T0 display a progress bar during e2fsck check
+$ sudo e2fsck -f -C 0 /dev/sdc1133

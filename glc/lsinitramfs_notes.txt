@@ -1,0 +1,12 @@
+
+
+lsinitramfs - lists the content of given initramfs images
+
+
+To list initramfs content of current running kernel
+$ sudo lsinitramfs /boot/initrd.img-$(uname -r)
+
+
+To display long and more verbose listing of initramfs content
+$ sudo lsinitramfs -l /boot/initrd.img-$(uname -r)284
+

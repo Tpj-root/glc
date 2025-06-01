@@ -1,0 +1,9 @@
+
+
+
+fallocate - preallocate or deallocate space to a file
+To allocate a file with a size of 2GB and 10 GB
+$ fallocate -l 2G file1.img
+$ fallocate -l 10G file2.img
+check with
+$ ls -lh *.img

@@ -1,0 +1,32 @@
+
+free - Display amount of free and used memory in the system
+$ free
+
+
+To display free and used memory in bytes
+$free -b
+
+
+To display free and used memory in kilobytes
+$free -k
+
+
+To display free and used memory in megabytes
+$free -m
+
+
+To display free and used memory in gigabyte
+$free -g
+
+
+To display an additional line containing the total of the total,
+used and free columns
+$ free -t
+
+
+To display the output of free command after a set time gap
+$ free -s 4 -c 4
+
+
+
+

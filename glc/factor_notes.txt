@@ -1,0 +1,19 @@
+
+factor - Print the prime factors of each specified integer NUMBER
+$ factor number
+$ factor 1000
+1000: 2 2 2 5 5 5
+$ factor 10000
+10000: 2 2 2 2 5 5 5 5
+$ factor 30
+30: 2 3 5
+$ factor 300
+300: 2 2 3 5 5
+$ factor 10000000
+10000000: 2 2 2 2 2 2 2 5 5 5 5 5 5 5
+$ factor 17
+17: 17
+$ factor 19
+19: 19
+
+

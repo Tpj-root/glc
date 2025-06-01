@@ -1,0 +1,57 @@
+
+hostname - display the system's DNS name, and to display
+or
+set its hostname or NIS domain name
+
+
+
+To display the system hostname
+$ hostname
+
+
+To get alias name of the host system
+$ hostname -a
+
+
+To get all Fully Qualified Domain Name of the host system
+$ hostname -A
+
+
+To always set a hostname, default name is used nothing is
+specified
+$ hostname -b
+
+
+To get the domain name if local domains are set. It will not
+return anything
+if no local domain is set.
+$ hostname -d
+
+
+
+To get the FQDN , It contains short hostname and DNS domain name
+$ hostname -f214
+
+
+To set the hostname specified in a file
+$ sudo hostname -F filename
+
+
+To get the IP addresses , works only if hostname is resolvable
+$ hostname -i
+
+
+To get all IP addresses
+$ hostname -I
+
+
+To get the hostname in short
+$ hostname -s
+
+
+To set the hostname
+$ sudo hostname new_hostname
+
+
+To display the NIS domain name
+$ hostname -y215

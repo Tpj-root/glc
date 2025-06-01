@@ -1,0 +1,31 @@
+
+nstat - simple tools to monitor kernel snmp counters and network
+interface statistics
+
+
+
+To Dump absolute values of counters
+$ nstat -a
+
+
+
+To format output in JSON
+$ nstat -j
+
+
+
+To make pretty print
+$ nstat -p -j
+
+
+
+To reset history
+$ nstat -r
+
+
+To not update the history
+$ nstat -s
+
+
+To show entries with zero activity
+$ nstat -z

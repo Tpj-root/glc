@@ -1,0 +1,39 @@
+
+timeout - run a command with a time limit
+syntax
+$ timeout [OPTION] DURATION COMMAND [ARG]...
+
+
+
+To specify timeout value (in seconds) with the command
+$ timeout 5 ping ilugc.in
+$ timeout 5h ping ilugc.in
+$ timeout 5d ping ilugc.in
+$ timeout 8 tail -f /var/log/syslog
+
+
+we can specify time in seconds , minutes , hours and days
+To make Preserve status returns an exit status even the process is
+terminated forcefully
+$ timeout --preserve-status 2m ping facebook.com
+Ctrl+c
+$ Ctrl+c
+$ echo $?
+
+
+To set a signal to the command
+$ timeout -s <command>
+
+
+To check the available signals
+$ kill -l
+$ sudo timeout -s SIGKILL ping ilugc.in
+
+
+To send signals by using a signal number
+$ sudo timeout -s 9 ping ilugc.in532
+
+
+To kill the timeout command after 5 seconds if the connection is
+not established
+$ sudo timeout -k 5 1m ping google.com

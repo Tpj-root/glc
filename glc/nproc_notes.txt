@@ -1,0 +1,22 @@
+
+
+
+nproc - print the number of processing units available
+
+
+To print the number of processing units available in the system or
+to the current process
+$ nproc
+
+
+To print total installed processing units
+$ nproc --all
+
+
+To exclude some processing units
+$ nproc --ignore=4
+
+
+To display the help
+$ nproc --help
+

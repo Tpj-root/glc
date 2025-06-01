@@ -1,0 +1,27 @@
+
+size - list section sizes and total size of binary files
+
+
+
+$ cat hello.c
+#include <stdio.h>
+int main() {
+// printf() displays the string inside quotation
+printf("Hello, World!");
+return 0;
+}
+$ gcc hello.c -o hello.o
+$ size hello.o
+
+
+
+To display in octal
+$ size -o hello.o
+
+
+To display in hexadecimal
+$ size -x hello.o
+
+
+To display in system V format and hexadecimal values
+$ size -Ax hello.o

@@ -1,0 +1,23 @@
+
+login - used when signing onto a system. It can also be used to switch from one user to another
+
+
+To log in to the system
+# login
+
+
+To log in to the system as user ilugc
+# login -p ilugc
+
+
+To login to a domain
+# login ilugc.in
+
+
+To skip the second login authentication
+# login -f -h host_name -f user_name
+# login -f -h ilugc -f user1
+
+
+To display help
+# login --help255

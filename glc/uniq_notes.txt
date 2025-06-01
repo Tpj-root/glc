@@ -1,0 +1,54 @@
+
+uniq - it is used to report or filter out repeated lines in a
+file.
+$ cat demo.txt
+redhat
+debian
+ubuntu
+ubuntu
+centos
+fedora
+fedora
+fedora
+fedora
+
+
+To report or filter out for lines that are adjacent and repeated
+$ uniq demo.txt
+
+
+To only print unique lines
+$ uniq -u demo.txt
+
+
+To prefix lines by the number of occurrences
+$ uniq -c demo.txt
+
+
+To only print duplicate lines, one for each group
+$ uniq -d demo.txt
+
+
+To print all duplicate lines
+$ uniq -D demo.txt
+
+
+To print all duplicate lines but
+an empty line
+allow
+separating
+groups
+with
+$ uniq --all-repeated=prepend demo.txt
+
+
+To ignore differences in case when comparing
+$ uniq -i demo.txt
+
+
+To skip comparing the first X number of characters in each line
+$ uniq -s 3 demo.txt
+
+
+To compare only the first X number of characters
+$ uniq -w 4 demo.txt

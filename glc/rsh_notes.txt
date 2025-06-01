@@ -1,0 +1,34 @@
+
+rsh command executes commands on a remote shell.
+syntax
+$ rsh remote-machinename/ip command
+
+
+To run a command on remote-host
+$ rsh remote-host ls
+$ rsh remote-machine/ip mkdir ~/Desktop/testfolder
+$ rsh remote-machine/ip mv -v ~/Desktop/*.txt
+
+
+~/Desktop/tesffolder/
+$ rsh 192.168.122.50 hostname
+
+
+To run command on remote-host as different user
+$ rsh -l user2 192.168.122.50 whoami
+
+
+To run multiple commands in the remote computer
+$ rsh -l user2 192.168.122.50 "pwd ; ls"
+
+
+To run commands with sudo privileges on the remote system
+$ rsh -l user2 192.168.122.50 sudo -S deluser user3
+
+
+To run local scripts on the remote system
+$ rsh -l user2 192.168.122.50 bash test-script.sh
+
+
+To save the remote system’s output to the local system
+$ rsh -l user2 192.168.122.50 ps > running_process.txt

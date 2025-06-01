@@ -1,0 +1,58 @@
+
+pgrep - look up or signal processes based on name and other
+attributes
+syntax
+$ pgrep [OPTIONS] <PATTERN>
+
+
+To find the PID of the SSH
+$ pgrep sshd
+
+
+To print the PID with delimiter for sshd process
+$ pgrep -d "|" sshd
+$ pgrep -d ":" sshd
+
+
+To use a space as a delimiter
+$ pgrep ssh -d' '
+
+
+To show the process name along with its ID
+$ pgrep ssh -l
+
+
+To list PID and full command line
+$ pgrep -a sshd
+
+
+To list all ThreadID
+$ pgrep -w sshd
+
+
+To match case insensitively
+$ pgrep -i sshd
+
+
+To print count of matching processes
+$ pgrep -c sshd
+
+
+To display most recently started process id
+$ pgrep -n sshd
+
+
+To display least recently started
+$ pgrep -o sshd
+
+
+To match only child processes of the given parent
+$ pgrep -P <PID_sshd>
+
+
+To match exactly with the command name
+$ pgrep -x sshd
+
+
+To print help
+$ pgrep --help

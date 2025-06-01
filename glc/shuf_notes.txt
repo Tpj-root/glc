@@ -1,0 +1,48 @@
+
+shuf - writes a random permutation of the input lines to standard
+output
+shuf command without any option
+$ shuf
+1
+2
+3
+ctrl+d
+3
+1
+2
+$ cat file.txt
+msg1
+msg2
+msg3
+msg4
+msg5
+msg6
+
+
+
+
+To shuffle all the lines in the file
+$ shuf file.txt
+To add the number of lines to shuffle
+$ shuf -n 3 file.txt459
+To make shuf as a range
+$ shuf -i 10-30
+To get only one output from the randomized range
+$ shuf -i 10-100 -n 1
+To shuffle a range and allow displaying three outputs which can
+be repetitive.
+$ shuf -i 10-100 -n 3 -r
+To use shuf as a List
+$ shuf -e a b c d
+$ shuf -e 1 2 3 4
+To randomize a list and decide to only output two output lines
+$ shuf -e -n 2 1 2 3 4
+$ shuf -e -n 2 a b c d
+To write output to a file
+$ shuf -i 10-20 -o file.txt
+$ cat file.txt
+
+
+
+
+

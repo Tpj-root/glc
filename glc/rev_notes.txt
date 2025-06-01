@@ -1,0 +1,12 @@
+
+
+rev - reverse lines characterwise
+$ vim file.txt
+This is sample test file
+:x
+$ rev file.txt
+$ rev
+linux
+foss
+ilugc
+$ echo This is sample file | rev

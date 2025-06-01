@@ -1,0 +1,16 @@
+
+slogin - is an alias for the ssh client, which is used to connect
+securely to a remote shell.
+
+
+To login to a remote server
+$ slogin 192.168.122.50
+$ slogin user1@192.168.122.50
+
+
+To login to remote server with port
+$ slogin -p 22 user1@192.168.122.50
+
+
+To to login as user1 on the remote machine
+$ slogin -l user1 192.168.122.50

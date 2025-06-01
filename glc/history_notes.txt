@@ -1,0 +1,57 @@
+144 history
+history - it is a built-in shell tool that displays a list of
+commands used in the terminal session
+To display the list of commands used since the start of the
+terminal session
+$ history
+
+
+To show only the latest 10 entries from the list of commands used
+since the start of the
+terminal session
+$ history 10
+
+
+To run the 100 th command again in history
+$ !100
+
+
+To repeat the last command
+$ !!
+
+
+To run the command count starts the from the end of the list
+for example to run the 3rd command in history count starts from
+the end
+$ !-3201
+
+
+To search a command by string
+$ !sudo
+
+
+To display the command without running it
+$ !sudo:p
+
+
+To search for a command that contains a string but not start with
+the string
+$ !?firewall-cmd
+
+
+sudo firewall-cmd --get-services
+To use history along with grep
+$ history | grep chown
+
+
+To remove a command from history
+$ history -d event_number
+$ history -d 100
+
+
+To remove whole history
+$ history -c
+
+
+To view the last 10 commands
+$ history | tail

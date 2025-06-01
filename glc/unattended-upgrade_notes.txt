@@ -1,0 +1,34 @@
+
+unattended-upgrade - automatic installation of security (and other) upgrades
+
+
+To simulate installing updates, do not actually do it
+$ sudo unattended-upgrade --dry-run
+
+
+To print debug messages
+$ sudo unattended-upgrade -d
+
+
+To make apt/libapt print verbose debug messages
+$ sudo unattended-upgrade --apt-debug -v
+
+
+To print info messages
+$ sudo unattended-upgrade -v
+
+
+To make Only download, do not even try to install
+$ sudo unattended-upgrade --download-only
+
+
+To make upgrade in minimal steps
+$ sudo unattended-upgrade --minimal-upgrade-steps
+
+
+To upgrade all packages together instead of in smaller sets
+$ sudo unattended-upgrade --no-minimal-upgrade-steps
+
+
+To show this help message
+$ sudo unattended-upgrade -h

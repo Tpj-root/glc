@@ -1,0 +1,69 @@
+gzip - compress or expand files reduces the size
+named files using Lempel-Ziv coding
+To compress a single file
+$ gzip file_name.txt
+
+
+To compress multiple files at once
+$ gzip a.txt b.txt c.txt
+
+
+To compress a single file and keep the original
+$ gzip -c a.txt > a.txt.gz
+
+
+To compress all files recursively
+$ gzip -r *
+
+
+To decompress a gzip compressed file
+$ gzip -d file_name.txt.gz
+
+
+To decompress a file and keep the original .gz file
+$ gunzip -c file.txt.gz > file.txt
+
+
+To list compression information
+$ gzip -l file.tar.gz
+of
+the
+To adjust compression level
+level of compression range from 1 to 9
+using option 1 will complete faster but space saving is less
+using option 9 will complete slow but space saving is high
+default gzip uses a compression level of -6
+$ time gzip -1 file.tar
+$ gzip -l file.tar.gz
+$ time gzip -9 file.tar
+$ gzip -l file.tar.gz
+
+
+To check the integrity of a compressed file
+$ gzip -tv file.txt.gz
+
+
+To view the CRC value
+$ gzip -lv file.txt.gz
+
+
+To concatenate multiple files
+$ gzip -c a.txt > c.gz
+$ gzip -c b.txt >> c.gz
+
+
+To specify our own suffix instead of .gz
+$ gzip -S .cz file189
+
+
+To display the gzip license info
+$ gzip -L
+
+
+
+To suppress all warnings
+$ gzip -q file.txt
+
+
+To save the original file name and time stamp
+$ gzip -N file.txt

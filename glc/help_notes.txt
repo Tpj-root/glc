@@ -1,3 +1,32 @@
+help - displays the information about the built-in commands present in the Linux shell
+
+
+
+To display information about help command
+$ help help
+$ help cd
+
+
+
+To display short description about commands
+$ help -d help
+$ help -d ls
+$ help -d cd
+
+
+
+To display usage in pseudo-manpage format
+$ help -m help
+$ help -m pwd
+
+
+
+To display short usage synopsis for each topic matching PATTERN
+$ help -s pwd
+$ help -s cd209
+
+
+
 How it helps you:
 
 The glc command provides usage instructions, installation steps, and examples 

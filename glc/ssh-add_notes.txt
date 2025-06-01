@@ -1,0 +1,39 @@
+
+ssh-add - adds private key identities to the OpenSSH
+authentication agent
+
+
+To create the public key and the private key
+$ ssh-keygen -t rsa
+
+
+To keep the identity of the agents for 600 seconds.
+$ ssh-agent -t 600
+
+
+To make ssh-agent command for non-interactive authentication
+$ eval $(ssh-agent)
+
+
+To add the private key passphrase to ssh-agent
+$ ssh-add
+
+
+To list my private keys cached by ssh-agent
+$ ssh-add -l
+
+
+To list all public key parameters of all identities
+$ ssh-add -L
+
+
+To remove all cached ssh-agent private keys
+$ ssh-add -D
+
+
+To lock the SSH Agent
+$ ssh-add -x
+
+
+To unlock SSH Agent
+$ ssh-add -X

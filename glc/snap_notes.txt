@@ -1,0 +1,94 @@
+
+snap- is used to
+install, configure, refresh and remove snaps
+$ sudo snap install snap-store
+
+
+To Install Snap Apps
+$ sudo snap install <package_name>
+
+
+
+To list Installed snaps
+$ snap list
+
+
+To Search for Snaps
+$ snap find <search_term>
+
+
+
+To update snaps
+$ snap refresh <package_name>
+
+
+
+To print which snap packages have available updates
+$ sudo snap refresh --list
+
+
+
+To downgrade Snaps
+$ sudo snap revert <package_name>
+
+
+
+To remove Snaps
+$ sudo snap remove <package_name>
+
+
+
+To remove a snap without generating a snapshot
+$ sudo snap remove <package_name> --purge
+
+
+
+To Disable Snaps
+$ sudo snap disable <package_name>
+
+
+
+To Enable a disabled snap
+$ sudo snap enable <package_name>
+
+
+To List All Running Services
+$ snap services
+
+
+
+To list the services of a single snap
+$ snap services <package_name>
+
+
+
+To Start, Restart, and Stop Snap Services
+$ sudo snap restart <package_name>
+$ sudo snap start <service_name>
+$ sudo snap stop <package_name>
+
+
+
+To prevent a snap service from starting on boot
+$ sudo snap stop --disable <service_name>
+
+
+
+To make a service to start on next boot
+$ sudo snap start --enable <service_name>
+
+
+
+To Download and Install Snap Apps Offline
+$ snap download <package_name>
+
+
+
+To display history of changes made to system
+$ snap changes
+
+
+
+To change to a different channel
+$ sudo snap refresh <package_name> --channel=<channel_name>
+$ sudo snap refresh youtube-dl --channel=stable

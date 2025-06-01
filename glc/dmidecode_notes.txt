@@ -1,0 +1,33 @@
+
+dmidecode -
+is a tool for dumping a computer's DMI (some say
+SMBIOS) table contents in a human-readable format
+To get information about Processor
+$ sudo dmidecode -t processor
+To get hardware information
+$ sudo dmidecode
+To get BIOS information
+$ sudo dmidecode -t bios
+To print less verbose output
+$ sudo dmidecode -q
+To display the value of the given DMI string
+$ sudo dmidecode -s processor-frequency
+To get information about Baseboard
+$ sudo dmidecode -t baseboard
+To get information about Chassis
+$ sudo dmidecode -t 3114
+To display the version
+$ sudo dmidecode -V
+To get DMI types
+$ sudo dmidecode -t 6
+To get the cache information
+$ sudo dmidecode -t cache
+To get memory Information
+$ sudo dmidecode -t 16
+To get the manufacturer, model and serial number
+$ sudo dmidecode -t system
+To Display Information of about Installed Physical Memory and
+DIMMs
+$ sudo dmidecode -t 17
+To find the maximum physical memory supported by your system
+$ sudo dmidecode -t 16115

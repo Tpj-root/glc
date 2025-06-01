@@ -1,0 +1,19 @@
+
+grpck - verify integrity of group files
+$ grpck [option] [files]
+
+
+
+To verify the group account file
+# grpck /etc/group
+
+
+To verify the shadow file
+# grpck /etc/gshadow
+Exit Codes
+0: Success.
+1: Syntax error.
+2: One or more bad group entries found.
+3: Could not open group files.
+4: Could not lock group files.
+5: Could not write group files.

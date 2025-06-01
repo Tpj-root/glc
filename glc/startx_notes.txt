@@ -1,0 +1,14 @@
+
+startx command launches an X11 session.
+
+
+To start an X session at 16 bits color depth.
+$ startx -- -depth 16
+
+
+To start an X session at 100 dpi (dots per inch) resolution.
+$ startx -- -dpi 100
+
+
+To start an X session with support for multiple displays.
+$ startx -- -layout Multihead

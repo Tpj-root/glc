@@ -1,0 +1,24 @@
+
+skill - is used to send signals to users and process
+
+
+To halt/stop user1
+$ skill -STOP -u user1
+
+
+To resume already halted user1
+$ skill -CONT -u user1
+
+
+To kill and logout user1
+$ skill -KILL -u user1
+
+
+To kill and logout all users
+$ skill -KILL -v /dev/pts/*
+
+
+To stop 3 users user1, user2, user3
+$ skill -STOP user1 user2 user3
+
+

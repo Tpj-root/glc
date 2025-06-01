@@ -1,0 +1,36 @@
+
+GNU diff - compare files line by line
+
+
+$ cat a.txt
+Apple
+Banana
+Grapes
+Mango
+Papaya
+
+
+$ cat b.txt
+Apple
+Banana
+Grapes
+Mango
+
+
+The change character can be one of the following:
+a - Add the lines.
+c - Change the lines.
+d - Delete the lines.
+$ diff a.txt b.txt130
+
+
+To view differences in context mode
+$ diff -c f1.txt f2.txt
+
+
+To view differences in unified mode
+$ diff -u f1.txt f2.txt
+
+
+To ignores case
+$ diff -i f1.txt f2.txt131

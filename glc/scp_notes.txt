@@ -1,0 +1,54 @@
+
+SCP (Secure Copy Protocol) - is a network protocol used to
+securely copy files/folders between Linux systems on a network
+syntax:
+$ scp [option] [user_name@source_host:path/to/source/file]
+[user_name@target_host:target/path]
+
+
+To copy a file from local to remote server
+$ scp example.txt root@remote_server:/home/user1/remote_dir
+
+
+To copy a file from a remote server to the local host
+$ scp remote_server:/home/remote_dir/example.txt
+home/user1/Documents
+
+
+To copy a file from one remote server to another
+$ scp root@remote_server1:/home/user1/remote_dir/example.txt
+root@remote_server2:/home/user2/Documents
+
+
+To copy multiple files with scp
+$ scp sample1.txt sample2.txt
+root@remote_server:/home/user1/remote_dir
+
+
+To copy a folder from local host to remote server recursively
+$ scp -r example_folder root@remote_server:/home/user1/remote_dir
+
+
+To copy a file with scp using a specific port
+$ scp -P 2222 sample_example.txt
+root@remote_server:/home/user1/remote_dir
+
+
+To copy a file with scp in quiet mode
+$ scp -q example.txt root@remote_server:/home/user1/remote_dir
+
+
+To copy a file with scp in verbose mode
+$ scp -v example.txt root@remote_server:/home/user1/remote_dir
+
+
+To copy a file with scp and limit bandwidth for scp to 50 KB/s
+$ scp -l 400 example.txt root@remote_server:/home/user1/remote_dir
+
+
+To copy a file with scp faster
+$ scp -C example.txt root@remote_server:/home/user1/remote_dir
+
+
+To copy a file with scp preserving file attributes
+$ scp -p example.txt root@remote_server:/home/user1/remote_dir

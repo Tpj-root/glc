@@ -1,0 +1,78 @@
+
+sed - stream editor for filtering and transforming text
+Basic text substitution using ‘sed’
+$ echo "indian linux user group" | sed 's/indian/kanchi/'
+Replace all instances of a text in a particular line of a file
+using ‘g’ option
+$ cat linux.txt
+linux is a very popular os.
+linux is easy to use. linux is easy to learn.
+linux is a versatile os
+
+
+
+To make all occurrences to change from linux to unix
+$ sed 's/linux/unix/g' linux.txt
+
+
+
+To replace words or characters with ignore character case
+$ sed 's/linux/unix/gi' myfile.txt
+
+
+
+To make the occurrences to change from linux to unix in line 2
+$ sed '2 s/linux/unix/g' linux.txt
+
+
+
+To Replace the second occurrence only of a match on each line
+$ sed 's/linux/unix/g2' linux.txt
+
+
+
+To Parenthesize first character of each word
+$ echo "Welcome To Indian Linux User Group" | sed 's/\(\b[A-Z]\)/\
+(\1\)/g'
+
+
+To Replace string on a range of lines
+$ sed '1,2 s/linux/unix/' linux.txt
+
+
+To Delete a particular line ex. 5th line
+$ sed '5d' filename.txt
+
+
+To Delete last line
+$ sed '$d' filename.txt
+
+
+To Delete line from range x to y
+$ sed 'x,yd' filename.txt
+$ sed '5,10d' filename.txt
+
+
+To Delete from nth to last line
+$ sed '12,$d' filename.txt
+
+
+To Delete pattern matching line
+$ sed '/pattern/d' filename.txt
+$ sed '/abc/d' filename.txt
+
+
+To View a range of lines of a document
+$ sed -n '5,10p' myfile.txt
+
+
+To view the entire file except a given range
+$ sed '5,10d' myfile.txt
+
+
+To Insert spaces in files
+$ sed G linux.txt
+
+
+To insert two blank lines
+$ sed 'G;G' linux.txt

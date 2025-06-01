@@ -1,0 +1,14 @@
+
+runuser - run a command with substitute user and group ID
+
+
+runuser cannot be used by non-root users
+Syntax:
+# runuser - username -c [commands...]
+# runuser - user1 -c 'mkdir -p ~/sample.txt'
+# runuser - user1 -c 'ls -l'
+# runuser - user1 -c 'df -Th'
+
+
+To run multiple commands
+# runuser -user1 -c 'mkdir -p ~/sample.txt; ls -l; df -Th '

@@ -1,0 +1,53 @@
+reboot - is used restart or reboot the system
+syntax
+$ reboot [OPTIONS...]
+
+
+To restart system
+$ sudo reboot
+$ sudo shutdown -r now
+
+
+To scheduled a restart after a specific time ex. 10 minutes
+$ sudo shutdown -r +10
+reboot system after 06:00 A.M
+$ sudo shutdown -r 06:00
+
+
+To cancel restart
+$ sudo shutdown -c "message"
+$ sudo shutdown -c "scheduled shutdown is cancelled"
+
+
+To restart remote server
+$ ssh root@remote-server /sbin/reboot
+$ ssh root@192.168.122.10 /sbin/shutdown -r now
+
+
+To print help options
+$ reboot --help
+
+
+
+To force immediate reboot
+$ sudo reboot -f
+
+
+To just write wtmp record and not reboot
+$ sudo reboot -w
+
+
+To restart with the Init command
+$ sudo init 6
+
+
+To don't write wtmp record
+$ sudo reboot -d
+
+
+To don't send wall message before reboot
+$ sudo reboot --no-wall
+
+
+To reboot system using systemctl
+$ sudo systemctl reboot

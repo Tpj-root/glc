@@ -1,0 +1,36 @@
+
+echo - display a line of text
+$ echo [string]
+$ echo "Welcome to Linux"
+To enable the interpretation of backslash escapes -e option
+\b
+To removes all the spaces in between the text
+$ echo -e "Welcome \bto \bLinux"
+WelcometoLinux
+\c To suppress trailing new line with backspace interpretor ‘-e‘
+to
+continue without emitting new line.
+$ echo -e "Welcome \cto Linux"
+Welcome
+\n To create new line from where it is used.
+$ echo -e "Welcome \nto \nLinux"
+Welcome
+to
+Linux140
+\t To create horizontal tab spaces
+$ echo -e "Welcome \tto \tLinux"
+Welcome
+to
+Linux
+\r To carriage return with backspace interpretor ‘-e‘ to have
+specified carriage return in output
+$ echo -e "Welcome \rto Linux"
+to Linux
+\v
+To create vertical tab spaces
+$ echo -e "Welcome \vto \vLinux"
+Welcome
+to
+Linux
+To print all files/folders
+$ echo *141

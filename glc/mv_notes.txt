@@ -1,0 +1,52 @@
+
+mv - move or rename files
+syntax:
+$ mv [Option] source destination
+
+
+
+To rename a file1.txt to file2.txt
+$ mv file1.txt file2.txt
+$ mv file1.txt /home/Documents/file2.txt
+
+
+
+To interactively rename file1.txt to file2.txt
+$ mv -i file1.txt file2.txt
+
+
+To forcefully rename or move the files , not prompt before
+overwriting
+$ mv -f file1.txt file2.txt
+
+
+
+To prevent overwrite an existing file
+$ mv -n file1.txt /home/ILUGC/Documents/
+
+
+
+To create a backup of existing destination file that will be
+overwritten
+$ mv -b file1.txt /home/ILUGC/Documents/
+
+
+
+To move only If source file Is newer than destination
+or when the destination file is missing
+$ mv -u file1.txt ~/Documents/
+
+
+
+To move multiple directories from one location to another
+$ mv dir1 dir2 dir3 /path/to/destination_directory/
+
+
+To move multiple files from one location to another
+$ mv file1 file2 file3 /path/to/destination_dir/
+
+
+
+To set SELinux security context of destination file to default
+type
+$ mv -Z file1.txt /path/to/destination_dir/

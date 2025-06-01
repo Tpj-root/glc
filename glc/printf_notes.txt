@@ -1,0 +1,34 @@
+
+printf - format and print data
+Syntax
+
+
+$ printf [-v var] format [arguments]
+
+
+To print the message
+$ printf "%s\n" "Hello, ILUGC"
+
+
+To print the string value
+$ printf "%s" "Hello, ILUGC"
+
+
+To display output with new line
+$ printf "Welcome to ILUGC \n"
+
+
+To Print integer values
+$ printf "%d\n" "1234567890"
+
+
+To Print float values
+$ printf "%f\n" "10.25"
+
+
+To Print environmental variable
+$ printf "The shell environment is: ""$SHELL \n"
+
+
+To print date and time
+$ printf "%(%D-%m-%Y %H:%M)T" $(date +%s)

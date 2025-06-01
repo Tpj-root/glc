@@ -1,0 +1,29 @@
+
+join - join lines of two files on a common field , join combines
+lines of files on a common field
+
+
+
+$ cat file1.txt
+1 andhra
+2 tamilnadu
+3 kerala
+4 karnataka
+5 pondicherry
+
+
+$ cat file2.txt
+1 101
+2 102
+3 103
+4 104
+5 105
+
+
+
+To join the 2 files
+$ join file1.txt file2.txt
+
+
+To create a new file with the joined contents
+$ join file1.txt file2.txt > file3.txt239

@@ -1,0 +1,47 @@
+
+lsmem - it lists the ranges of available memory with their online status
+
+
+To list the available online memory status
+$ lsmem
+
+
+To List each individual memory block, instead of memory blocks with similar attributes
+$ lsmem -a
+
+
+To print the SIZE column in bytes
+$ lsmem -b
+
+
+To print the output in json format
+$ lsmem -J
+
+
+To print output without header line
+$ lsmem -n
+
+
+To get help options
+$ lsmem -h
+
+
+To print output of specific column
+$ lsmem -o RANGE
+$ lsmem -o SIZE
+$ lsmem -o STATE
+$ lsmem -o REMOVABLE
+$ lsmem -o BLOCK
+combining
+
+
+
+To print all available columns
+$ lsmem --output-all
+
+
+To Produce output
+$ lsmem --pairs
+in
+the
+form of key="value" pairs280

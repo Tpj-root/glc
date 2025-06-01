@@ -1,0 +1,35 @@
+
+mkswap - set up a Linux swap area
+
+
+To make the swap
+$ sudo mkswap /dev/sdb
+
+
+To check the device for bad blocks before creating
+the swap area
+$ sudo mkswap -c /dev/sdb
+
+
+To create swap area larger than the file or partition it resides
+on
+$ sudo mkswap -f /dev/sdb
+
+
+To specify the page size (in bytes) to use, mkswap reads the size
+from the kernel
+$ sudo mkswap -p PAGESIZE
+
+
+To specify a label for the device, to allow swapon by label
+$ sudo mkswap -L LABEL
+
+
+To specify the swap space version
+$ sudo mkswap -v1
+
+
+To specify the UUID to use.
+$ sudo mkswap -U UUID
+
+The default is to generate a UUID

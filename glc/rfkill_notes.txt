@@ -1,0 +1,38 @@
+
+rfkill - tool for enabling and disabling wireless devices
+
+
+To list all the available wireless interfaces on a system
+$ sudo rfkill
+
+
+$ sudo rfkill list
+To print ID, TYPE-DESC, SOFT and HARD columns in the output
+$ sudo rfkill -o ID,TYPE-DESC,SOFT,HARD
+
+
+To print JSON-formatted output
+$ sudo rfkill -o ID,TYPE-DESC,SOFT,HARD -J
+$ sudo rfkill -J
+
+
+To Block an interface by ID
+$ sudo rfkill block 0
+$ sudo rfkill block 1
+
+
+To Block interfaces by type
+$ sudo rfkill block bluetooth
+
+
+To unblocking interfaces
+$ sudo rfkill unblock 0
+
+
+To unblock all bluetooth devices
+$ sudo rfkill unblock bluetooth
+
+
+To toggle the status of an interface
+$ sudo rfkill toggle <interface_id>
+$ sudo rfkill toggle 0

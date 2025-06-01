@@ -1,0 +1,98 @@
+
+lsns - lists information about all the currently accessible namespaces or about the given namespace
+
+
+
+To display information about all the currently accessible
+namespaces
+$ sudo lsns
+
+
+
+To print info about all currently accessible namespaces in JSON
+output format
+$ sudo lsns -J
+
+
+To print the output without header line
+$ sudo lsns -n
+
+
+
+To print only namespace identifier (inode number)
+$ sudo lsns -o NS
+
+
+To print only kind of namespace
+$ sudo lsns -o TYPE
+
+
+
+To print only the path to the namespace
+$ sudo lsns -o PATH
+
+
+
+To print the number of processes in the namespace
+$ sudo lsns -o NPROCS
+
+
+To print the lowest PID in the namespace
+$ sudo lsns -o PID
+
+
+To print the PPID of the PID
+$ sudo lsns -o PPID
+
+
+To print the command line of the PID
+$ sudo lsns -o COMMAND
+
+
+To print the UID of the PID
+$ sudo lsns -o UID
+
+
+To print the username of the PID
+$ sudo lsns -o USER
+
+
+To print the namespace ID as used by network subsystem
+$ sudo lsns -o NETNSID
+
+
+To print the nsfs mountpoint
+$ sudo lsns -o NSFS
+
+
+To display all output columns
+$ sudo lsns --output-all
+
+
+To display only the namespaces held by the process with specific
+PID
+$ sudo lsns -p <PID>
+
+
+
+To use the raw output format
+$ sudo lsns -r
+
+
+To display the specified type of namespaces only
+$ sudo lsns -t mnt
+$ sudo lsns -t net
+$ sudo lsns -t ipc
+$ sudo lsns -t user
+$ sudo lsns -t pid
+$ sudo lsns -t uts
+$ sudo lsns -t cgroup
+
+
+
+To display output not in columns
+$ sudo lsns -u
+
+
+To print help options
+$ sudo lsns --help

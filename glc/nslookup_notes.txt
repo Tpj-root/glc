@@ -1,0 +1,30 @@
+
+nslookup - query Internet name servers interactively
+
+
+To find out “A” record (IP address) of Domain
+$ nslookup ilugc.in
+
+
+To find out reverse domain lookup
+$ nslookup 34.87.59.92
+
+
+To Query MX (Mail Exchange) records.
+$ nslookup -query=mx www.ilugc.in
+
+
+To query NS(Name Server) record.
+$ nslookup -query=ns www.yahoo.com
+
+
+To query SOA (Start of Authority) record.
+$ nslookup -type=soa www.yahoo.com
+
+
+To query all Available DNS records.
+$ nslookup -query=any facebook.com
+
+
+To enable debug mode
+$ nslookup -debug facebook.com344

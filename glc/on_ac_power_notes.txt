@@ -1,0 +1,20 @@
+
+on_ac_power - test whether computer is running on AC power
+
+
+$ on_ac_power
+0 (true)
+System is on mains power
+1 (false) System is not on mains power
+255 (false)
+Power status could not be determined
+run system on mains power
+$ on_ac_power
+$ echo $?
+0
+
+
+run system on battery power
+$ on_ac_power
+$ echo $?
+1

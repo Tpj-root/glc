@@ -1,0 +1,15 @@
+
+gpasswd - administer /etc/group and /etc/gshadow
+
+
+
+To add user user1 to the group ilugc
+$ sudo gpasswd -a user1 ilugc
+
+
+To give user user1 administrative rights to the group ilugc
+$ sudo gpasswd -A user1 ilugc
+
+
+To remove user user1 from the group ilugc
+$ sudo gpasswd -d user1 ilugc181

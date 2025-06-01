@@ -1,0 +1,52 @@
+
+modprobe - Add and remove modules from the Linux Kernel
+
+
+To find the available modules
+$ find /lib/modules/$(unam -r) -type f -name ‘*.ko’ | more
+
+
+
+To load a Linux Kernel Module using modprobe
+$ sudo ln -s /path/to/kernel-module /lib/modules/`uname -r`
+$ sudo depmod -a
+$ sudo modprobe kernel-module
+
+
+
+To add a module into the kernel
+$ sudo modprobe <module name>
+$ sudo modprobe soundcore
+$ sudo modprobe torture
+
+
+To Check if module is added to the kernel
+$ sudo modprobe soundcore --first-time
+$ sudo modprobe torture --first-time
+
+
+To Remove a module from the kernel
+$ sudo modprobe -r soundcore
+$ sudo modprobe -r torture
+
+
+To check the module has been successfully removed
+$ sudo modprobe -r torture --first-time
+$ sudo modprobe -r soundcore --first-time303
+
+
+To make a dry run for debugging
+$ sudo modprobe -vn module_name
+$ sudo modprobe -vn soundcore
+$ sudo modprobe -vn torture
+
+
+To suppress the error information
+$ sudo modprobe lk
+$ sudo modprobe -q lk
+
+
+
+To dump out the effective configuration from the config directory
+and exit
+$ sudo modprobe -c3

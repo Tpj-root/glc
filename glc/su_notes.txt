@@ -1,0 +1,43 @@
+
+su - run a command with substitute user and group ID
+
+
+su command without any option
+$ su
+
+
+su command to make the shell a login shell
+$ su - user3
+
+
+To switch to root user
+$ su -
+
+
+To print help options
+$ su -h
+
+
+To switch to a Different User
+$ su -l user3
+
+
+To Use su with sudo command
+$ sudo su - user3
+
+
+To run specific command as a different user
+$ su -c pwd user3
+
+
+To use a different shell
+$ su -s /usr/bin/csh
+
+
+To Execute a command as different user with su command
+$ su -c <command> user3
+
+
+To use a different user in the same environment
+$ su -p user3
+$ su -m user3

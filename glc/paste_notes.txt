@@ -1,0 +1,42 @@
+
+paste - used to join files horizontally (parallel merging) by
+outputting lines consisting of lines from each file specified,
+separated by tab as delimiter, to the standard output
+
+
+$ cat name
+apache
+nginx
+mysql
+ftp
+jenkins
+
+
+$ server
+webserver
+webserver
+db server
+file server
+integration server
+To merge the files in parallel with default delimiter as tab
+$ paste name server
+
+
+
+To merge files with delimiter as any character
+$ paste -d "|" name server
+$ paste -d "\n" name server
+To paste one file at a time instead of in parallel
+$ paste -s name server
+$ paste -s name
+$ paste -s server
+To merge the contents in a column
+$ paste - - - < name
+$ paste - - < server
+To specify a delimiter for sequential merging of files
+$ paste -s -d ":" name server
+To merge N consecutive lines from a file into a single line
+with 2 hyphens
+$ cat name | paste - -
+with 3 hyphens
+$ cat name | paste - - -

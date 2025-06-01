@@ -92,3 +92,104 @@ nmap --help
 
 Or visit [https://nmap.org/book/](https://nmap.org/book/) for detailed documentation.
 
+
+nmap - tool for network exploration and security auditing
+
+
+
+To scan a system with hostname and IP address
+$ nmap www.ilugc.in
+$ nmap 18.140.226.100
+
+
+
+To get more detailed information about the remote machines
+$ nmap -v www.ilugc.in
+
+
+To scan multiple hosts
+$ nmap 157.240.16.35 104.244.42.193 18.140.226.100
+
+
+To scan whole subnet
+$ nmap 18.140.226.*
+
+
+To scan to detect firewall settings
+$ nmap -sA 18.140.226.100
+
+
+
+To scan from a file
+$ cat input.txt
+157.240.16.35
+104.244.42.193
+18.140.226.100
+$ nmap -iL input.txt
+
+
+
+To scan multiple servers using last octet of IP address
+$ nmap 172.10.0.101,102,103
+
+
+To scan IP address range
+$ nmap 172.10.0.101-110
+
+
+
+To scan network excluding remote hosts
+$ nmap 172.10.0.* --exclude 172.10.0.100
+
+
+
+To scan OS information and traceroute
+$ nmap -A 18.140.226.100
+
+
+
+To enable OS detection with nmap
+$ sudo nmap -O ilugc.in
+
+
+
+To scan a host to check its protected by firewall
+$ nmap -PN 18.140.226.100
+
+
+To find out Live hosts in a network
+$ nmap -sP 18.140.226.*
+
+
+To perform a fast scan
+$ nmap -F 18.140.226.100
+
+
+To print host interfaces and routes
+$ nmap --iflist
+
+
+To scan for specific port
+$ nmap -p 80 www.ilugc.in
+$ nmap -p 443 www.ilugc.in
+
+
+
+To scan a TCP port
+$ nmap -p T:443,80 www.ilugc.in
+
+
+To scan a UDP Port
+$ nmap -pU 22 www.ilugc.in
+
+
+To scan multiple ports
+$ nmap -p 80,443,22,53 18.140.226.100
+
+
+To scan ports by range
+$ nmap -p 80-450 18.140.226.100
+
+
+To find host services version numbers
+$ nmap -sV 18.140.226.100

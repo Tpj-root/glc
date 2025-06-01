@@ -1,0 +1,28 @@
+
+fuser - identify processes using files or sockets fuser displays
+the PIDs of processes using the specified files or filesystems.
+To find process accessing a directory
+$ fuser .
+or
+$ fuser /home/ilugc
+To view more details enable verbose
+$ fuser -v .
+or
+$ fuser -v /home/ilugc
+
+
+
+To find process accessing file system
+$ fsuer -v -m /etc/profile
+
+
+To kill a processes accessing a file or socket
+$ sudo fuser -k .
+
+
+To interactively kill a process
+$ sudo fuser -ki .
+
+
+To list all the signals
+$ sudo fuser --list-signals177

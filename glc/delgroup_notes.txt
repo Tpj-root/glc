@@ -1,0 +1,4 @@
+
+delgroup - remove a user or group from the system
+$ sudo delgroup group_name
+$ sudo delgroup devops_group126

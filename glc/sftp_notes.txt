@@ -1,0 +1,43 @@
+
+sftp - is a secure remote file transfer utility based on File
+Transfer Protocol (FTP)
+
+
+
+To Connect to SFTP
+$ sftp user@192.168.122.50
+sftp>
+To get help commands
+sftp> help
+To Check Present Working Directory
+local working directory
+sftp> lpwd
+remote working directory
+sftp> pwd
+To List files with sftp
+On Remote
+sftp> ls
+On local machine
+sftp> lls
+To upload file using sftp
+sftp > put sample.py
+To upload multiple files using sftp
+sftp > mput *.py449
+To download files using sftp
+sftp > get example.py
+To download multiple files using sftp
+sftp > mget *.pl
+To switching directories in sftp
+On Remote
+sftp > cd Documents
+on local machine
+sftp > lcd Documents
+To create new directory on local
+sftp > mkdir local_dir
+To create new directory on remote
+sftp > lmkdir remote_dir
+To remove directories using sftp
+sftp > rm file.txt
+sftp > rmdir dir1
+To exit sftp shell
+sftp > exit

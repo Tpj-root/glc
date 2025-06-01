@@ -1,0 +1,46 @@
+
+uname - print system information
+
+
+To print uname without options
+$ uname 
+
+To print all information
+$ uname -a
+
+
+To print the kernel name
+$ uname -s
+
+
+To print the network node hostname
+$ uname -n
+
+
+To print the kernel release
+$ uname -r
+
+
+To print the kernel version
+$ uname -v
+
+
+To print the machine hardware name
+$ uname -m
+
+
+To print the processor type
+$ uname -p
+
+
+To print the hardware platform
+$ uname -i
+
+
+To print the operating system
+$ uname -o
+
+
+To display help options and version
+$ uname -h
+$ uname --version

@@ -1,0 +1,23 @@
+
+fdisk is a dialog-driven program for creation and manipulation of
+partition tables. It understands GPT, MBR, Sun, SGI and BSD
+partition tables
+To view all disk partitions in linux
+$ sudo fdisk -l
+
+
+To view specific disk partition in linux
+$ sudo fdisk -l /dev/sda
+
+
+To view all available fdisk commands
+$ sudo fdisk /dev/sda
+
+
+To print all partition table in linux
+$ sudo fdisk /dev/sda
+
+
+Command (m for help): p
+To check Size of a partition in linux
+$ sudo fdisk -s /dev/sda3157

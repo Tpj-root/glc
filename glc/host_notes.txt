@@ -1,0 +1,34 @@
+
+host - DNS lookup utility used for performing DNS lookups. It is normally used to convert names to IP addresses and vice versa
+
+
+To print the IP address details of the specified domain
+$ host ilugc.in
+
+
+To display the domain details of the specified IP Address
+$ host 54.255.56.197
+
+
+To specify the query type or enables the verbose output
+$ host -a ilugc.in
+
+
+To specify the type of query
+$ host -t ns ilugc.in
+
+
+To print SOA record
+$ host -t SOA ilugc.in
+
+
+To print txt record
+$ host -t txt ilugc.in
+
+
+To compare the SOA records on authoritative nameservers
+$ host -t SOA ilugc.in
+
+
+To specify the number of retries you can do in case one try fails
+$ host -R 3 ilugc.in

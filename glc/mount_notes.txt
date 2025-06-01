@@ -1,0 +1,58 @@
+
+mount - is used to mount the filesystem
+syntax
+$ mount -t type device dir
+
+
+To list mounted file systems
+$ mount
+
+
+To list information about specific file systems
+$ sudo mount -l -t ext4
+
+
+To mount file systems
+$ sudo mount /dev/sdb4 /media/ilugc
+
+
+
+To mount ISO files
+$ sudo mount /file.iso /media/iso-file -o loop
+
+
+To mount an NFS
+$ sudo mkdir /media/nfs
+$ sudo mount /media/nfs
+
+
+To mount all the /etc/fstab entries
+$ sudo mount -a
+
+
+To mount only specific filesystem from /etc/fstab
+$ sudo mount /backup_data
+or
+mount with device name
+$ sudo mount /dev/sda3
+
+
+
+To bind mount points to a new directory
+$ sudo mount -B /backup_data /mnt
+
+
+To access contents from new mount point
+$ sudo mount -M /backup_data /mnt/
+
+
+To mount without writing entry into /etc/mtab
+$ sudo mount -n /dev/sda5 /backup_data
+
+
+To mount partition as read only
+$ sudo mount /dev/sda4 /backup_data -r
+
+
+To remount the mounted filesystem
+$ sudo mount -o remount,rw /backup_data

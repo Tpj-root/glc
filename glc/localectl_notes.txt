@@ -1,0 +1,12 @@
+
+localectl - used to query and change the system locale and
+keyboard layout settings
+
+
+To change or set system local
+$ localectl set-locale LANG=en_IN.UTF-8
+
+
+
+To configure a specific locale parameter
+$ localectl set-locale LC_TIME=en_IN.UTF-8252

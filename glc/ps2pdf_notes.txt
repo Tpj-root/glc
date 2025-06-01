@@ -1,0 +1,12 @@
+
+ps2pdf - Convert PostScript to PDF using ghostscript
+$ ps2pdf sample.ps
+$ ps2pdf file.ps file.pdf
+
+
+To embed fonts
+$ ps2pdf -dEmbedAllFonts=true sample.ps
+
+
+To compress the PDF
+$ ps2pdf -dUseFlateCompression=true sample.ps

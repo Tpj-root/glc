@@ -1,0 +1,28 @@
+
+
+last - show a listing of last logged in users
+
+
+To list last five users logged in
+$ last -5
+
+
+To display without the host-name field
+$ last -R user_name
+
+
+To display the login and logout time including the dates
+$ last -F
+
+
+To display the host-name in the last column
+$ last -a
+
+
+To display within a specific time period.(-s) since and (-t) until
+$ last -s yesterday -t today
+
+
+To display information like system down entries and run level
+changes
+$ last -x

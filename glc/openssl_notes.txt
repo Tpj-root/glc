@@ -1,0 +1,74 @@
+
+openssl - is an open-source command line tool that is commonly
+used to generate private keys, create CSRs, install your SSL/TLS
+certificate, and identify certificate information.
+
+
+
+To generate private key and certificate signing request
+$ openssl req -out ilugc.csr -newkey rsa:2048 -nodes -keyout
+ilugc.key
+
+
+To create a self-signed certificate
+$ openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -
+keyout ilugc_selfsigned.key -out ilugc_cert.pem
+
+
+To verify CSR file
+$ openssl req -noout -text -in ilugc.csr
+
+
+To create RSA private key
+$ openssl genrsa -out private.key 2048
+
+
+To remove passphrase from key
+$ openssl rsa -in certkey.key -out nopassphrase.key
+
+
+To verify private key
+$ openssl rsa -in certkey.key –check
+
+
+To verify certificate file
+$ openssl x509 -in certfile.pem -text –noout
+
+
+To verify the Certificate Signer Authority
+$ openssl x509 -in certfile.pem -noout -issuer -issuer_hash
+
+
+
+To check hash value of a certificate
+$ openssl x509 -noout -hash -in ilugc_cert.pem
+
+
+
+To Convert DER (Distinguished Encoding Rules) to PEM (Privacy
+Enhanced Mail) format
+$ openssl x509 –inform der –in sslcert.der –out sslcert.pem
+
+
+
+To convert PEM(Privacy Enhanced Mail) to DER(Distinguished
+Encoding Rules) format
+$ openssl x509 –outform der –in sslcert.pem –out sslcert.der
+
+
+
+To create CSR using an existing private key
+$ openssl req –out certificate.csr –key existing.key –new
+
+
+To test SSL certificate of particular url
+$ openssl s_client -connect myurl.com:443 –showcerts
+
+
+To check PEM file certificate expiration date
+$ openssl x509 -noout -in certificate.pem -dates
+
+
+To check certificate expiration date of SSL url
+$ openssl s_client -connect myurl.com:443 2>/dev/null | openssl
+x509 -noout –enddate

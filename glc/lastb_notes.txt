@@ -1,0 +1,20 @@
+
+lastb - is the same as last, except that by default it shows a log
+of the /var/log/btmp file, which contains all the bad login
+attempts
+
+
+To show a list of all failed login attempts
+$ sudo lastb
+
+
+To show a list of failed login attempts since a given time
+$ sudo lastb --since YYYY-MM-DD
+
+
+To show a list of failed login attempts until a given time
+$ sudo lastb --until YYYY-MM-DD
+
+
+To show a list of all failed login attempts at a specific time
+$ sudo lastb --present hh:mm246

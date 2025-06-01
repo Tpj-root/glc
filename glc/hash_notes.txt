@@ -1,0 +1,23 @@
+
+hash - built-in command of bash which is used to maintain a hash
+table of recently executed programs
+To display information about the hash table
+$ hash
+hits command
+2/usr/bin/man
+2/usr/bin/ls
+1/usr/bin/cat
+To forget the remembered location of each name
+$ hash -r
+
+
+To display in a format that may be reused as input
+$ hash -l
+
+
+To display the remembered location of each NAME
+$ hash -t cat ls
+
+
+cat /usr/bin/cat
+ls /usr/bin/ls

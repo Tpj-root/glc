@@ -1,0 +1,30 @@
+
+service - is used to control SysVinit services through SysVinit
+scripts
+syntax
+$ service [options] [service] [subcommand]
+
+
+
+To check the status of service
+$ sudo service rsyslog status
+$ sudo service sshd status
+
+
+To stop a service
+$ sudo service rsyslog stop
+$ sudo service sshd stop
+
+
+To restart a service
+$ sudo service rsyslog restart
+$ sudo service sshd restart
+$ sudo service vsftpd restart
+
+
+To list the status for all the programs
+$ sudo service --status-all
+
+
+To do a full restart
+$ sudo service service_name --full-restart

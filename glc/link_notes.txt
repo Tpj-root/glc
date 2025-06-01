@@ -1,0 +1,18 @@
+
+link - call the link function to create a link to a file
+
+
+$ link FILE1 FILE2
+
+
+$ vim file1.txt
+1 andhra
+2 tamilnadu
+3 kerala
+4 karnataka
+5 pondicherry
+link file1.txt to file2.txt
+$ link file1.txt file2.txt
+
+
+it would create the file file2.txt linked to the file file1.txt

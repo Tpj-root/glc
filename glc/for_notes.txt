@@ -1,0 +1,25 @@
+
+for - command in Linux is used to repeatedly execute a set of
+command for every element present in the list.
+
+
+
+$ for i in 0 1 2 3 4 5 6 7 8 9; do echo $i; done
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+$ for i in 1 2 3 4 5; do echo "welcome $i times"; done
+welcome 1 times
+welcome 2 times
+welcome 3 times
+welcome 4 times
+welcome 5 times

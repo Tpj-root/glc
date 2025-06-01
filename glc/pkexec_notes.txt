@@ -1,0 +1,9 @@
+pkexec - Execute a command as another user
+$ pkexec <command>
+$ pkexec pwd
+$ pkexec ls
+$ pkexec df
+
+
+To run the command as some other user
+$ pkexec --user <username> <command>377

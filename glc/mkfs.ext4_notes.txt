@@ -1,0 +1,23 @@
+
+mkfs.ext4 - is used to create filesystem (ext2, ext3, ext4, etc)
+on Linux system
+
+
+To format the disk as a ext4 partition
+$ sudo mkfs.ext4 /dev/sdb
+
+
+To check the partition for bad blocks before formatting
+$ sudo mkfs.ext4 -c /dev/sdc
+
+
+To quietly create an ext4 partition
+$ sudo mkfs.ext4 -q /dev/sdb
+
+
+To create an ext4 filesystem with label backup
+$ sudo mkfs.ext4 -L backup /dev/sdc
+
+
+To create an ext4 filesystem with detail verbose output
+$ sudo mkfs.ext4 -v /dev/sdb307

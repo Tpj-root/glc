@@ -1,0 +1,32 @@
+
+hwclock - administration tool for the time clocks
+
+
+To display the hardware clock date and time
+$ sudo hwclock
+
+
+To set the hardware clock same as system clock
+$ sudo hwclock --systohc
+or
+$ sudo hwclock -w
+
+
+To set hardware clock date manually
+$ sudo hwclock --set --date 9/2/2022
+
+
+To set hardware clock time manually
+$ sudo hwclock --set --date "9/2/2022 13:00:00"
+
+
+To get the output of the date command, and pass it to the --set
+and --date option
+$ sudo hwclock --set --date "Friday Sep 02 13:00:00 PDT 2022"
+
+
+To copy the hardware time to system time
+$ sudo hwclock -hctosys216
+To
+run hwclock test mode
+$ sudo hwclock --systz --test217

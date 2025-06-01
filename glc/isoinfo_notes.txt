@@ -1,0 +1,12 @@
+
+isoinfo - utility programs for dumping and verifying iso9660
+images.
+
+
+To list the content of ISO file
+$ isoinfo -i ubuntu-20.04-server-amd64.iso -l
+
+
+To extract a single file from an ISO image
+$ isoinfo -i ubuntu-20.04-server-amd64.iso -x MD5SUM.TXT >
+MD5SUM.TXT

@@ -1,0 +1,13 @@
+
+renice - alter priority of running processes
+To change the priority of the running process.
+
+
+$ sudo renice -n <nice_value>
+-p <pid_of_the_process>
+$ renice -n 10 -p <PID>
+To change the priority of all programs of a specific group with
+group id 5 to 15
+$ renice -n 15 -g 5
+To change the priority of all programs of a specific user 3 to 15
+$ sudo renice -n 15 -u 3

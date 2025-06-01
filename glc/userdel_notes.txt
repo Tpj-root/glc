@@ -1,0 +1,25 @@
+
+userdel - delete a user account and related files
+syntax
+$ userdel [OPTIONS] USERNAME
+
+
+To delete a user account
+$ sudo userdel user1
+
+
+To remove the user’s home directory and mail spool
+$ sudo userdel -r user2
+
+
+To forcefully remove the user account
+$ sudo userdel -f user3
+
+
+To display help options
+$ sudo userdel --help
+
+
+To remove any SELinux(Security-Enhanced Linux) user mapping for
+the user’s login.
+$ sudo userdel -Z user2

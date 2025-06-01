@@ -1,0 +1,58 @@
+
+
+networkctl - Query the status of network links
+first check
+$ sudo systemctl start systemd-networkd
+$ sudo systemctl enable systemd-networkd
+$ sudo systemctl status systemd-networkd
+
+
+
+To get the status information about network links
+$ networkctl
+
+
+
+To display all network links and their status
+$ networkctl -a
+or
+$ networkctl list
+
+
+
+To display information type, state, kernel module driver, hardware
+and IP address, configured DNS
+$ networkctl status
+$ networkctl status wlp2s0
+$ networkctl status virbr0
+$ networkctl status docker0
+
+
+
+To show Link Layer Discovery Protocol (LLDP) status
+$ networkctl lldp
+
+
+To prevent the networkctl output piped into a pager
+$ networkctl status --no-pager
+
+
+To print output without headers and footers
+$ networkctl --no-legend
+
+
+To show detailed link statics
+$ networkctl -s
+
+
+To get help commands
+$ networkctl --help
+
+
+
+To show current address label entries in the kernel
+$ networkctl label
+
+
+To reload .network and .netdev files
+$ networkctl reload

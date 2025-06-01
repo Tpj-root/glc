@@ -1,0 +1,48 @@
+
+lsblk - to display details about block devices
+
+
+To display block devices
+$ sudo lsblk
+
+
+To display empty block devices
+$ sudo lsblk -a
+
+
+To print size information in bytes
+$ sudo lsblk -b
+
+
+To print zone model for devices
+$ sudo lsblk -z
+
+
+To skip slave entries
+$ sudo lsblk -d
+
+
+To print information about device owner, group, and mode of block devices
+$ sudo lsblk -m
+
+
+To print selected columns of block-devices
+$ sudo lsblk -o SIZE, NAME, MOUNTPOINT
+
+
+To display help
+$ sudo lsblk --help
+
+
+
+To produce output in the form of a list
+$ sudo lsblk -l
+
+
+
+To list information about a particular block device
+$ sudo lsblk /dev/sdb1/
+
+
+To display SCSI devices only
+$ sudo lsblk -S

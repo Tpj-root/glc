@@ -1,0 +1,18 @@
+
+select - is a very useful bash command for bash menu creation
+syntax:
+select v in data_list
+do
+statement1
+Statement2
+Statement3
+done
+Creating a simple menu
+$ vim select.sh
+#!/bin/bash
+# Define the menu list here
+select os in debian ubuntu fedora arch kali
+do
+echo "You have chosen $os"
+done
+$ bash select.sh

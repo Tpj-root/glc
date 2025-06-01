@@ -1,0 +1,23 @@
+
+partprobe - is a program that informs the operating system kernel
+of partition table changes
+
+
+To reload partition table in linux
+$ sudo partprobe <device_name>
+$ sudo partprobe /dev/sdc
+
+
+To show a summary of devices and their partitions
+$ sudo partprobe -s
+
+
+To make a dry run and not to update the kernel
+$ sudo partprobe --dry-run
+or
+$ sudo partprobe -d
+
+
+To show a summary of devices and their partitions but don’t notify
+the kernel
+$ sudo partprobe -sd

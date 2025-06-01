@@ -1,0 +1,17 @@
+
+locale - displays information about the current locale, or all
+locales, on standard output
+
+
+
+To view system locale in linux
+$ locale
+
+
+To view more information about an environmental variable which
+store date and time
+$ locale -k LC_TIME
+
+
+To display a list of all available locales
+$ locale -a251

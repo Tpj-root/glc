@@ -1,0 +1,24 @@
+
+loginctl - The loginctl command can be used to check and control the status of systemd, and to view the messages of logged-in users
+
+
+
+To Show all sessions and attributes
+$ loginctl -a
+
+
+To display session configuration message
+$ loginctl show-session
+
+
+To list currently logged in users
+$ loginctl list-users
+
+
+To show concise runtime status information about one or more
+logged in users
+$ loginctl user-status USER_NAME
+
+
+To show properties of one or more users
+$ loginctl show-user USER_NAME

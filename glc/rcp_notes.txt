@@ -1,0 +1,25 @@
+
+rcp - is used to copy files from one networked computer to another
+syntax
+$ rcp options source destination
+
+
+To send a file from local host to remote host
+$ rcp /home/ilugc/file.txt remotehost:/home/remote_home/file.txt
+
+
+To receive a file from a remote host
+$ rcp remote_host:/home/remote_home/file.txt .
+
+
+To have the modification times, access times, modes and ACLs if
+applicable as the original file
+$ rcp -p remote_host:/home/remote_home/file.txt
+
+
+To copy directories
+$ rcp -r localdir remote_host:
+
+
+To copy two files from local host to remote host
+$ rcp a.txt b.txt c.txt remote_host:/var/www/

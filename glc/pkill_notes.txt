@@ -1,0 +1,37 @@
+
+pkill - is used to kill the current or running process on the
+environment
+syntax
+$ pkill [OPTIONS] <PATTERN>
+To stop the process gracefully
+$ pkill -15 docker
+$ pkill -15 firefox
+To reload any “X” process
+$ pkill -HUP X
+To Kill the Process Starts and Ends With Specific Expression
+$ pkill '^ssh$'
+To Kill Process Based on Full Command
+$ pkill ping
+$ pkill -9 -f "ping google.com"
+To send a different signal to kill a process
+$ pkill --signal SIGKILL ping
+To make the pkill case insensitive
+$ pkill -i [process-name]
+$ pkill -i PING380
+To kill match the processes being run by a specific user
+$
+pkill -u user1
+To kill match the processes being run by multiuser
+$ pkill -u
+user1, user2, user3
+To send KILL signals to all processes under the user1 and patterns
+matching X process
+$ pkill -9 -u user1 X
+To kill only the oldest (least recently started) of the matching
+processes
+$ pkill -9 -o chrome
+To kill only the newest (most recently started) of
+processes
+$ pkill -9 -n chrome
+the
+matching

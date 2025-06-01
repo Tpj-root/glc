@@ -1,0 +1,71 @@
+
+md5sum - it is designed to create, read, and check file integrity using MD5
+
+
+$ cat example.txt
+this is line one
+this is line two
+
+
+
+To display the file hash value alongside the filename
+$ md5sum [filename]
+$ md5sum example.txt
+
+
+To read the file in binary mode
+$ md5sum -b example.txt
+
+
+To read the file in text mode
+$ md5sum -t example.txt
+
+
+To create a BSD-style checksum with -tag
+$ md5sum --tag example.txt
+
+
+To check a file by comparing its hash value with the value
+provided in a hash file
+$ cat example.txt
+this is line one
+this is line two
+
+
+
+To store the MD5 checksum for example.txt in file checkmd5.md5
+$ md5sum example.txt > checkmd5.md5296
+
+
+To check the contents of file
+$ md5sum -c checkmd5.md5
+example.txt: OK
+
+
+
+After changing the contents of file
+$ echo "Hai" >> example.txt
+$ md5sum -c checkmd5.md5
+example.txt: FAILED
+md5sum: WARNING: 1 computed checksum did NOT match
+
+
+
+To create a BSD-style checksum with tag option
+$ md5sum --tag test.txt
+
+
+To validate multiple files
+$ md5sum file1.txt file2.txt file3.txt > hashfile
+
+
+
+To check the integrity of above multiple files
+$ md5sum -c hashfile
+change the content of any one above file for eg. file2.txt and
+check
+
+
+To display only modified files
+$ md5sum --quiet -c hashfile
+

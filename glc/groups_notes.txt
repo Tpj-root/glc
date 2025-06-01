@@ -1,0 +1,15 @@
+
+groups - print the groups a user is in
+
+
+
+$ groups [username]
+Provided with a username ilugc
+$ groups ilugc
+ilugc : ilugc adm cdrom sudo dip plugdev lpadmin lxd sambashare
+libvirt docker
+To display group membership for the current user
+$ groups
+To find groups of root
+# groups
+root

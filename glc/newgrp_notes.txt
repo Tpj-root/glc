@@ -1,0 +1,19 @@
+
+newgrp - is used to change the current group ID (GID) during a
+login session for a user
+
+
+$ newgrp [-] [group]
+$ newgrp ilugc
+
+
+
+Attempts to log in to the group ilugc
+Attempts to log in to the group ilugc , if successful re-
+initializes the user environment.
+$ newgrp - ilugc
+
+
+
+To change the real group ID back to your original login group
+$ newgrp

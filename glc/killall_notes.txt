@@ -1,0 +1,31 @@
+
+killall - kill processes by name, killall sends a signal to all
+processes running any of the specified commands
+To killall a program name sample
+$ killall example
+
+
+To killall sshd
+$ killall sshd
+
+
+To send kill signal instead of default term signal
+$ killall -9 sshd
+
+
+killall is case sensitive, To killall a program to ignore case
+$ killall -I Example
+
+
+To get a list of signals that killall can send
+$ killall -l
+
+
+To send different signals to kill processes
+$ killall -s SIGINT example
+
+
+To Kill multiple processes interactively
+$ killall -i example1 example2
+
+

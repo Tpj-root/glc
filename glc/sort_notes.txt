@@ -1,0 +1,53 @@
+
+sort - is used to sort a file, arranging the records in a
+particular order.
+
+
+$ cat file.txt
+assam
+tamilnadu
+chattisgarh
+delhi
+gujarat
+himachal pradesh
+kerala
+bihar
+
+
+
+To sort arrange the file.txt
+$ sort file.txt
+
+
+
+To Save Output to File
+$ sort file.txt > sorted.txt
+
+
+
+To Check for Sorting in File
+$ sort -c file.txt
+
+
+
+To Sort Multiple Files
+$ sort file1.txt file2.txt
+
+
+
+To Sort in Reverse Order
+$ sort -r file.txt
+
+
+To Remove Duplicate Entries
+$ sort -u file.txt
+
+
+To Sort by Months
+$ ls -l > month.txt
+$ sort -Mk6 month.txt
+
+
+
+To Randomly Sort Data
+$ sort -R sorted.txt

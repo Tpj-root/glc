@@ -1,0 +1,59 @@
+
+ls - list directory contents
+To list files and directories
+$ ls
+
+
+To long listing of files
+$ ls -l
+
+
+To view hidden files
+$ ls -a
+
+
+To list files with human readable format
+$ ls -lh
+
+
+To add the / character at the end of each directory.
+$ ls -F
+
+
+To list files in reverse order
+$ ls -r
+
+
+recursively list Subdirectories
+$ ls -R
+
+
+To sort files by file size
+$ ls -lS
+
+
+
+To display Inode number of file or directory
+$ ls -i
+
+
+To display UID and GID of files
+$ ls -n
+
+
+To order files based on last modified time
+$ ls -lt
+
+
+To order files based on last modified time in reverse order
+$ ls -ltr
+
+
+
+To make visual classification of files with special characters
+/ - directory.
+nothing - normal file.
+@ - link file.
+* - Executable file
+$ ls -F
+

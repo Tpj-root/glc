@@ -1,0 +1,59 @@
+
+udevadm - is used to manage udev. It takes various subcommands,
+each of which performs a certain task to modify the behavior of
+the systemd-udevd daemon and related components
+
+
+To get help options
+$ udevadm --help
+$ udevadm info --help
+$ udevadm trigger --help
+$ udevadm settle --help
+$ udevadm control --help
+$ udevadm monitor --help
+$ udevadm test --help
+$ udevadm test-builtin --help
+
+
+To query the Udev database for the device path of /dev/vda1
+$ udevadm info --query=path --name=/dev/vda1
+
+
+To query the device attributes from the udev database
+$ udevadm info /dev/vda1
+
+
+To query the Udev database for all device information for
+/dev/vda1
+$ udevadm info --query=all --name=/dev/xvda
+$ udevadm info --query=all --name=/dev/xvda1
+
+
+To print all sysfs properties of /dev/vda1
+$ udevadm info --attribute-walk --name=/dev/vda
+$ udevadm info --attribute-walk --name=/dev/vda1
+
+
+
+To Trigger all udev rules
+$ sudo udevadm trigger
+
+
+To Reload all udev rules
+$ sudo udevadm control --reload-rules
+
+
+To List attributes of a device
+$ udevadm info --attribute-walk --path /dev/vda1
+
+
+To Monitor all device events
+$ udevadm monitor
+
+
+To Print uevents sent out by the kernel
+$ udevadm monitor --kernel
+
+
+To Print device events after being processed by udev
+$ udevadm monitor --udev

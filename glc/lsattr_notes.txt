@@ -1,0 +1,43 @@
+
+lsattr is used to list the attributes of a file or directory
+
+
+
+The syntax of the lsattr command
+$ lsattr [options] [file/Dir]
+
+
+
+To display all the files and directories in the current directory
+along with their file attributes
+$ lsattr
+$ lsattr file.txt
+
+
+
+To Recursively list attributes of directories and their contents
+$ lsattr -R /etc/ssh/
+
+
+To List the file's version/generation number
+$ lsattr -v
+
+
+To display the program version
+$ lsattr -V
+
+
+To list all files in directories
+$ lsattr -a
+$ lsattr -a ~263
+
+
+
+To display all the contents of the directory along
+with its file attributes
+$ lsattr /etc/ssh/
+
+
+To list directories like other files, rather than listing their
+contents
+$ lsattr -d /etc/ssh/264

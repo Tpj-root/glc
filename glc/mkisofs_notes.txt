@@ -1,0 +1,17 @@
+
+mkisofs - is a utility that creates an ISO 9660 image from files on disk
+
+
+To create an ISO that can be used to back up another ISO file
+$ mkisofs -o [filename.iso] [directory_path]
+$ mkisofs -o bootiso.iso /boot
+
+
+
+To create ISO image of a folder in Linux
+$ mkisofs -J -allow-lowercase -R -V "BootCD" -iso-level 4 -o
+BootCD.iso ~/BootCD
+
+
+To list content of ISO file
+$ isoinfo -l -i bootiso.iso310

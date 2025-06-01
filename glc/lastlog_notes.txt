@@ -1,0 +1,14 @@
+
+lastlog - reports the most recent login of all users or of a given user
+
+
+To print the last login of all the users
+$ sudo lastlog
+
+
+To print the records of specified days older ex. 7days older
+$ sudo lastlog -b 7
+
+
+To print the last login records of specified user
+$ sudo lastlog -u user_name245

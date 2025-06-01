@@ -1,0 +1,19 @@
+
+swaplabel - print or change the label or UUID of a swap area
+
+
+To print the swaplabel
+$ sudo swaplabel /dev/vda5
+
+
+To change the swaplabel, first make swapoff
+$ sudo swapoff -a
+then,
+change the swaplabel name
+$ sudo swaplabel -L mynewswap /dev/vda5
+then,
+$ sudo swapon -a
+check with
+$ sudo swapon --show
+now new swaplabel is fixed
+$ sudo swaplabel /dev/vda5

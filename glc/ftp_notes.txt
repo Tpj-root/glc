@@ -1,0 +1,26 @@
+
+ftp - internet file transfer program. 
+
+ftp is the user interface to the Internet standard File Transfer Protocol
+
+
+To open an ftp connection to a remote system
+$ ftp xx.xx.xx.xx
+xx.xx.xx.xx is the remote server ip
+to change to another directory
+
+
+ftp > lcd dir_name
+To download a single file from the remote server
+ftp > get file_name
+To download multiple files at once
+ftp > mget file1 file2 file3
+To upload a file
+ftp >
+put file_name
+To upload multiple files
+ftp > put file1 file2 file3174
+To close the connection
+ftp > quit
+or
+ftp > bye

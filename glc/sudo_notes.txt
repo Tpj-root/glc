@@ -1,0 +1,45 @@
+
+sudo - allows a permitted user to execute a command as the
+superuser or another user
+
+
+To run command as a root user
+$ sudo <command>
+$ sudo pwd
+
+
+To run command as a different user
+$ sudo -u user3 <command>
+$ sudo -u user3 pwd
+
+
+To List user privileges with sudo
+$ sudo -l
+
+
+To Display privileges for another user with sudo
+$ sudo -l -U user3
+
+
+To add a user to the sudo group
+$ sudo usermod -aG sudo user3
+
+
+To add users to the sudoers file
+$ sudo visudo
+
+
+To run command in the background
+$ sudo -b <command>
+
+
+To update sudoers files
+$ sudo -e <file>
+
+
+To update the user’s cached credentials
+$ sudo -v
+
+
+To invalidate user’s cached credentials
+$ sudo -k

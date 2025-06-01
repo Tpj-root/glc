@@ -1,0 +1,23 @@
+
+sync - is used to synchronize the data of the temporary memory to
+the permanent storage memory
+syntax
+$ sync [option] [file]
+
+
+To sync all the cached files to the permanent memory which belongs
+to the current user
+$ sudo sync
+
+
+To sync only file data, no unneeded metadata
+$ sudo sync -d /home/ilugc/file1.txt
+
+
+To sync all the files in dir
+$ sudo sync -f /home/ilugc/Downloads
+
+
+To sync the cache data of the mounted partition
+$ sudo sync /dev/vda1
+$ sudo sync /var/log/syslog

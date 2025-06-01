@@ -1,0 +1,35 @@
+
+mandb - used to initialize or manually update/create the index
+database cache that is usually maintained by man
+$ sudo mandb
+
+
+To print debugging information
+$ sudo mandb -d
+$ sudo mandb -d unzip
+
+
+To do mandb without warnings in quiet mode
+$ sudo mandb -q
+
+
+To force mandb to delete previous databases and recreate them from scratch, and implies --no-purge
+$ sudo mandb -c
+
+
+To Create user databases with write permissions to create system db
+$ sudo mandb -u
+
+
+
+To perform correctness checks on manual
+$ sudo mandb -t
+
+
+To specify the configuration file to use
+$ sudo mandb --config-file=file
+
+
+To update the index cache of the top command
+$ sudo mandb top
+pages

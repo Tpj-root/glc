@@ -1,0 +1,36 @@
+
+nice - run a program with modified scheduling priority
+
+
+To check all nice values of all processes
+$ top
+
+
+To check the nice value of vlc process
+$ ps -el | grep vlc
+
+
+
+To check the nice value of terminal
+$ ps -el | grep terminal
+
+
+
+To check the nice value of top process
+$ ps -el | grep top
+
+
+
+To set the priority of a process
+$ nice -n <number><process name>
+$ nice -10 vlc
+$ nice -10 gnome-terminal
+$ nice -n 5 bash
+$ nice -n 5 top
+
+
+To set the negative priority for a process
+$ nice --n <number><process name>
+$ nice --10 vlc
+$ nice --10 gnome-terminal
+$ nice --10 top320

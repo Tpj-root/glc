@@ -1,0 +1,55 @@
+
+set - is a built-in Linux shell command that displays and sets the
+names and values of shell and Linux environment variables
+syntax:
+$ set [options] [arguments]
+To list
+all settings
+$ set
+$ set debian redhat arch
+To list all the parameters in the order of $1 $2 $3
+$ echo "$*"
+$ echo $1
+$ echo $2
+$ echo $3
+
+
+To unset All Positional Parameters
+$ set --
+
+
+To print out an error on the shell if the script runs into an
+undefined variable
+$ vim example1.sh
+#!/bin/bash
+set -u
+echo $foo
+echo "welcome to ilugc"
+:x
+$ bash example.sh
+
+
+
+To display an Error If a Command Is Non-existent
+$ vim example2.sh
+#!/bin/bash
+set -e
+foo bar
+echo "welcome to klug"
+:x
+$ bash example2.sh
+
+
+To Display an Error in Piped Commands
+$ vim example3.sh
+#!/bin/bash
+set -eo pipefail
+foobar | echo "Hi welcome to chennaipy"
+echo "welcome to ilugc"
+:x
+$ bash example3.sh
+
+
+
+To set allexport and notify options
+$ set -o allexport -o notify

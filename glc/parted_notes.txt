@@ -1,0 +1,43 @@
+
+parted - is a program to manipulate disk partitions
+
+
+To list linux disk partitions
+$ sudo parted
+(parted) print
+or
+$ sudo parted -l
+To select different hard disk with parted
+(parted) select /disk_name
+(parted) select /dev/vda
+To create a primary partition
+$ sudo parted /dev/sda mkpart primary ext4 start end
+To create a logical partition
+(parted) mkpart
+partition type: extended
+start ?
+end ?
+or
+$ sudo parted /dev/sda mkpart extended start end
+To resize disk partition
+(parted) resizepart partition_number end
+To change the FLAG on partition
+(parted) set partition_number flag state
+To toggle the state of FLAG on partition
+(parted) toggle
+To delete the partition
+(parted) rm partition_number
+or
+$ sudo parted /disk/name rm partition_number
+To create a partition without knowing disk size
+$ sudo parted /dev/sda mkpart primary 10000 100%
+To set the flag on partition
+$ sudo parted /dev/sda set partition_number Flag State
+To rescue a lost partition
+(parted) rescue
+or
+(parted) rescue start end
+To set the name of partition
+(parted) name
+or
+(parted) partition_number name

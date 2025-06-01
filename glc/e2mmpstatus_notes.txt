@@ -1,0 +1,13 @@
+
+e2mmpstatus - it is used to check Multiple-Mount Protection (MMP)
+status of an ext4 filesystem with the mmp feature enabled. 
+The specified filesystem can be a device name or an ext4 filesystem
+label or UUID
+
+
+
+$ sudo e2mmpstatus /dev/sda1
+or
+$ sudo e2mmpstatus LABEL=label_name
+or
+$ sudo e2mmpstatus UUID=cccccccccc-aaaaa-zzzzzzz-yyyyyy-xxxxxxx135
