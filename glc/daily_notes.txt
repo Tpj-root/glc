@@ -1,0 +1,22 @@
+A short, organized space to write important thoughts, tasks, ideas, or reminders each day. 
+Easy to review and update anytime.
+
+
+--------------------
+Make sure img2pdf is installed. Install with:
+
+pip install img2pdf
+
+Use this command to convert images into a PDF using img2pdf
+
+img2pdf image1.jpg image2.png -o output.pdf
+
+--------------------
+
+
+To merge all PDF files in a folder into one, use this command (Linux/macOS):
+
+
+pdfunite *.pdf merged_output.pdf
+
+
